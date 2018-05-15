@@ -20,5 +20,5 @@ You're looking at it
 - API Gateway(graphql)
 
 ### Micro-services:
-- Users (graphql + prisma)
+- Users (graphql + Auth0)
 - Auctions (graphql + prisma)
