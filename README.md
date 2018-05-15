@@ -1,12 +1,12 @@
 # The Bid
 
+[![license](https://img.shields.io/github/license/the-bid/web-app.svg?style=flat-square)](https://github.com/the-bid/web-app/blob/master/LICENSE)
+[![GitHub last commit (master)](https://img.shields.io/github/last-commit/the-bid/web-app/master.svg?style=flat-square)](https://github.com/the-bid/web-app/commits/master)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/the-bid/web-app.svg?style=flat-square)](https://github.com/the-bid/web-app/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/the-bid/web-app.svg?style=flat-square)](https://github.com/the-bid/web-app/issues)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-![license](https://img.shields.io/github/license/the-bid/web-app?style=flat-square)
-![GitHub last commit (master)](https://img.shields.io/github/last-commit/the-bid/web-app/master.svg?style=flat-square)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/the-bid/web-app?style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues/the-bid/web-app.svg?style=flat-square)
 ### Developed by Daniel Biales
-
 
 ## Features
 - NONE!
