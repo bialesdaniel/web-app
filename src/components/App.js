@@ -5,6 +5,7 @@ import { withStyles } from 'material-ui/styles'
 import Header from './Header'
 import Auctions from './Auctions/AuctionsMain'
 import CreateAuction from './Auctions/CreateAuction'
+import AuctionDetails from './Auctions/AuctionDetails'
 import Callback from './Callback'
 import Auth from '../services/Auth'
 
@@ -37,6 +38,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Auctions} />
             <Route exact path="/auctions/new" component={CreateAuction} />
+            <Route exact path="/auctions/:auctionId" component={AuctionDetails} />
             <Route
               exact
               path="/callback"

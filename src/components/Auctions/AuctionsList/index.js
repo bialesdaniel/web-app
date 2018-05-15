@@ -36,21 +36,20 @@ class AuctionsList extends Component {
           </Grid>
         </ListSubheader>
         <Divider />
-        {loading && <CircularProgress />}
-        {!loading && auctions.length > 0 ? (
-          auctions.map(auction => {
-            return (
-              <AuctionsListItem
-                key={auction.id}
-                name={auction.name}
-                auctionId={auction.id}
-                owner={auction.owner.username}
-              />
-            )
-          })
+        {loading ? (
+          <CircularProgress />
+        ) : auctions.length > 0 && !error ? (
+          auctions.map(auction => (
+            <AuctionsListItem
+              key={auction.id}
+              name={auction.name}
+              auctionId={auction.id}
+              owner={auction.owner.username}
+            />
+          ))
         ) : (
           <ListItem>
-            <ListItemText className={classes.emptyListItemText} primary="No auctions available" />
+            <ListItemText className={classes.emptyListItemText} primary={error ? error : 'No auctions available'} />
           </ListItem>
         )}
       </List>

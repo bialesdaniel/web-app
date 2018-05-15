@@ -46,8 +46,8 @@ class CreateAuction extends Component {
       [field]: event.target.value
     })
   }
-  handleCreate = () => {
-    this.props.history.replace('/')
+  handleCreate = data => {
+    this.props.history.replace(`/auctions/${data.createAuction.id}`)
   }
   handleError = error => {
     console.log(error)
@@ -57,7 +57,7 @@ class CreateAuction extends Component {
     const { classes } = this.props
     return (
       <Mutation mutation={CREATE_AUCTION} onCompleted={this.handleCreate} onError={this.handleError}>
-        {(createAuction, { loading, error, data }) => (
+        {(createAuction, { loading, error }) => (
           <form
             className={classes.root}
             onSubmit={e => {

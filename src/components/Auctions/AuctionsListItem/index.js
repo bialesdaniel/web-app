@@ -5,7 +5,7 @@ import { ListItem, ListItemText } from 'material-ui/List'
 
 class AuctionListItem extends Component {
   handleClick = () => {
-    //TODO: do something
+    this.props.history.push(`/auctions/${this.props.auctionId}`)
   }
   render() {
     return (
@@ -19,7 +19,8 @@ class AuctionListItem extends Component {
 AuctionListItem.propTypes = {
   name: PropTypes.string.isRequired,
   owner: PropTypes.string.isRequired,
-  auctionId: PropTypes.string.isRequired
+  auctionId: PropTypes.string.isRequired,
+  history: PropTypes.object.isRequired
 }
 
 export default withRouter(AuctionListItem)
