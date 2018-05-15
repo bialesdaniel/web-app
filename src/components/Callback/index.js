@@ -1,31 +1,29 @@
-import React, {Component} from 'react'
-import {withStyles} from 'material-ui/styles'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { withStyles } from 'material-ui/styles'
 import Grid from 'material-ui/Grid'
-import {CircularProgress} from 'material-ui/Progress'
+import { CircularProgress } from 'material-ui/Progress'
 
-
-const styles=(theme)=>({
-  root:{
-    margin:theme.spacing.unit *3
+const styles = theme => ({
+  root: {
+    margin: theme.spacing.unit * 3
   }
 })
-class Callback extends Component{
-  render(){
-    const {classes} = this.props
+class Callback extends Component {
+  render() {
+    const { classes } = this.props
     return (
-      <Grid
-        container
-        direction='row'
-        justify='center'
-        alignItems='stretch'
-        className={classes.root}
-        >
+      <Grid container direction="row" justify="center" alignItems="stretch" className={classes.root}>
         <Grid item xs={12}>
-          <CircularProgress size='40%' color='secondary'/>
+          <CircularProgress size="40%" color="secondary" />
         </Grid>
       </Grid>
     )
   }
+}
+
+Callback.propTypes = {
+  classes: PropTypes.object
 }
 
 export default withStyles(styles)(Callback)

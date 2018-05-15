@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from 'material-ui/styles'
 import AppBar from 'material-ui/AppBar'
@@ -12,30 +12,36 @@ import Auth from '../../services/Auth'
 
 const styles = {
   root: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   flex: {
-    flex: 1,
+    flex: 1
   },
   menuButton: {
     marginLeft: -12,
-    marginRight: 20,
-  },
+    marginRight: 20
+  }
 }
 
 class Header extends Component {
-  render(){
+  render() {
     const { classes } = this.props
     return (
       <div className={classes.root}>
-        <AppBar position='static'>
+        <AppBar position="static">
           <Toolbar>
             <IconButton className={classes.menuButton} aria-label="Menu">
-              <MenuIcon/>
+              <MenuIcon />
             </IconButton>
-            <Typography variant='title' color='inherit' className={classes.flex}>The Bid</Typography>
-            {this.props.auth.isAuthenticated() && <IconButton><AccountCircle color='inherit'/></IconButton>}
-            <AuthenticateButton auth={this.props.auth}/>
+            <Typography variant="title" color="inherit" className={classes.flex}>
+              The Bid
+            </Typography>
+            {this.props.auth.isAuthenticated() && (
+              <IconButton>
+                <AccountCircle color="inherit" />
+              </IconButton>
+            )}
+            <AuthenticateButton auth={this.props.auth} />
           </Toolbar>
         </AppBar>
       </div>
@@ -44,7 +50,8 @@ class Header extends Component {
 }
 
 Header.propTypes = {
-  auth:PropTypes.instanceOf(Auth).isRequired
+  auth: PropTypes.instanceOf(Auth).isRequired,
+  classes: PropTypes.object
 }
 
 export default withStyles(styles)(Header)

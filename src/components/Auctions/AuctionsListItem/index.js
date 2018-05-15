@@ -1,19 +1,16 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import {withRouter} from 'react-router'
-import {ListItem, ListItemText} from 'material-ui/List'
+import { withRouter } from 'react-router'
+import { ListItem, ListItemText } from 'material-ui/List'
 
-class AuctionListItem extends Component{
-  handleClick=()=>{
-    console.log(localStorage.getItem('access_token'))
+class AuctionListItem extends Component {
+  handleClick = () => {
+    //TODO: do something
   }
-  render(){
+  render() {
     return (
       <ListItem onClick={this.handleClick} button divider>
-        <ListItemText
-          primary={this.props.name}
-          secondary={`by ${this.props.owner}`}
-        />
+        <ListItemText primary={this.props.name} secondary={`by ${this.props.owner}`} />
       </ListItem>
     )
   }

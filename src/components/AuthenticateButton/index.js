@@ -1,29 +1,40 @@
-import React, {Component} from 'react'
-import {withStyles} from 'material-ui/styles'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { withStyles } from 'material-ui/styles'
 import Button from 'material-ui/Button'
+import Auth from '../../services/Auth'
 
 const styles = {}
 
-class LoginSignupButton extends Component{
-  handleLogin=()=>{
+class LoginSignupButton extends Component {
+  handleLogin = () => {
     this.props.auth.login()
   }
-  handleLogout=()=>{
+  handleLogout = () => {
     this.props.auth.logout()
   }
-  render(){
+  render() {
     const { isAuthenticated } = this.props.auth
-    
-    return(
+
+    return (
       <div>
-        {
-          isAuthenticated()?
-            <Button onClick={this.handleLogout} color='inherit'>Logout</Button>:
-            <Button onClick={this.handleLogin} color='inherit'>Login</Button>
-        }
+        {isAuthenticated() ? (
+          <Button onClick={this.handleLogout} color="inherit">
+            Logout
+          </Button>
+        ) : (
+          <Button onClick={this.handleLogin} color="inherit">
+            Login
+          </Button>
+        )}
       </div>
     )
   }
+}
+
+LoginSignupButton.propTypes = {
+  auth: PropTypes.instanceOf(Auth).isRequired,
+  classes: PropTypes.object
 }
 
 export default withStyles(styles)(LoginSignupButton)
