@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
-import { withStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import CircularProgress from '@material-ui/core/CircularProgress'
@@ -21,17 +20,9 @@ const GET_AUCTION = gql`
   }
 `
 
-const styles = theme => ({
-  auctionContent: {
-    marginTop: theme.spacing.unit,
-    padding: theme.spacing.unit
-  }
-})
-
 class AuctionDetails extends Component {
   render() {
     const { auctionId } = this.props.match.params
-    const { classes } = this.props
     return (
       <Query query={GET_AUCTION} variables={{ auctionId }}>
         {({ loading, error, data }) => {
@@ -61,4 +52,4 @@ AuctionDetails.propTypes = {
   classes: PropTypes.object
 }
 
-export default withStyles(styles)(AuctionDetails)
+export default AuctionDetails
