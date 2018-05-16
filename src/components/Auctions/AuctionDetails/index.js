@@ -6,13 +6,14 @@ import { withStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import CircularProgress from '@material-ui/core/CircularProgress'
-import Paper from '@material-ui/core/Paper'
+import Tournament from '../../Tournament'
 
 const GET_AUCTION = gql`
   query auction($auctionId: ID!) {
     auction(id: $auctionId) {
       id
       name
+      createdAt
       owner {
         username
       }
@@ -37,17 +38,15 @@ class AuctionDetails extends Component {
           if (loading) return <CircularProgress size="40%" />
           if (error) return <Typography variant="subheading">{error}</Typography>
           return (
-            <Grid container alignItems="center" direction="column" justify="flex-start">
+            <Grid container alignItems="stretch" direction="column" justify="flex-start">
               <Grid item>
                 <Typography variant="headline">{data.auction.name}</Typography>
-                <Typography variant="subheading" align="left">
+                <Typography variant="subheading" align="center">
                   by {data.auction.owner.username}
                 </Typography>
               </Grid>
               <Grid item>
-                <Paper elevation={2} square={true} className={classes.auctionContent}>
-                  <div>This is where content will go</div>
-                </Paper>
+                <Tournament year={new Date(data.auction.createdAt)} />
               </Grid>
             </Grid>
           )
