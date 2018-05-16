@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Tooltip from 'material-ui/Tooltip'
-import IconButton from 'material-ui/IconButton'
+import Tooltip from '@material-ui/core/Tooltip'
+import IconButton from '@material-ui/core/IconButton'
 import AddBoxIcon from '@material-ui/icons/AddBox'
-import Snackbar from 'material-ui/Snackbar'
+import Snackbar from '@material-ui/core/Snackbar'
 import CloseIcon from '@material-ui/icons/Close'
 import { withRouter } from 'react-router'
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Switch, Route } from 'react-router-dom'
-import { withStyles } from 'material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import Header from './Header'
 import Auctions from './Auctions/AuctionsMain'
 import CreateAuction from './Auctions/CreateAuction'

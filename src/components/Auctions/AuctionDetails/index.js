@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
-import { withStyles } from 'material-ui/styles'
-import Grid from 'material-ui/Grid'
-import Typography from 'material-ui/Typography'
-import { CircularProgress } from 'material-ui/Progress'
-import Paper from 'material-ui/Paper'
+import { withStyles } from '@material-ui/core/styles'
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
+import CircularProgress from '@material-ui/core/CircularProgress'
+import Paper from '@material-ui/core/Paper'
 
 const GET_AUCTION = gql`
   query auction($auctionId: ID!) {

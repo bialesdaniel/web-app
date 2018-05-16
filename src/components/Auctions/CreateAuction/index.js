@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Mutation } from 'react-apollo'
 import gql from 'graphql-tag'
-import { withStyles } from 'material-ui/styles'
-import TextField from 'material-ui/TextField'
-import Button from 'material-ui/Button'
-import Typography from 'material-ui/Typography'
-import { CircularProgress } from 'material-ui/Progress'
+import { withStyles } from '@material-ui/core/styles'
+import TextField from '@material-ui/core/TextField'
+import Button from '@material-ui/core/Button'
+import Typography from '@material-ui/core/Typography'
+import CircularProgress from '@material-ui/core/CircularProgress'
 
 const CREATE_AUCTION = gql`
   mutation createAuction($name: String!) {

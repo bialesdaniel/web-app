@@ -10,6 +10,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@material-ui/core": "^1.0.0-rc.1",
     "@material-ui/icons": "^1.0.0-beta.43",
     "apollo-boost": "^0.1.4",
     "auth0-js": "^9.5.1",
