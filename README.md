@@ -22,3 +22,4 @@ You're looking at it
 ### Micro-services:
 - Users (graphql + Auth0)
 - Auctions (graphql + prisma)
+- Tournaments (graphql + Sports Radar)
