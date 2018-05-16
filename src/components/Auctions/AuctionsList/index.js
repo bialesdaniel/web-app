@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { get } from 'lodash'
 import { withStyles } from '@material-ui/core/styles'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
@@ -27,6 +28,15 @@ const styles = theme => ({
 class AuctionsList extends Component {
   render() {
     const { classes, loading, error, auctions } = this.props
+
+    const errorMessage = (auctions.length = 0 && !error)
+      ? 'No auctions available'
+      : get(error, 'networkError')
+        ? `[NetworkError]: ${error.networkError.toString()}`
+        : error
+          ? error.graphQLErrors.toString()
+          : '' //TODO: Find a better way to write this / handle error logic
+
     return (
       <List>
         <ListSubheader color="inherit" className={classes.listHeader}>
@@ -51,7 +61,7 @@ class AuctionsList extends Component {
           ))
         ) : (
           <ListItem>
-            <ListItemText className={classes.emptyListItemText} primary={error ? error : 'No auctions available'} />
+            <ListItemText className={classes.emptyListItemText} primary={errorMessage} />
           </ListItem>
         )}
       </List>

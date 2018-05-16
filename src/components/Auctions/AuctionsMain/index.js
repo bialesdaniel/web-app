@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
+import { get } from 'lodash'
 import { withStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import AuctionsList from '../AuctionsList'
@@ -27,7 +28,7 @@ class AuctionsMain extends Component {
         <Grid item sm={8}>
           <Query query={QUERY_ALL_AUCTIONS}>
             {({ loading, error, data }) => {
-              return <AuctionsList loading={loading} error={error} auctions={data.auctions} />
+              return <AuctionsList loading={loading} error={error} auctions={get(data, 'auctions')} />
             }}
           </Query>
         </Grid>

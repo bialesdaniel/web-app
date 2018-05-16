@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { withRouter } from 'react-router'
+import { Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
@@ -14,18 +16,23 @@ const styles = {
   root: {
     flexGrow: 1
   },
-  flex: {
-    flex: 1
-  },
   menuButton: {
     marginLeft: -12,
     marginRight: 20
+  },
+  headerLink: {
+    flex: 1,
+    color: 'inherit',
+    textDecoration: 'none',
+    '&:focus, &:hover, &:visited, &:link, &:active': {
+      textDecoration: 'none'
+    }
   }
 }
 
 class Header extends Component {
   render() {
-    const { classes } = this.props
+    const { classes, location, auth } = this.props
     return (
       <div className={classes.root}>
         <AppBar position="static">
@@ -33,15 +40,20 @@ class Header extends Component {
             <IconButton className={classes.menuButton} aria-label="Menu">
               <MenuIcon />
             </IconButton>
-            <Typography variant="title" color="inherit" className={classes.flex}>
-              The Bid
-            </Typography>
+
+            <Link to="/" replace={location.pathname === '/'} className={classes.headerLink}>
+              <Typography variant="title" color="inherit">
+                The Bid
+              </Typography>
+            </Link>
+
             {this.props.auth.isAuthenticated() && (
               <IconButton>
                 <AccountCircle color="inherit" />
               </IconButton>
             )}
-            <AuthenticateButton auth={this.props.auth} />
+
+            <AuthenticateButton auth={auth} />
           </Toolbar>
         </AppBar>
       </div>
@@ -51,7 +63,8 @@ class Header extends Component {
 
 Header.propTypes = {
   auth: PropTypes.instanceOf(Auth).isRequired,
-  classes: PropTypes.object
+  classes: PropTypes.object,
+  location: PropTypes.object.isRequired
 }
 
-export default withStyles(styles)(Header)
+export default withStyles(styles)(withRouter(Header))
