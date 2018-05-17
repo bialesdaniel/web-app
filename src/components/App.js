@@ -6,8 +6,10 @@ import Header from './Header'
 import Auctions from './Auctions/AuctionsMain'
 import CreateAuction from './Auctions/CreateAuction'
 import AuctionDetails from './Auctions/AuctionDetails'
+import StaticPage from './StaticPage'
 import Callback from './Callback'
 import Auth from '../services/Auth'
+import { PUBLIC_URL } from '../config/config'
 
 const auth = new Auth()
 
@@ -39,6 +41,8 @@ class App extends Component {
             <Route exact path="/" component={Auctions} />
             <Route exact path="/auctions/new" component={CreateAuction} />
             <Route exact path="/auctions/:auctionId" component={AuctionDetails} />
+            <Route exact path="/rules" render={() => <StaticPage markdownSource={`${PUBLIC_URL}/static/rules.md`} />} />
+            <Route exact path="/about" render={() => <StaticPage markdownSource={`${PUBLIC_URL}/static/about.md`} />} />
             <Route
               exact
               path="/callback"
