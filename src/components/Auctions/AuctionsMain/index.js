@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
 import { get } from 'lodash'
-import { withStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import AuctionsList from '../AuctionsList'
 
@@ -17,8 +16,6 @@ const QUERY_ALL_AUCTIONS = gql`
     }
   }
 `
-
-const styles = theme => ({})
 
 class AuctionsMain extends Component {
   render() {
@@ -38,4 +35,4 @@ class AuctionsMain extends Component {
   }
 }
 
-export default withStyles(styles)(AuctionsMain)
+export default AuctionsMain

@@ -10,6 +10,7 @@ import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import AccountCircle from '@material-ui/icons/AccountCircle'
 import AuthenticateButton from '../AuthenticateButton'
+import NavMenu from './NavMenu'
 import Auth from '../../services/Auth'
 
 const styles = {
@@ -31,15 +32,23 @@ const styles = {
 }
 
 class Header extends Component {
+  state = {
+    isMenuOpen: false
+  }
+  toggleMenu = () => {
+    this.setState({ isMenuOpen: !this.state.isMenuOpen })
+  }
   render() {
     const { classes, location, auth } = this.props
+    const { isMenuOpen } = this.state
     return (
       <div className={classes.root}>
         <AppBar position="static">
           <Toolbar>
             <IconButton className={classes.menuButton} aria-label="Menu">
-              <MenuIcon />
+              <MenuIcon onClick={this.toggleMenu} />
             </IconButton>
+            <NavMenu open={isMenuOpen} toggleMenu={this.toggleMenu} />
 
             <Link to="/" replace={location.pathname === '/'} className={classes.headerLink}>
               <Typography variant="title" color="inherit">

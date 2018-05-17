@@ -4,7 +4,7 @@ module.exports = {
     ecmaVersion: 9,
     sourceType: 'module'
   },
-  plugins: ['jest', 'prettier', 'react', 'security'],
+  plugins: ['jest', 'prettier', 'react', 'security', 'jsx-a11y'],
   env: {
     browser: true,
     node: true,
@@ -15,7 +15,8 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:prettier/recommended',
     'plugin:react/recommended',
-    'plugin:security/recommended'
+    'plugin:security/recommended',
+    'plugin:jsx-a11y/recommended'
   ],
   rules: {
     'no-var': 'error',
