@@ -28,14 +28,14 @@ const styles = theme => ({
 class AuctionsList extends Component {
   render() {
     const { classes, loading, error, auctions } = this.props
-
-    const errorMessage = (auctions.length = 0 && !error)
-      ? 'No auctions available'
-      : get(error, 'networkError')
-        ? `[NetworkError]: ${error.networkError.toString()}`
-        : error
-          ? error.graphQLErrors.toString()
-          : '' //TODO: Find a better way to write this / handle error logic
+    const errorMessage =
+      auctions.length === 0 && !error
+        ? 'No auctions available'
+        : get(error, 'networkError')
+          ? `[NetworkError]: ${error.networkError.toString()}`
+          : error
+            ? error.graphQLErrors.toString()
+            : '' //TODO: Find a better way to write this / handle error logic
 
     return (
       <List>
