@@ -5,7 +5,7 @@ import ListItemText from '@material-ui/core/ListItemText'
 
 class Team extends Component {
   render() {
-    const { seed, school } = this.props.team
+    const { seed, school } = this.props
     return (
       <ListItem>
         <ListItemText primary={`${seed}. ${school}`} />
@@ -15,7 +15,9 @@ class Team extends Component {
 }
 
 Team.propTypes = {
-  team: PropTypes.object.isRequired
+  school: PropTypes.string.isRequired,
+  seed: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired
 }
 
 export default Team

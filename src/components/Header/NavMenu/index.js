@@ -8,35 +8,52 @@ import IconButton from '@material-ui/core/IconButton'
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft'
 import Divider from '@material-ui/core/Divider'
 import NavMenuItem from '../NavMenuItem'
+import InfoSnackBar, { LOGIN_REQUIRED_MESSAGE } from '../../Messaging/SnackBars/Info'
 
 class NavMenu extends Component {
+  state = {
+    isMessageOpen: false
+  }
+  toggleMessage = () => {
+    this.setState({ isMessageOpen: !this.state.isMessageOpen })
+  }
   render() {
-    const { open, toggleMenu } = this.props
+    const { open, toggleMenu, isLoggedIn } = this.props
     return (
-      <SwipeableDrawer open={open} onOpen={toggleMenu} onClose={toggleMenu}>
-        <MenuList>
-          <MenuItem onClick={toggleMenu}>
-            <ListItemSecondaryAction>
-              <IconButton>
-                <KeyboardArrowLeftIcon onClick={toggleMenu} />
-              </IconButton>
-            </ListItemSecondaryAction>
-          </MenuItem>
-          <Divider />
-          <NavMenuItem to="/" onClick={toggleMenu} label="Home" />
-          <NavMenuItem to="/auctions/new" onClick={toggleMenu} label="Create Auction" />
-          <Divider />
-          <NavMenuItem to="/rules" onClick={toggleMenu} label="Rules" />
-          <NavMenuItem to="/about" onClick={toggleMenu} label="About" />
-        </MenuList>
-      </SwipeableDrawer>
+      <div>
+        <SwipeableDrawer open={open} onOpen={toggleMenu} onClose={toggleMenu}>
+          <MenuList>
+            <MenuItem onClick={toggleMenu}>
+              <ListItemSecondaryAction>
+                <IconButton>
+                  <KeyboardArrowLeftIcon onClick={toggleMenu} />
+                </IconButton>
+              </ListItemSecondaryAction>
+            </MenuItem>
+            <Divider />
+            <NavMenuItem to="/" onClick={toggleMenu} label="Home" />
+            <NavMenuItem
+              to="/auctions/new"
+              onClick={toggleMenu}
+              label="Create Auction"
+              disabled={!isLoggedIn}
+              onDisabledClick={this.toggleMessage}
+            />
+            <Divider />
+            <NavMenuItem to="/rules" onClick={toggleMenu} label="Rules" />
+            <NavMenuItem to="/about" onClick={toggleMenu} label="About" />
+          </MenuList>
+        </SwipeableDrawer>
+        <InfoSnackBar isOpen={this.state.isMessageOpen} onClose={this.toggleMessage} message={LOGIN_REQUIRED_MESSAGE} />
+      </div>
     )
   }
 }
 
 NavMenu.propTypes = {
   open: PropTypes.bool.isRequired,
-  toggleMenu: PropTypes.func.isRequired
+  toggleMenu: PropTypes.func.isRequired,
+  isLoggedIn: PropTypes.bool.isRequired
 }
 
 export default NavMenu

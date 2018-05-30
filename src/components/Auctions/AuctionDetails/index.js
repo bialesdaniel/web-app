@@ -2,10 +2,9 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
-import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import CircularProgress from '@material-ui/core/CircularProgress'
-import Tournament from '../../Tournament'
+import AuctionDetails from './AuctionDetails'
 
 const GET_AUCTION = gql`
   query auction($auctionId: ID!) {
@@ -20,7 +19,7 @@ const GET_AUCTION = gql`
   }
 `
 
-class AuctionDetails extends Component {
+class AuctionDetailsGQL extends Component {
   render() {
     const { auctionId } = this.props.match.params
     return (
@@ -28,28 +27,17 @@ class AuctionDetails extends Component {
         {({ loading, error, data }) => {
           if (loading) return <CircularProgress size="40%" />
           if (error) return <Typography variant="subheading">{error}</Typography>
-          return (
-            <Grid container alignItems="stretch" direction="column" justify="flex-start">
-              <Grid item>
-                <Typography variant="headline">{data.auction.name}</Typography>
-                <Typography variant="subheading" align="center">
-                  by {data.auction.owner.username}
-                </Typography>
-              </Grid>
-              <Grid item>
-                <Tournament year={new Date(data.auction.createdAt)} />
-              </Grid>
-            </Grid>
-          )
+          const { auction } = data
+          return <AuctionDetails name={auction.name} createdAt={auction.createdAt} owner={auction.owner.username} />
         }}
       </Query>
     )
   }
 }
 
-AuctionDetails.propTypes = {
+AuctionDetailsGQL.propTypes = {
   match: PropTypes.object.isRequired,
   classes: PropTypes.object
 }
 
-export default AuctionDetails
+export default AuctionDetailsGQL

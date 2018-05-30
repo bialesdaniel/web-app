@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
-import ListSubheader from 'material-ui/List/ListSubheader' //TODO: will this change to core?
+import ListSubheader from '@material-ui/core/ListSubheader'
 import Grid from '@material-ui/core/Grid'
 import Divider from '@material-ui/core/Divider'
 import CircularProgress from '@material-ui/core/CircularProgress'
@@ -32,9 +32,9 @@ class AuctionsList extends Component {
       auctions.length === 0 && !error
         ? 'No auctions available'
         : get(error, 'networkError')
-          ? `[NetworkError]: ${error.networkError.toString()}`
+          ? `[NetworkError]: ${error.networkError}`
           : error
-            ? error.graphQLErrors.toString()
+            ? JSON.stringify(error.graphQLErrors)
             : '' //TODO: Find a better way to write this / handle error logic
 
     return (
@@ -49,15 +49,12 @@ class AuctionsList extends Component {
         </ListSubheader>
         <Divider />
         {loading ? (
-          <CircularProgress />
+          <Grid container direction="row" justify="center">
+            <CircularProgress />
+          </Grid>
         ) : auctions.length > 0 && !error ? (
           auctions.map(auction => (
-            <AuctionsListItem
-              key={auction.id}
-              name={auction.name}
-              auctionId={auction.id}
-              owner={auction.owner.username}
-            />
+            <AuctionsListItem key={auction.id} id={auction.id} name={auction.name} owner={auction.owner.username} />
           ))
         ) : (
           <ListItem>
@@ -70,8 +67,8 @@ class AuctionsList extends Component {
 }
 
 AuctionsList.propTypes = {
-  auctions: PropTypes.array.isRequired,
-  loading: PropTypes.bool.isRequired,
+  auctions: PropTypes.array,
+  loading: PropTypes.bool,
   error: PropTypes.object,
   classes: PropTypes.object
 }

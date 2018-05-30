@@ -1,0 +1,1000 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Tournament default 1`] = `
+<div
+  className="MuiGrid-container MuiGrid-justify-xs-space-between"
+>
+  <div
+    className="MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded Bracket-root"
+    >
+      <ul
+        className="MuiList-root MuiList-padding MuiList-subheader"
+      >
+        <li
+          className="MuiListSubheader-root MuiListSubheader-sticky Bracket-header"
+        >
+          Corporis laborum cupiditate
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              13. Earum sapiente error
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              14. Qui itaque qui
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              4. Nihil est qui
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              8. Ad rerum natus
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              9. Id velit
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              11. Aut enim incidunt
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              8. Magnam optio
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              13. Et qui
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              9. Est in iure
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              6. Laboriosam minima
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              4. Ducimus et asperiores
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              9. Iusto autem aliquid
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              14. Sunt sapiente reiciendis
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              12. Nulla optio eos
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              11. Odio in
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              9. Provident velit
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded Bracket-root"
+    >
+      <ul
+        className="MuiList-root MuiList-padding MuiList-subheader"
+      >
+        <li
+          className="MuiListSubheader-root MuiListSubheader-sticky Bracket-header"
+        >
+          Dignissimos magnam
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              16. Enim at
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              15. Neque et architecto
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              2. Voluptatem ipsa
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              16. Similique aut in
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              15. Illo perferendis
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              2. Inventore asperiores unde
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              14. Autem eos quis
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              12. Sed qui est
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              3. Delectus beatae cupiditate
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              2. Qui ut
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              1. Omnis quae dolorem
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              9. Placeat asperiores voluptates
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              14. Eum occaecati nemo
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              12. Explicabo ut
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              9. Et nisi beatae
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              3. Sunt unde
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded Bracket-root"
+    >
+      <ul
+        className="MuiList-root MuiList-padding MuiList-subheader"
+      >
+        <li
+          className="MuiListSubheader-root MuiListSubheader-sticky Bracket-header"
+        >
+          Maiores non
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              12. Odit enim
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              6. Magni vel veniam
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              7. Cupiditate voluptatem
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              4. Impedit molestiae
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              11. Aliquam eos
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              13. Dolor qui dolorem
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              14. In ut ex
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              13. Nihil magnam
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              11. Rerum mollitia
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              11. Aut error sint
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              10. Enim occaecati tempora
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              10. Magnam dolor
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              12. Quasi in
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              2. Suscipit eos
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              9. Dolor rerum et
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              12. Qui rerum nihil
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded Bracket-root"
+    >
+      <ul
+        className="MuiList-root MuiList-padding MuiList-subheader"
+      >
+        <li
+          className="MuiListSubheader-root MuiListSubheader-sticky Bracket-header"
+        >
+          Corrupti voluptatibus saepe
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              8. Vel in
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              6. Occaecati nihil ab
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              5. Aperiam ut
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              10. Delectus enim consequatur
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              11. Facilis modi
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              6. Voluptas blanditiis
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              4. Molestiae et officiis
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              7. Explicabo quam suscipit
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              7. Quaerat sunt officia
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              2. Dolorem aliquid et
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              7. Blanditiis debitis
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              2. Soluta saepe
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              11. Labore optio non
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              6. Dicta et
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              3. Quasi rerum corporis
+            </span>
+          </div>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+          disabled={false}
+        >
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            >
+              1. Assumenda aliquam soluta
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tournament gql 1`] = `
+<div
+  className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+  role="progressbar"
+  style={
+    Object {
+      "height": 40,
+      "width": 40,
+    }
+  }
+>
+  <svg
+    className="MuiCircularProgress-svg"
+    viewBox="0 0 50 50"
+  >
+    <circle
+      className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+      cx={25}
+      cy={25}
+      fill="none"
+      r={20}
+      strokeWidth={3.6}
+      style={Object {}}
+    />
+  </svg>
+</div>
+`;

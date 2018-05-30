@@ -6,7 +6,7 @@ import ListItemText from '@material-ui/core/ListItemText'
 
 class AuctionListItem extends Component {
   handleClick = () => {
-    this.props.history.push(`/auctions/${this.props.auctionId}`)
+    this.props.history.push(`/auctions/${this.props.id}`)
   }
   render() {
     return (
@@ -20,7 +20,7 @@ class AuctionListItem extends Component {
 AuctionListItem.propTypes = {
   name: PropTypes.string.isRequired,
   owner: PropTypes.string.isRequired,
-  auctionId: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
   history: PropTypes.object.isRequired
 }
 

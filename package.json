@@ -6,11 +6,15 @@
     "lint": "eslint . --fix --ignore-path .gitignore --ignore-pattern '!.eslintrc.js'",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "npm run lint && npm run unit",
+    "unit": "CI=true react-scripts test --env=jsdom",
+    "coverage": "npm run unit -- --coverage",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
-    "@material-ui/core": "^1.0.0-rc.1",
+    "@material-ui/core": "^1.1.0",
     "@material-ui/icons": "^1.0.0-beta.43",
     "apollo-boost": "^0.1.4",
     "auth0-js": "^9.5.1",
@@ -18,37 +22,56 @@
     "graphql": "^0.13.2",
     "history": "^4.7.2",
     "lodash": "^4.17.10",
-    "material-ui": "^1.0.0-beta.47",
     "prop-types": "^15.6.1",
-    "react": "^16.3.2",
+    "react": "^16.4.0",
     "react-apollo": "^2.1.3",
-    "react-dom": "^16.3.2",
+    "react-dom": "^16.4.0",
     "react-markdown": "^3.3.2",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4"
   },
   "devDependencies": {
-    "@storybook/addon-knobs": "^3.4.4",
-    "@storybook/addon-storyshots": "^3.4.4",
-    "@storybook/react": "^3.4.4",
+    "@octokit/rest": "^15.7.0",
+    "@storybook/addon-actions": "^3.4.5",
+    "@storybook/addon-links": "^3.4.5",
+    "@storybook/addon-storyshots": "^3.4.5",
+    "@storybook/addons": "^3.4.5",
+    "@storybook/react": "^3.4.5",
+    "apollo-storybook-react": "^0.1.2",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
+    "babel-runtime": "^6.26.0",
+    "casual-browserify": "^1.5.19",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-jest": "^21.15.1",
+    "eslint-plugin-jest": "^21.15.2",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-security": "^1.4.0",
     "jest": "^22.4.3",
-    "jest-enzyme": "^6.0.0",
-    "prettier": "^1.12.1"
+    "jest-enzyme": "^6.0.1",
+    "jest-localstorage-mock": "^2.2.0",
+    "node-fetch": "^2.1.2",
+    "prettier": "^1.12.1",
+    "react-test-renderer": "^16.4.0"
   },
   "prettier": {
     "semi": false,
     "printWidth": 120,
     "singleQuote": true
+  },
+  "jest":{
+    "collectCoverageFrom":[
+      "src/**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/*.{stories,test}.{js,jsx}",
+      "!src/config/**",
+      "!src/styles/**",
+      "!src/setupTests.js"
+    ]
   }
 }

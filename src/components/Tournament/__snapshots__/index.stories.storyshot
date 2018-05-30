@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Tournament default 1`] = `
+<div
+  className="MuiCircularProgress-root-60 MuiCircularProgress-colorPrimary-63 MuiCircularProgress-indeterminate-62"
+  role="progressbar"
+  style={
+    Object {
+      "height": 40,
+      "width": 40,
+    }
+  }
+>
+  <svg
+    className="MuiCircularProgress-svg-65"
+    viewBox="0 0 50 50"
+  >
+    <circle
+      className="MuiCircularProgress-circle-66 MuiCircularProgress-circleIndeterminate-68"
+      cx={25}
+      cy={25}
+      fill="none"
+      r={20}
+      strokeWidth={3.6}
+      style={Object {}}
+    />
+  </svg>
+</div>
+`;

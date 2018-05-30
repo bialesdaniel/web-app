@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots CreateAuction default 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <h1
+    className="MuiTypography-root MuiTypography-headline MuiTypography-gutterBottom"
+  >
+    Create Auction
+  </h1>
+  <div
+    className="CreateAuction-formRow"
+  >
+    <div
+      aria-describedby={undefined}
+      className="MuiFormControl-root MuiFormControl-fullWidth CreateAuction-formInput"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <label
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+        data-shrink={false}
+        htmlFor="name"
+      >
+        Name
+        <span
+          className="MuiFormLabel-asterisk"
+        >
+           *
+        </span>
+      </label>
+      <div
+        className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+      >
+        <input
+          aria-invalid={false}
+          aria-required={true}
+          autoComplete={undefined}
+          autoFocus={undefined}
+          className="MuiInput-input"
+          defaultValue={undefined}
+          disabled={false}
+          id="name"
+          name={undefined}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={undefined}
+          onKeyUp={undefined}
+          placeholder={undefined}
+          readOnly={undefined}
+          required={true}
+          rows={undefined}
+          type="text"
+          value=""
+        />
+      </div>
+      
+    </div>
+  </div>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedPrimary"
+    disabled={false}
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex="0"
+    type="submit"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Create
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>
+</form>
+`;
+
+exports[`Storyshots CreateAuction error 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <h1
+    className="MuiTypography-root MuiTypography-headline MuiTypography-gutterBottom"
+  >
+    Create Auction
+  </h1>
+  <div
+    className="CreateAuction-formRow"
+  >
+    <div
+      aria-describedby="name-helper-text"
+      className="MuiFormControl-root MuiFormControl-fullWidth CreateAuction-formInput"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <label
+        className="MuiFormLabel-root MuiFormLabel-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+        data-shrink={false}
+        htmlFor="name"
+      >
+        Name
+        <span
+          className="MuiFormLabel-asterisk MuiFormLabel-error"
+        >
+           *
+        </span>
+      </label>
+      <div
+        className="MuiInput-root MuiInput-error MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+      >
+        <input
+          aria-invalid={true}
+          aria-required={true}
+          autoComplete={undefined}
+          autoFocus={undefined}
+          className="MuiInput-input"
+          defaultValue={undefined}
+          disabled={false}
+          id="name"
+          name={undefined}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={undefined}
+          onKeyUp={undefined}
+          placeholder={undefined}
+          readOnly={undefined}
+          required={true}
+          rows={undefined}
+          type="text"
+          value=""
+        />
+      </div>
+      <p
+        className="MuiFormHelperText-root MuiFormHelperText-error"
+        id="name-helper-text"
+      >
+        there was an error
+      </p>
+    </div>
+  </div>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedPrimary"
+    disabled={false}
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex="0"
+    type="submit"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Create
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>
+</form>
+`;
+
+exports[`Storyshots CreateAuction loading 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <h1
+    className="MuiTypography-root MuiTypography-headline MuiTypography-gutterBottom"
+  >
+    Create Auction
+  </h1>
+  <div
+    className="CreateAuction-formRow"
+  >
+    <div
+      aria-describedby={undefined}
+      className="MuiFormControl-root MuiFormControl-fullWidth CreateAuction-formInput"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <label
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+        data-shrink={false}
+        htmlFor="name"
+      >
+        Name
+        <span
+          className="MuiFormLabel-asterisk"
+        >
+           *
+        </span>
+      </label>
+      <div
+        className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+      >
+        <input
+          aria-invalid={false}
+          aria-required={true}
+          autoComplete={undefined}
+          autoFocus={undefined}
+          className="MuiInput-input"
+          defaultValue={undefined}
+          disabled={false}
+          id="name"
+          name={undefined}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={undefined}
+          onKeyUp={undefined}
+          placeholder={undefined}
+          readOnly={undefined}
+          required={true}
+          rows={undefined}
+          type="text"
+          value=""
+        />
+      </div>
+      
+    </div>
+  </div>
+  <button
+    className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-raised MuiButton-raisedPrimary MuiButton-disabled"
+    disabled={true}
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex="-1"
+    type="submit"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Create
+    </span>
+  </button>
+  <div
+    className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate CreateAuction-buttonProgress"
+    role="progressbar"
+    style={
+      Object {
+        "height": 32,
+        "width": 32,
+      }
+    }
+  >
+    <svg
+      className="MuiCircularProgress-svg"
+      viewBox="0 0 50 50"
+    >
+      <circle
+        className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+        cx={25}
+        cy={25}
+        fill="none"
+        r={20}
+        strokeWidth={3.6}
+        style={Object {}}
+      />
+    </svg>
+  </div>
+</form>
+`;

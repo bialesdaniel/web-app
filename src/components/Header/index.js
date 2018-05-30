@@ -48,7 +48,7 @@ class Header extends Component {
             <IconButton className={classes.menuButton} aria-label="Menu">
               <MenuIcon onClick={this.toggleMenu} />
             </IconButton>
-            <NavMenu open={isMenuOpen} toggleMenu={this.toggleMenu} />
+            <NavMenu open={isMenuOpen} toggleMenu={this.toggleMenu} isLoggedIn={auth.isAuthenticated()} />
 
             <Link to="/" replace={location.pathname === '/'} className={classes.headerLink}>
               <Typography variant="title" color="inherit">

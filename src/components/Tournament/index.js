@@ -2,10 +2,9 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
-import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import CircularProgress from '@material-ui/core/CircularProgress'
-import Bracket from '../Bracket'
+import Tournament from './Tournament'
 
 const GET_TOURNAMENT = gql`
   query tournament($year: Int!) {
@@ -28,32 +27,25 @@ const GET_TOURNAMENT = gql`
   }
 `
 
-class Tournament extends Component {
+class TournamentGQL extends Component {
   render() {
-    const { year } = this.props
+    const { date } = this.props
+    const seasonYear = date.getMonth() <= 3 ? date.getYear() - 1 : date.getYear()
     return (
-      <Query query={GET_TOURNAMENT} variables={{ year: year.getYear() }}>
+      <Query query={GET_TOURNAMENT} variables={{ year: seasonYear }}>
         {({ loading, error, data }) => {
           if (loading) return <CircularProgress />
           if (error) return <Typography variant="subheading">{error}</Typography>
           const { tournament } = data
-          return (
-            <Grid container direction="row" justify="space-between">
-              {tournament.brackets.map(bracket => (
-                <Grid key={bracket.id} item md={3} sm={6} xs={12}>
-                  <Bracket bracket={bracket} />
-                </Grid>
-              ))}
-            </Grid>
-          )
+          return <Tournament brackets={tournament.brackets} />
         }}
       </Query>
     )
   }
 }
 
-Tournament.propTypes = {
-  year: PropTypes.instanceOf(Date)
+TournamentGQL.propTypes = {
+  date: PropTypes.instanceOf(Date)
 }
 
-export default Tournament
+export default TournamentGQL
