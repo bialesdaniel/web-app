@@ -3,27 +3,12 @@ import PropTypes from 'prop-types'
 import Button from '@material-ui/core/Button'
 
 class LoginSignupButton extends Component {
-  handleLogin = () => {
-    this.props.login()
-  }
-  handleLogout = () => {
-    this.props.logout()
-  }
   render() {
-    const { isAuthenticated } = this.props
-
+    const { isAuthenticated, login, logout } = this.props
     return (
-      <div>
-        {isAuthenticated ? (
-          <Button onClick={this.handleLogout} color="inherit">
-            Logout
-          </Button>
-        ) : (
-          <Button onClick={this.handleLogin} color="inherit">
-            Login
-          </Button>
-        )}
-      </div>
+      <Button onClick={isAuthenticated ? logout : login} color="inherit">
+        {isAuthenticated ? 'Logout' : 'Login'}
+      </Button>
     )
   }
 }

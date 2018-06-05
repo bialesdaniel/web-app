@@ -288,34 +288,32 @@ exports[`Storyshots Header default 1`] = `
           The Bid
         </h2>
       </a>
-      <div>
-        <button
-          className="MuiButtonBase-root MuiButton-root MuiButton-colorInherit MuiButton-flat"
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex="0"
-          type="button"
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-colorInherit MuiButton-flat"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
         >
-          <span
-            className="MuiButton-label"
-          >
-            Login
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
+          Login
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
     </div>
   </header>
 </div>
@@ -649,34 +647,32 @@ exports[`Storyshots Header logged in 1`] = `
           className="MuiTouchRipple-root"
         />
       </button>
-      <div>
-        <button
-          className="MuiButtonBase-root MuiButton-root MuiButton-colorInherit MuiButton-flat"
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex="0"
-          type="button"
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-colorInherit MuiButton-flat"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
         >
-          <span
-            className="MuiButton-label"
-          >
-            Logout
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
+          Logout
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
     </div>
   </header>
 </div>
