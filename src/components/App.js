@@ -35,7 +35,7 @@ class App extends Component {
     const { classes } = this.props
     return (
       <div className={classes.root}>
-        <Header auth={auth} />
+        <Header login={auth.login} logout={auth.logout} isAuthenticated={auth.isAuthenticated} />
         <div className={classes.content}>
           <Switch>
             <Route exact path="/" component={Auctions} />

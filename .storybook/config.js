@@ -1,6 +1,6 @@
 import React from 'react'
 import { configure,addDecorator } from '@storybook/react'
-import JssProvider from 'react-jss/lib/JssProvider'
+import {JssProvider } from 'react-jss'
 import { BrowserRouter } from 'react-router-dom'
 import apolloStorybookDecorator from 'apollo-storybook-react'
 import  { introspectSchema} from 'graphql-tools'
@@ -11,9 +11,9 @@ const generateClassName = (rule, styleSheet) =>
   `${styleSheet.options.classNamePrefix}-${rule.key}`
 
 addDecorator(story => (
-   <JssProvider generateClassName={generateClassName}>
-      {story()}
-   </JssProvider>
+  <JssProvider generateClassName={generateClassName}>
+    {story()}
+  </JssProvider>
 ))
 
 addDecorator(story => <BrowserRouter>{story()}</BrowserRouter>)

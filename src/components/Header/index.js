@@ -11,7 +11,6 @@ import MenuIcon from '@material-ui/icons/Menu'
 import AccountCircle from '@material-ui/icons/AccountCircle'
 import AuthenticateButton from '../AuthenticateButton'
 import NavMenu from './NavMenu'
-import Auth from '../../services/Auth'
 
 const styles = {
   root: {
@@ -39,7 +38,7 @@ class Header extends Component {
     this.setState({ isMenuOpen: !this.state.isMenuOpen })
   }
   render() {
-    const { classes, location, auth } = this.props
+    const { classes, location, isAuthenticated, login, logout } = this.props
     const { isMenuOpen } = this.state
     return (
       <div className={classes.root}>
@@ -48,7 +47,7 @@ class Header extends Component {
             <IconButton className={classes.menuButton} aria-label="Menu">
               <MenuIcon onClick={this.toggleMenu} />
             </IconButton>
-            <NavMenu open={isMenuOpen} toggleMenu={this.toggleMenu} isLoggedIn={auth.isAuthenticated()} />
+            <NavMenu open={isMenuOpen} toggleMenu={this.toggleMenu} isLoggedIn={isAuthenticated()} />
 
             <Link to="/" replace={location.pathname === '/'} className={classes.headerLink}>
               <Typography variant="title" color="inherit">
@@ -56,13 +55,13 @@ class Header extends Component {
               </Typography>
             </Link>
 
-            {this.props.auth.isAuthenticated() && (
+            {isAuthenticated() && (
               <IconButton>
                 <AccountCircle color="inherit" />
               </IconButton>
             )}
 
-            <AuthenticateButton auth={auth} />
+            <AuthenticateButton login={login} logout={logout} isAuthenticated={isAuthenticated()} />
           </Toolbar>
         </AppBar>
       </div>
@@ -71,9 +70,11 @@ class Header extends Component {
 }
 
 Header.propTypes = {
-  auth: PropTypes.instanceOf(Auth).isRequired,
-  classes: PropTypes.object,
-  location: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  login: PropTypes.func.isRequired,
+  logout: PropTypes.func.isRequired,
+  isAuthenticated: PropTypes.func.isRequired
 }
 
 export default withStyles(styles)(withRouter(Header))

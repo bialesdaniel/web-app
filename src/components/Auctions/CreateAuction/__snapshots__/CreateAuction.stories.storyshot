@@ -60,7 +60,7 @@ exports[`Storyshots CreateAuction default 1`] = `
     </div>
   </div>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedPrimary"
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary"
     disabled={false}
     onBlur={[Function]}
     onFocus={[Function]}
@@ -152,7 +152,7 @@ exports[`Storyshots CreateAuction error 1`] = `
     </div>
   </div>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-raised MuiButton-raisedPrimary"
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary"
     disabled={false}
     onBlur={[Function]}
     onFocus={[Function]}
@@ -239,7 +239,7 @@ exports[`Storyshots CreateAuction loading 1`] = `
     </div>
   </div>
   <button
-    className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-raised MuiButton-raisedPrimary MuiButton-disabled"
+    className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary MuiButton-disabled"
     disabled={true}
     onBlur={[Function]}
     onFocus={[Function]}
