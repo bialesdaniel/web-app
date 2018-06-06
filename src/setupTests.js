@@ -6,6 +6,9 @@ import initStoryshots, { multiSnapshotWithOptions } from '@storybook/addon-story
 import 'jest-localstorage-mock'
 import React from 'react'
 import PropTypes from 'prop-types'
+import { createMount } from '@material-ui/core/test-utils'
+import { createSerializer } from 'enzyme-to-json'
+import { addSerializer } from 'jest-specific-snapshot'
 
 const mockWrapperComponent = props => <div>{props.children}</div>
 mockWrapperComponent.propTypes = {
@@ -14,12 +17,19 @@ mockWrapperComponent.propTypes = {
 // Components that break tests
 jest.mock('@material-ui/core/Tooltip', () => mockWrapperComponent)
 jest.mock('@material-ui/core/SwipeableDrawer', () => mockWrapperComponent)
+jest.mock('@material-ui/core/Slide', () => mockWrapperComponent)
 
 configure({ adapter: new Adapter() })
-initStoryshots({ test: multiSnapshotWithOptions({}) })
+addSerializer(createSerializer({ mode: 'deep' }))
+initStoryshots({
+  test: multiSnapshotWithOptions({
+    renderer: createMount()
+  })
+})
 
 beforeEach(() => {
   jest.unmock('@material-ui/core/Tooltip')
   jest.unmock('@material-ui/core/SwipeableDrawer')
+  jest.unmock('@material-ui/core/Slide')
   casual.seed(42) // make sure the storyshots don't update because of different random data
 })

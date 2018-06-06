@@ -1,6 +1,6 @@
-import { uuid, title, moment, integer, word } from 'casual-browserify'
+import { uuid, title, moment, integer, word, seed } from 'casual-browserify'
 import gql from 'graphql-tag'
-
+seed(42)
 export const MockTournament = {
   tournament: {
     __typename: 'Tournament',

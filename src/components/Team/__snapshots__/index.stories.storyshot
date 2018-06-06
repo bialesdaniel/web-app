@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Team default 1`] = `
+<li
+  className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
+  disabled={false}
+>
+  <div
+    className="MuiListItemText-root"
+  >
+    <span
+      className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+    >
+      12. Lake Valentine sit
+    </span>
+  </div>
+</li>
+`;

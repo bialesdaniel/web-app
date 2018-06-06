@@ -27,7 +27,6 @@ exports[`Storyshots CreateAuctionButton default 1`] = `
         <svg
           aria-hidden="true"
           className="MuiSvgIcon-root"
-          color={undefined}
           focusable="false"
           viewBox="0 0 24 24"
         >

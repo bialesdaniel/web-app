@@ -57,7 +57,6 @@ exports[`Storyshots NavMenu closed 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root"
-                color={undefined}
                 focusable="false"
                 onClick={[Function]}
                 viewBox="0 0 24 24"
@@ -121,7 +120,6 @@ exports[`Storyshots NavMenu closed 1`] = `
         className="withRouter(NavMenuItem)-nav"
         href="/auctions/new"
         onClick={[Function]}
-        style={undefined}
       >
         <li
           className="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-disabled MuiListItem-button MuiMenuItem-root"
@@ -159,7 +157,6 @@ exports[`Storyshots NavMenu closed 1`] = `
         className="withRouter(NavMenuItem)-nav"
         href="/rules"
         onClick={[Function]}
-        style={undefined}
       >
         <li
           className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
@@ -195,7 +192,6 @@ exports[`Storyshots NavMenu closed 1`] = `
         className="withRouter(NavMenuItem)-nav"
         href="/about"
         onClick={[Function]}
-        style={undefined}
       >
         <li
           className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
@@ -288,7 +284,6 @@ exports[`Storyshots NavMenu default 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root"
-                color={undefined}
                 focusable="false"
                 onClick={[Function]}
                 viewBox="0 0 24 24"
@@ -352,7 +347,6 @@ exports[`Storyshots NavMenu default 1`] = `
         className="withRouter(NavMenuItem)-nav"
         href="/auctions/new"
         onClick={[Function]}
-        style={undefined}
       >
         <li
           className="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-disabled MuiListItem-button MuiMenuItem-root"
@@ -390,7 +384,6 @@ exports[`Storyshots NavMenu default 1`] = `
         className="withRouter(NavMenuItem)-nav"
         href="/rules"
         onClick={[Function]}
-        style={undefined}
       >
         <li
           className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
@@ -426,7 +419,6 @@ exports[`Storyshots NavMenu default 1`] = `
         className="withRouter(NavMenuItem)-nav"
         href="/about"
         onClick={[Function]}
-        style={undefined}
       >
         <li
           className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
@@ -519,7 +511,6 @@ exports[`Storyshots NavMenu logged in 1`] = `
               <svg
                 aria-hidden="true"
                 className="MuiSvgIcon-root"
-                color={undefined}
                 focusable="false"
                 onClick={[Function]}
                 viewBox="0 0 24 24"
@@ -583,7 +574,6 @@ exports[`Storyshots NavMenu logged in 1`] = `
         className="withRouter(NavMenuItem)-nav"
         href="/auctions/new"
         onClick={[Function]}
-        style={undefined}
       >
         <li
           className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
@@ -624,7 +614,6 @@ exports[`Storyshots NavMenu logged in 1`] = `
         className="withRouter(NavMenuItem)-nav"
         href="/rules"
         onClick={[Function]}
-        style={undefined}
       >
         <li
           className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
@@ -660,7 +649,6 @@ exports[`Storyshots NavMenu logged in 1`] = `
         className="withRouter(NavMenuItem)-nav"
         href="/about"
         onClick={[Function]}
-        style={undefined}
       >
         <li
           className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"

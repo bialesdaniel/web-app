@@ -13,7 +13,6 @@ exports[`Storyshots CreateAuction default 1`] = `
     className="CreateAuction-formRow"
   >
     <div
-      aria-describedby={undefined}
       className="MuiFormControl-root MuiFormControl-fullWidth CreateAuction-formInput"
       onBlur={[Function]}
       onFocus={[Function]}
@@ -36,27 +35,17 @@ exports[`Storyshots CreateAuction default 1`] = `
         <input
           aria-invalid={false}
           aria-required={true}
-          autoComplete={undefined}
-          autoFocus={undefined}
           className="MuiInput-input"
-          defaultValue={undefined}
           disabled={false}
           id="name"
-          name={undefined}
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={undefined}
-          onKeyUp={undefined}
-          placeholder={undefined}
-          readOnly={undefined}
           required={true}
-          rows={undefined}
           type="text"
           value=""
         />
       </div>
-      
     </div>
   </div>
   <button
@@ -123,22 +112,13 @@ exports[`Storyshots CreateAuction error 1`] = `
         <input
           aria-invalid={true}
           aria-required={true}
-          autoComplete={undefined}
-          autoFocus={undefined}
           className="MuiInput-input"
-          defaultValue={undefined}
           disabled={false}
           id="name"
-          name={undefined}
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={undefined}
-          onKeyUp={undefined}
-          placeholder={undefined}
-          readOnly={undefined}
           required={true}
-          rows={undefined}
           type="text"
           value=""
         />
@@ -192,7 +172,6 @@ exports[`Storyshots CreateAuction loading 1`] = `
     className="CreateAuction-formRow"
   >
     <div
-      aria-describedby={undefined}
       className="MuiFormControl-root MuiFormControl-fullWidth CreateAuction-formInput"
       onBlur={[Function]}
       onFocus={[Function]}
@@ -215,27 +194,17 @@ exports[`Storyshots CreateAuction loading 1`] = `
         <input
           aria-invalid={false}
           aria-required={true}
-          autoComplete={undefined}
-          autoFocus={undefined}
           className="MuiInput-input"
-          defaultValue={undefined}
           disabled={false}
           id="name"
-          name={undefined}
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          onKeyDown={undefined}
-          onKeyUp={undefined}
-          placeholder={undefined}
-          readOnly={undefined}
           required={true}
-          rows={undefined}
           type="text"
           value=""
         />
       </div>
-      
     </div>
   </div>
   <button

@@ -44,7 +44,6 @@ exports[`Storyshots AuctionsList default 1`] = `
                 <svg
                   aria-hidden="true"
                   className="MuiSvgIcon-root"
-                  color={undefined}
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -250,7 +249,6 @@ exports[`Storyshots AuctionsList loading 1`] = `
                 <svg
                   aria-hidden="true"
                   className="MuiSvgIcon-root"
-                  color={undefined}
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -349,7 +347,6 @@ exports[`Storyshots AuctionsList no auctions 1`] = `
                 <svg
                   aria-hidden="true"
                   className="MuiSvgIcon-root"
-                  color={undefined}
                   focusable="false"
                   viewBox="0 0 24 24"
                 >

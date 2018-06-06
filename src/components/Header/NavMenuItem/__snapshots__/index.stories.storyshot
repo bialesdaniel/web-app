@@ -6,7 +6,6 @@ exports[`Storyshots NavMenuItem default 1`] = `
   className="withRouter(NavMenuItem)-nav"
   href="/autem"
   onClick={[Function]}
-  style={undefined}
 >
   <li
     className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
@@ -45,7 +44,6 @@ exports[`Storyshots NavMenuItem disabled 1`] = `
   className="withRouter(NavMenuItem)-nav"
   href="/autem"
   onClick={[Function]}
-  style={undefined}
 >
   <li
     className="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-disabled MuiListItem-button MuiMenuItem-root"
@@ -81,7 +79,6 @@ exports[`Storyshots NavMenuItem disabled with onDisabledClick function 1`] = `
   className="withRouter(NavMenuItem)-nav"
   href="/autem"
   onClick={[Function]}
-  style={undefined}
 >
   <li
     className="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-disabled MuiListItem-button MuiMenuItem-root"
@@ -117,7 +114,6 @@ exports[`Storyshots NavMenuItem with onClick function 1`] = `
   className="withRouter(NavMenuItem)-nav"
   href="/autem"
   onClick={[Function]}
-  style={undefined}
 >
   <li
     className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"

@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import ReactMarkdown from 'react-markdown'
 import axios from 'axios'
 import { withStyles } from '@material-ui/core/styles'
+const CancelToken = axios.CancelToken //Only needed because storyshots unmount before componentDidMount called
+const { token, cancel } = CancelToken.source()
 
 const styles = {
   root: {
@@ -19,19 +21,29 @@ class StaticPage extends Component {
 
   async setMarkdownContent() {
     const { markdownSource } = this.props
-    const { data: markdownContent } = await axios(markdownSource)
-    this.setState({ markdownContent })
+    try {
+      const { data: markdownContent } = await axios.get(markdownSource, { cancelToken: token })
+      this.setState({ markdownContent })
+    } catch (e) {
+      if (!axios.isCancel(e)) {
+        this.setState({ markdownContent: e.message })
+      }
+    }
   }
 
-  componentDidMount() {
-    this.setMarkdownContent()
+  async componentDidMount() {
+    await this.setMarkdownContent()
   }
 
-  componentDidUpdate(prevProps) {
+  async componentDidUpdate(prevProps) {
     const { markdownSource } = this.props
     if (prevProps.markdownSource !== markdownSource) {
-      this.setMarkdownContent()
+      await this.setMarkdownContent()
     }
+  }
+
+  componentWillUnmount() {
+    cancel()
   }
 
   render() {

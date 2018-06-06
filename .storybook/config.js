@@ -7,6 +7,7 @@ import  { introspectSchema} from 'graphql-tools'
 import octokit from '@octokit/rest'
 import {MockTournament} from '../test/mock-data/get-tournament'
 
+
 const generateClassName = (rule, styleSheet) =>
   `${styleSheet.options.classNamePrefix}-${rule.key}`
 
@@ -15,12 +16,11 @@ addDecorator(story => (
     {story()}
   </JssProvider>
 ))
-
 addDecorator(story => <BrowserRouter>{story()}</BrowserRouter>)
 
 function loadStories() {
-  const req = require.context('../src/',true,/\.stories\.js$/);
-  req.keys().forEach((filename)=>req(filename))
+  const req = require.context('../src/',true,/\.stories\.js$/)
+  req.keys().forEach(filename => req(filename))
 }
 
 async function loadApolloMock(){
