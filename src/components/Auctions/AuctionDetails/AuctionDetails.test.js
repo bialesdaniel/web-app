@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { title, username, moment } from 'casual-browserify'
+import casual from 'casual-browserify'
 import Typography from '@material-ui/core/Typography'
 import AuctionDetails from './AuctionDetails'
 import Tournament from '../../Tournament'
@@ -8,7 +8,9 @@ import Tournament from '../../Tournament'
 describe('AuctionDetails', () => {
   let wrapper
   beforeEach(() => {
-    wrapper = shallow(<AuctionDetails name={title} owner={username} createdAt={moment.toISOString()} />)
+    wrapper = shallow(
+      <AuctionDetails name={casual.title} owner={casual.username} createdAt={casual.moment.toISOString()} />
+    )
   })
   afterEach(() => {
     wrapper.unmount()

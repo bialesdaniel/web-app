@@ -1,23 +1,23 @@
-import { uuid, title, moment, integer, word, seed } from 'casual-browserify'
+import casual from 'casual-browserify'
 import gql from 'graphql-tag'
-seed(42)
+casual.seed(42)
 export const MockTournament = {
   tournament: {
     __typename: 'Tournament',
-    id: uuid,
-    status: word,
-    startDate: moment.toISOString(),
-    endDate: moment.toISOString(),
+    id: casual.uuid,
+    status: casual.word,
+    startDate: casual.moment.toISOString(),
+    endDate: casual.moment.toISOString(),
     brackets: Array.from(new Array(4), () => ({
       __typename: 'Bracket',
-      id: uuid,
-      name: title,
-      teams: Array.from(new Array(integer(16, 17)), () => ({
+      id: casual.uuid,
+      name: casual.title,
+      teams: Array.from(new Array(casual.integer(16, 17)), () => ({
         __typename: 'Team',
-        id: uuid,
-        name: title + word,
-        school: title,
-        seed: integer(1, 16)
+        id: casual.uuid,
+        name: casual.city + casual.word,
+        school: casual.title,
+        seed: casual.integer(1, 16)
       }))
     }))
   }

@@ -1,10 +1,10 @@
-import { integer, uuid, title } from 'casual-browserify'
+import casual from 'casual-browserify'
 
 class MockTeam {
   constructor() {
-    this.id = uuid
-    this.school = title
-    this.seed = integer(1, 16)
+    this.id = casual.uuid
+    this.school = casual.title
+    this.seed = casual.integer(1, 16)
   }
 }
 

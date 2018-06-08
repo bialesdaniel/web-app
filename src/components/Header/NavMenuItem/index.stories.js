@@ -1,23 +1,23 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { word, title } from 'casual-browserify'
+import casual from 'casual-browserify'
 import NavMenuItem from './index'
 
 storiesOf('NavMenuItem', module)
-  .add('default', () => <NavMenuItem location={{}} to={`/${word}`} label={title} />)
+  .add('default', () => <NavMenuItem location={{}} to={`/${casual.word}`} label={casual.title} />)
   .add('with onClick function', () => (
-    <NavMenuItem onClick={action('click')} location={{}} to={`/${word}`} label={title} />
+    <NavMenuItem onClick={action('click')} location={{}} to={`/${casual.word}`} label={casual.title} />
   ))
   .add('disabled', () => (
-    <NavMenuItem onClick={action('click')} location={{}} to={`/${word}`} label={title} disabled={true} />
+    <NavMenuItem onClick={action('click')} location={{}} to={`/${casual.word}`} label={casual.title} disabled={true} />
   ))
   .add('disabled with onDisabledClick function', () => (
     <NavMenuItem
       onClick={action('click')}
       location={{}}
-      to={`/${word}`}
-      label={title}
+      to={`/${casual.word}`}
+      label={casual.title}
       disabled={true}
       onDisabledClick={action('disabled')}
     />

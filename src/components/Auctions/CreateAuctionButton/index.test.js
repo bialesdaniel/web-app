@@ -1,6 +1,6 @@
 import React from 'react'
 import { createShallow } from '@material-ui/core/test-utils'
-import { uuid } from 'casual-browserify'
+import casual from 'casual-browserify'
 import IconButton from '@material-ui/core/IconButton'
 import CreateAuctionButton from './index'
 
@@ -23,7 +23,7 @@ describe('CreateAuctionButton', () => {
     expect(wrapper).toExist()
   })
   test('navigates to /auctions/new when button clicked and user is not logged in', () => {
-    localStorage.setItem('access_token', uuid)
+    localStorage.setItem('access_token', casual.uuid)
     const IconButtonNode = wrapper.find(IconButton)
     IconButtonNode.simulate('click')
     expect(history.push).toHaveBeenCalledWith('/auctions/new')

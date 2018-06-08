@@ -1,6 +1,6 @@
 import React from 'react'
 import { createShallow } from '@material-ui/core/test-utils'
-import { integer } from 'casual-browserify'
+import casual from 'casual-browserify'
 import CircularProgress from '@material-ui/core/CircularProgress'
 import ListItemText from '@material-ui/core/ListItemText'
 import AuctionsList from './index'
@@ -29,7 +29,7 @@ describe('AuctionsList', () => {
     expect(wrapper.find(ListItemText)).toHaveProp('primary', 'No auctions available')
   })
   test('ListItems are created per auction', () => {
-    const auctions = Array.from(new Array(integer(1, 10)), () => new MockAuction())
+    const auctions = Array.from(new Array(casual.integer(1, 10)), () => new MockAuction())
     wrapper.setProps({ auctions })
     expect(wrapper.find(AuctionListItem)).toHaveLength(auctions.length)
   })

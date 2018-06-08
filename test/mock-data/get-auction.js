@@ -1,15 +1,15 @@
-import { uuid, title, moment, username, seed } from 'casual-browserify'
+import casual from 'casual-browserify'
 import gql from 'graphql-tag'
-seed(42)
+casual.seed(42)
 export const MockAuction = {
   auction: {
     __typename: 'Auction',
-    id: uuid,
-    name: title,
-    createdAt: moment.toISOString(),
+    id: casual.uuid,
+    name: casual.title,
+    createdAt: casual.moment.toISOString(),
     owner: {
       __typename: 'User',
-      username: username
+      username: casual.username
     }
   }
 }

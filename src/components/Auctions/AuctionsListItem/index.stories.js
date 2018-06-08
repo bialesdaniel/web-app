@@ -1,6 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { title, username, uuid } from 'casual-browserify'
+import casual from 'casual-browserify'
 import AuctionsListItem from './index'
 
-storiesOf('AuctionsListItem', module).add('default', () => <AuctionsListItem name={title} owner={username} id={uuid} />)
+storiesOf('AuctionsListItem', module).add('default', () => (
+  <AuctionsListItem name={casual.title} owner={casual.username} id={casual.uuid} />
+))

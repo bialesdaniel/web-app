@@ -1,6 +1,6 @@
 import React from 'react'
 import { createShallow } from '@material-ui/core/test-utils'
-import { uuid, word } from 'casual-browserify'
+import casual from 'casual-browserify'
 import AccountCircle from '@material-ui/icons/AccountCircle'
 import MenuIcon from '@material-ui/icons/Menu'
 import Header from './index'
@@ -12,8 +12,8 @@ describe('Header', () => {
     shallow = createShallow()
     wrapper = shallow(
       <Header.WrappedComponent
-        location={{ pathname: `/${word}` }}
-        classes={{ root: uuid, menuButton: uuid, headerLink: uuid }}
+        location={{ pathname: `/${casual.word}` }}
+        classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
         login={jest.fn()}
         logout={jest.fn()}
         isAuthenticated={jest.fn(() => false)}

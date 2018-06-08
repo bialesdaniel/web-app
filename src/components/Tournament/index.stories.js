@@ -1,10 +1,10 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { MockedProvider } from 'react-apollo/test-utils'
-import { moment } from 'casual-browserify'
+import casual from 'casual-browserify'
 import { GET_TOURNAMENT_QUERY, MockTournament } from '../../../test/mock-data/get-tournament'
 import Tournament from './index'
-const date = new Date(moment.toISOString())
+const date = new Date(casual.moment.toISOString())
 storiesOf('Tournament', module).add('gql', () => (
   <MockedProvider
     mocks={[

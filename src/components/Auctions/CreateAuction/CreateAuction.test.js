@@ -1,6 +1,6 @@
 import React from 'react'
 import { createShallow } from '@material-ui/core/test-utils'
-import { title, short_description, word } from 'casual-browserify'
+import casual from 'casual-browserify'
 import CircularProgress from '@material-ui/core/CircularProgress'
 import CreateAuction from './CreateAuction'
 
@@ -23,7 +23,7 @@ describe('CreateAuction', () => {
     expect(wrapper).toExist()
   })
   test('changing the name input changes the state', () => {
-    const event = { target: { value: word } }
+    const event = { target: { value: casual.word } }
     const textFieldNode = wrapper.find('TextField')
     textFieldNode.simulate('change', event)
     expect(wrapper).toHaveState('name', event.target.value)
@@ -39,7 +39,7 @@ describe('CreateAuction', () => {
     expect(handleSubmit).not.toHaveBeenCalled()
   })
   test('form submit calls onSubmit if name is provided', () => {
-    wrapper.setState({ name: title })
+    wrapper.setState({ name: casual.title })
     const formNode = wrapper.find('form')
     formNode.simulate('submit', event)
     expect(handleSubmit).toHaveBeenCalled()
@@ -50,7 +50,7 @@ describe('CreateAuction', () => {
     expect(progessNode).toExist()
   })
   test('error displays in the input error message', () => {
-    const error = { message: short_description }
+    const error = { message: casual.short_description }
     wrapper.setProps({ error })
     const textFieldNode = wrapper.find('TextField')
     expect(textFieldNode).toHaveProp('error', true)

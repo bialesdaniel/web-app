@@ -1,11 +1,11 @@
-import { uuid, title, username } from 'casual-browserify'
+import casual from 'casual-browserify'
 
 class MockAuction {
   constructor() {
-    this.id = uuid
-    this.name = title
+    this.id = casual.uuid
+    this.name = casual.title
     this.owner = {
-      username: username
+      username: casual.username
     }
   }
 }

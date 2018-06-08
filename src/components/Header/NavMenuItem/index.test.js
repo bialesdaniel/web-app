@@ -1,6 +1,6 @@
 import React from 'react'
 import { createShallow } from '@material-ui/core/test-utils'
-import { word, uuid } from 'casual-browserify'
+import casual from 'casual-browserify'
 import NavMenuItem from './index'
 
 describe('NavMenuItem', () => {
@@ -10,10 +10,10 @@ describe('NavMenuItem', () => {
     shallow = createShallow()
     wrapper = shallow(
       <NavMenuItem.WrappedComponent
-        classes={{ nav: uuid, activeNav: uuid }}
+        classes={{ nav: casual.uuid, activeNav: casual.uuid }}
         location={{}}
-        to={`/${word}`}
-        label={word}
+        to={`/${casual.word}`}
+        label={casual.word}
       />
     )
   })

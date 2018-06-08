@@ -1,6 +1,6 @@
 import React from 'react'
 import { createShallow } from '@material-ui/core/test-utils'
-import { city, word, integer, uuid } from 'casual-browserify'
+import casual from 'casual-browserify'
 import Team from './index'
 
 describe('Team', () => {
@@ -8,7 +8,7 @@ describe('Team', () => {
   let shallow
   beforeEach(() => {
     shallow = createShallow({ dive: true })
-    wrapper = shallow(<Team school={`${city} ${word}`} seed={integer(1, 16)} id={uuid} />)
+    wrapper = shallow(<Team school={`${casual.city} ${casual.word}`} seed={casual.integer(1, 16)} id={casual.uuid} />)
   })
   afterEach(() => {
     wrapper.unmount()

@@ -1,6 +1,6 @@
 import React from 'react'
 import { createShallow } from '@material-ui/core/test-utils'
-import { title, username, uuid } from 'casual-browserify'
+import casual from 'casual-browserify'
 import AuctionListItem from './index'
 
 describe('AuctionListItem', () => {
@@ -9,11 +9,16 @@ describe('AuctionListItem', () => {
   let historyMock
   let auctionId
   beforeEach(() => {
-    auctionId = uuid
+    auctionId = casual.uuid
     historyMock = { push: jest.fn() }
     shallow = createShallow({ dive: true })
     wrapper = shallow(
-      <AuctionListItem.WrappedComponent name={title} owner={username} id={auctionId} history={historyMock} />
+      <AuctionListItem.WrappedComponent
+        name={casual.title}
+        owner={casual.username}
+        id={auctionId}
+        history={historyMock}
+      />
     )
   })
   afterEach(() => {

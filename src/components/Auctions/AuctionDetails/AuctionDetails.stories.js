@@ -1,12 +1,12 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { MockedProvider } from 'react-apollo/test-utils'
-import { title, username, moment } from 'casual-browserify'
+import casual from 'casual-browserify'
 import { GET_TOURNAMENT_QUERY, MockTournament } from '../../../../test/mock-data/get-tournament'
 import AuctionDetails from './AuctionDetails'
 
 storiesOf('AuctionDetails', module).add('default', () => {
-  const date = moment.toISOString()
+  const date = casual.moment.toISOString()
   return (
     <MockedProvider
       mocks={[
@@ -16,7 +16,7 @@ storiesOf('AuctionDetails', module).add('default', () => {
         }
       ]}
     >
-      <AuctionDetails name={title} owner={username} createdAt={date} />
+      <AuctionDetails name={casual.title} owner={casual.username} createdAt={date} />
     </MockedProvider>
   )
 })
