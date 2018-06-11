@@ -1,0 +1,39 @@
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { Mutation } from 'react-apollo'
+import gql from 'graphql-tag'
+import BidDialog from './BidDialog'
+
+const CREATE_BID = gql`
+  mutation createBid($auctionId: ID!, $teamId: ID!, $amount: Float!) {
+    createBid(auctionID: $auctionId, teamId: $teamId, amount: $amount) {
+      id
+    }
+  }
+`
+
+class BidDialogGQL extends Component {
+  render() {
+    return (
+      <Mutation mutation={CREATE_BID}>
+        {(createBid, { loading }) => {
+          return <BidDialog {...this.props} onSubmit={createBid} loading={loading} />
+        }}
+      </Mutation>
+    )
+  }
+}
+
+BidDialogGQL.propTypes = {
+  auctionId: PropTypes.string.isRequired,
+  currentValue: PropTypes.number.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  teamId: PropTypes.string.isRequired,
+  teamName: PropTypes.string.isRequired
+}
+BidDialogGQL.defaultProps = {
+  isOpen: false
+}
+
+export default BidDialogGQL
