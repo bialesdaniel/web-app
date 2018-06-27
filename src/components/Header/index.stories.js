@@ -1,22 +1,12 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
+import { AuthProvider } from '../../context/AuthContext'
 import Header from './index'
 
 storiesOf('Header', module)
-  .add('default', () => (
-    <Header
-      location={{ pathname: '/' }}
-      login={action('login')}
-      logout={action('logout')}
-      isAuthenticated={() => false}
-    />
-  ))
   .add('logged in', () => (
-    <Header
-      location={{ pathname: '/' }}
-      login={action('login')}
-      logout={action('logout')}
-      isAuthenticated={() => true}
-    />
+    <AuthProvider authMethods={{ isAuthenticated: () => true }}>
+      <Header location={{ pathname: '/' }} />
+    </AuthProvider>
   ))
+  .add('not logged in', () => <Header location={{ pathname: '/' }} />)

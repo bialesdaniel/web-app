@@ -3,8 +3,8 @@
 exports[`Storyshots BidButton default 1`] = `
 <div>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-flat MuiButton-outlined"
-    disabled={false}
+    className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+    disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -16,7 +16,7 @@ exports[`Storyshots BidButton default 1`] = `
     onTouchEnd={[Function]}
     onTouchMove={[Function]}
     onTouchStart={[Function]}
-    tabIndex="0"
+    tabIndex="-1"
     type="button"
   >
     <span
@@ -25,9 +25,35 @@ exports[`Storyshots BidButton default 1`] = `
       $
       56.18
     </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots BidButton disabled 1`] = `
+<div>
+  <button
+    className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+    disabled={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex="-1"
+    type="button"
+  >
     <span
-      className="MuiTouchRipple-root"
-    />
+      className="MuiButton-label"
+    >
+      $
+      56.18
+    </span>
   </button>
 </div>
 `;

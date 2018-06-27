@@ -22,7 +22,7 @@ describe('CreateAuctionButton', () => {
   test('renders', () => {
     expect(wrapper).toExist()
   })
-  test('navigates to /auctions/new when button clicked and user is not logged in', () => {
+  test('navigates to /auctions/new when button clicked and user is logged in', () => {
     localStorage.setItem('access_token', casual.uuid)
     const IconButtonNode = wrapper.find(IconButton)
     IconButtonNode.simulate('click')

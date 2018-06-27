@@ -21,7 +21,7 @@ exports[`Storyshots AuthenticateButton logged in 1`] = `
   <span
     className="MuiButton-label"
   >
-    Logout
+    Login
   </span>
   <span
     className="MuiTouchRipple-root"

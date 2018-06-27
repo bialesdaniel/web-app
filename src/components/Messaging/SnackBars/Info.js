@@ -17,7 +17,7 @@ class Info extends Component {
       <Snackbar
         anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
         open={isOpen}
-        autoHideDuration={5000}
+        autoHideDuration={50000}
         onClose={this.handleClose}
         ContentProps={{
           'aria-describedby': 'message-id'

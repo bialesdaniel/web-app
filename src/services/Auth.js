@@ -1,7 +1,6 @@
 import auth0 from 'auth0-js'
 import history from './history'
 import { AUTH0_DOMAIN, AUTH0_CLIENT_ID, AUTH0_REDIRECT_URI, AUTH0_AUDIENCE } from '../config/config'
-
 export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: AUTH0_DOMAIN,

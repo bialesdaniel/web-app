@@ -10,7 +10,7 @@ storiesOf('BidDialog', module)
       isOpen={true}
       onClose={action('close')}
       onSubmit={action('submit')}
-      teamName={`${casual.city} ${casual.word}`}
+      school={`${casual.city} ${casual.word}`}
       currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
       auctionId={casual.uuid}
       teamId={casual.uuid}
@@ -21,7 +21,7 @@ storiesOf('BidDialog', module)
       isOpen={true}
       onClose={action('close')}
       onSubmit={action('submit')}
-      teamName={`${casual.city} ${casual.word}`}
+      school={`${casual.city} ${casual.word}`}
       currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
       auctionId={casual.uuid}
       teamId={casual.uuid}
@@ -33,7 +33,7 @@ storiesOf('BidDialog', module)
       isOpen={false}
       onClose={action('close')}
       onSubmit={action('submit')}
-      teamName={`${casual.city} ${casual.word}`}
+      school={`${casual.city} ${casual.word}`}
       currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
       auctionId={casual.uuid}
       teamId={casual.uuid}

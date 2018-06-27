@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import AccountCircle from '@material-ui/icons/AccountCircle'
+import { AuthConsumer } from '../../context/AuthContext'
 import AuthenticateButton from '../AuthenticateButton'
 import NavMenu from './NavMenu'
 
@@ -38,31 +39,35 @@ class Header extends Component {
     this.setState({ isMenuOpen: !this.state.isMenuOpen })
   }
   render() {
-    const { classes, location, isAuthenticated, login, logout } = this.props
+    const { classes, location } = this.props
     const { isMenuOpen } = this.state
     return (
       <div className={classes.root}>
         <AppBar position="static">
-          <Toolbar>
-            <IconButton className={classes.menuButton} aria-label="Menu">
-              <MenuIcon onClick={this.toggleMenu} />
-            </IconButton>
-            <NavMenu open={isMenuOpen} toggleMenu={this.toggleMenu} isLoggedIn={isAuthenticated()} />
+          <AuthConsumer>
+            {({ auth }) => (
+              <Toolbar>
+                <IconButton className={classes.menuButton} aria-label="Menu">
+                  <MenuIcon onClick={this.toggleMenu} />
+                </IconButton>
+                <NavMenu open={isMenuOpen} toggleMenu={this.toggleMenu} isAuthenticated={auth.isAuthenticated} />
 
-            <Link to="/" replace={location.pathname === '/'} className={classes.headerLink}>
-              <Typography variant="title" color="inherit">
-                The Bid
-              </Typography>
-            </Link>
+                <Link to="/" replace={location.pathname === '/'} className={classes.headerLink}>
+                  <Typography variant="title" color="inherit">
+                    The Bid
+                  </Typography>
+                </Link>
 
-            {isAuthenticated() && (
-              <IconButton>
-                <AccountCircle color="inherit" />
-              </IconButton>
+                {auth.isAuthenticated() && (
+                  <IconButton>
+                    <AccountCircle color="inherit" />
+                  </IconButton>
+                )}
+
+                <AuthenticateButton login={auth.login} logout={auth.logout} />
+              </Toolbar>
             )}
-
-            <AuthenticateButton login={login} logout={logout} isAuthenticated={isAuthenticated()} />
-          </Toolbar>
+          </AuthConsumer>
         </AppBar>
       </div>
     )
@@ -71,10 +76,7 @@ class Header extends Component {
 
 Header.propTypes = {
   classes: PropTypes.object.isRequired,
-  location: PropTypes.object.isRequired,
-  login: PropTypes.func.isRequired,
-  logout: PropTypes.func.isRequired,
-  isAuthenticated: PropTypes.func.isRequired
+  location: PropTypes.object.isRequired
 }
 
 export default withStyles(styles)(withRouter(Header))

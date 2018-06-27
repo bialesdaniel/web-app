@@ -1,5 +1,6 @@
 import React from 'react'
 import { createShallow } from '@material-ui/core/test-utils'
+import casual from 'casual-browserify'
 import Bracket from './index'
 import MockBracket from '../../../test/mock-data/Bracket'
 
@@ -9,7 +10,9 @@ describe('Bracket', () => {
   beforeEach(() => {
     const { name, teams } = new MockBracket()
     shallow = createShallow({ dive: true })
-    wrapper = shallow(<Bracket name={name} teams={teams} />)
+    wrapper = shallow(
+      <Bracket.WrappedComponent name={name} teams={teams} match={{ params: { auctionId: casual.uuid } }} />
+    )
   })
   afterEach(() => {
     wrapper.unmount()
@@ -19,6 +22,6 @@ describe('Bracket', () => {
     expect(wrapper).toExist()
   })
   test('contains a list of teams', () => {
-    expect(wrapper.find('Team').length).toBeGreaterThan(0)
+    expect(wrapper.find('TeamGQL').length).toBeGreaterThan(0)
   })
 })

@@ -19,227 +19,771 @@ exports[`Storyshots Tournament default 1`] = `
           Corporis laborum cupiditate
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              13. Earum sapiente error
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                13. Earum sapiente error
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              14. Qui itaque qui
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                14. Qui itaque qui
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              4. Nihil est qui
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                4. Nihil est qui
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              8. Ad rerum natus
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                8. Ad rerum natus
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              9. Id velit
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                9. Id velit
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              11. Aut enim incidunt
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                11. Aut enim incidunt
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              8. Magnam optio
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                8. Magnam optio
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              13. Et qui
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                13. Et qui
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              9. Est in iure
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                9. Est in iure
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              6. Laboriosam minima
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                6. Laboriosam minima
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              4. Ducimus et asperiores
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                4. Ducimus et asperiores
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              9. Iusto autem aliquid
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                9. Iusto autem aliquid
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              14. Sunt sapiente reiciendis
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                14. Sunt sapiente reiciendis
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              12. Nulla optio eos
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                12. Nulla optio eos
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              11. Odio in
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                11. Odio in
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              9. Provident velit
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                9. Provident velit
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
       </ul>
@@ -260,227 +804,771 @@ exports[`Storyshots Tournament default 1`] = `
           Dignissimos magnam
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              16. Enim at
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                16. Enim at
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              15. Neque et architecto
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                15. Neque et architecto
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              2. Voluptatem ipsa
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                2. Voluptatem ipsa
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              16. Similique aut in
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                16. Similique aut in
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              15. Illo perferendis
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                15. Illo perferendis
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              2. Inventore asperiores unde
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                2. Inventore asperiores unde
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              14. Autem eos quis
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                14. Autem eos quis
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              12. Sed qui est
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                12. Sed qui est
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              3. Delectus beatae cupiditate
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                3. Delectus beatae cupiditate
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              2. Qui ut
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                2. Qui ut
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              1. Omnis quae dolorem
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                1. Omnis quae dolorem
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              9. Placeat asperiores voluptates
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                9. Placeat asperiores voluptates
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              14. Eum occaecati nemo
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                14. Eum occaecati nemo
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              12. Explicabo ut
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                12. Explicabo ut
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              9. Et nisi beatae
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                9. Et nisi beatae
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              3. Sunt unde
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                3. Sunt unde
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
       </ul>
@@ -501,227 +1589,771 @@ exports[`Storyshots Tournament default 1`] = `
           Maiores non
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              12. Odit enim
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                12. Odit enim
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              6. Magni vel veniam
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                6. Magni vel veniam
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              7. Cupiditate voluptatem
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                7. Cupiditate voluptatem
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              4. Impedit molestiae
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                4. Impedit molestiae
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              11. Aliquam eos
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                11. Aliquam eos
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              13. Dolor qui dolorem
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                13. Dolor qui dolorem
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              14. In ut ex
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                14. In ut ex
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              13. Nihil magnam
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                13. Nihil magnam
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              11. Rerum mollitia
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                11. Rerum mollitia
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              11. Aut error sint
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                11. Aut error sint
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              10. Enim occaecati tempora
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                10. Enim occaecati tempora
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              10. Magnam dolor
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                10. Magnam dolor
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              12. Quasi in
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                12. Quasi in
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              2. Suscipit eos
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                2. Suscipit eos
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              9. Dolor rerum et
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                9. Dolor rerum et
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              12. Qui rerum nihil
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                12. Qui rerum nihil
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
       </ul>
@@ -742,227 +2374,771 @@ exports[`Storyshots Tournament default 1`] = `
           Corrupti voluptatibus saepe
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              8. Vel in
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                8. Vel in
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              6. Occaecati nihil ab
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                6. Occaecati nihil ab
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              5. Aperiam ut
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                5. Aperiam ut
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              10. Delectus enim consequatur
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                10. Delectus enim consequatur
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              11. Facilis modi
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                11. Facilis modi
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              6. Voluptas blanditiis
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                6. Voluptas blanditiis
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              4. Molestiae et officiis
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                4. Molestiae et officiis
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              7. Explicabo quam suscipit
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                7. Explicabo quam suscipit
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              7. Quaerat sunt officia
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                7. Quaerat sunt officia
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              2. Dolorem aliquid et
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                2. Dolorem aliquid et
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              7. Blanditiis debitis
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                7. Blanditiis debitis
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              2. Soluta saepe
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                2. Soluta saepe
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              11. Labore optio non
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                11. Labore optio non
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              6. Dicta et
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                6. Dicta et
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              3. Quasi rerum corporis
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                3. Quasi rerum corporis
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-default MuiListItem-gutters"
-          disabled={false}
+          className="MuiListItem-container"
         >
           <div
-            className="MuiListItemText-root"
+            className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
+            disabled={false}
           >
-            <span
-              className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+            <div
+              className="MuiListItemText-root Team-text"
             >
-              1. Assumenda aliquam soluta
-            </span>
+              <span
+                className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                1. Assumenda aliquam soluta
+              </span>
+            </div>
+          </div>
+          <div
+            className="MuiListItemSecondaryAction-root"
+          >
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="-1"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  $
+                  0
+                </span>
+              </button>
+            </div>
           </div>
         </li>
       </ul>

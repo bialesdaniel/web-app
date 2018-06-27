@@ -6,7 +6,7 @@ import apolloStorybookDecorator from 'apollo-storybook-react'
 import  { introspectSchema} from 'graphql-tools'
 import octokit from '@octokit/rest'
 import {MockTournament} from '../test/mock-data/get-tournament'
-
+import {AuthProvider} from '../src/context/AuthContext'
 
 const generateClassName = (rule, styleSheet) =>
   `${styleSheet.options.classNamePrefix}-${rule.key}`
@@ -17,6 +17,7 @@ addDecorator(story => (
   </JssProvider>
 ))
 addDecorator(story => <BrowserRouter>{story()}</BrowserRouter>)
+addDecorator(story=><AuthProvider authMethods={{isAuthenticated:()=>false}}>{story()}</AuthProvider>)
 
 function loadStories() {
   const req = require.context('../src/',true,/\.stories\.js$/)

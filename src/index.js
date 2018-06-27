@@ -6,7 +6,9 @@ import { ApolloProvider } from 'react-apollo'
 import { API_GATEWAY_URL } from './config/config'
 import './styles/index.css'
 import App from './components/App'
+import { AuthProvider } from './context/AuthContext'
 import registerServiceWorker from './registerServiceWorker'
+import Auth from './services/Auth'
 
 const apiGateway = new ApolloClient({
   uri: API_GATEWAY_URL,
@@ -20,11 +22,13 @@ const apiGateway = new ApolloClient({
       })
   }
 })
-
+const auth = new Auth()
 ReactDOM.render(
   <BrowserRouter>
     <ApolloProvider client={apiGateway}>
-      <App />
+      <AuthProvider authMethods={auth}>
+        <App />
+      </AuthProvider>
     </ApolloProvider>
   </BrowserRouter>,
   document.getElementById('root')

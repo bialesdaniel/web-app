@@ -1,12 +1,16 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
+import { AuthProvider } from '../../context/AuthContext'
 import AuthenticateButton from './index'
 
 storiesOf('AuthenticateButton', module)
   .add('not logged in', () => (
-    <AuthenticateButton login={action('login')} logout={action('logout')} isAuthenticated={false} />
+    <AuthProvider authMethods={{ isAuthenticated: () => false }}>
+      <AuthenticateButton />
+    </AuthProvider>
   ))
   .add('logged in', () => (
-    <AuthenticateButton login={action('login')} logout={action('logout')} isAuthenticated={true} />
+    <AuthProvider authMethods={{ isAuthenticated: () => true }}>
+      <AuthenticateButton />
+    </AuthProvider>
   ))

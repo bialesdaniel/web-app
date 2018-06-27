@@ -18,7 +18,7 @@ class NavMenu extends Component {
     this.setState({ isMessageOpen: !this.state.isMessageOpen })
   }
   render() {
-    const { open, toggleMenu, isLoggedIn } = this.props
+    const { isAuthenticated, open, toggleMenu } = this.props
     return (
       <div>
         <SwipeableDrawer open={open} onOpen={toggleMenu} onClose={toggleMenu}>
@@ -36,7 +36,7 @@ class NavMenu extends Component {
               to="/auctions/new"
               onClick={toggleMenu}
               label="Create Auction"
-              disabled={!isLoggedIn}
+              disabled={!isAuthenticated()}
               onDisabledClick={this.toggleMessage}
             />
             <Divider />
@@ -51,9 +51,9 @@ class NavMenu extends Component {
 }
 
 NavMenu.propTypes = {
+  isAuthenticated: PropTypes.func.isRequired,
   open: PropTypes.bool.isRequired,
-  toggleMenu: PropTypes.func.isRequired,
-  isLoggedIn: PropTypes.bool.isRequired
+  toggleMenu: PropTypes.func.isRequired
 }
 
 export default NavMenu

@@ -6,7 +6,7 @@ import BidDialog from './BidDialog'
 
 const CREATE_BID = gql`
   mutation createBid($auctionId: ID!, $teamId: ID!, $amount: Float!) {
-    createBid(auctionID: $auctionId, teamId: $teamId, amount: $amount) {
+    createBid(auctionId: $auctionId, teamId: $teamId, amount: $amount) {
       id
     }
   }
@@ -30,7 +30,7 @@ BidDialogGQL.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
   teamId: PropTypes.string.isRequired,
-  teamName: PropTypes.string.isRequired
+  school: PropTypes.string.isRequired
 }
 BidDialogGQL.defaultProps = {
   isOpen: false

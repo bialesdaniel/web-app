@@ -1,46 +1,99 @@
 import React from 'react'
-import { createShallow } from '@material-ui/core/test-utils'
+import { createMount } from '@material-ui/core/test-utils'
 import casual from 'casual-browserify'
-import AccountCircle from '@material-ui/icons/AccountCircle'
+import { BrowserRouter } from 'react-router-dom'
 import MenuIcon from '@material-ui/icons/Menu'
+import AccountCircle from '@material-ui/icons/AccountCircle'
+import { mockAuth } from '../../../test/mock-context/AuthConsumer'
 import Header from './index'
 
 describe('Header', () => {
   let wrapper
-  let shallow
+  let mount
   beforeEach(() => {
-    shallow = createShallow()
-    wrapper = shallow(
+    mount = createMount()
+    /* TODO: waiting to be able to mock context provider or consumer
+    wrapper = mount(<AuthProvider authMethods={auth}>
+      <BrowserRouter>
       <Header.WrappedComponent
         location={{ pathname: `/${casual.word}` }}
         classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
-        login={jest.fn()}
-        logout={jest.fn()}
-        isAuthenticated={jest.fn(() => false)}
       />
-    )
+    </BrowserRouter>
+    </AuthProvider>
+    )*/
   })
   afterEach(() => {
     wrapper.unmount()
-    shallow = null
+    mount = null
+    mockAuth.isAuthenticated.mockReturnValue(false)
   })
   test('renders', () => {
+    wrapper = mount(
+      <BrowserRouter>
+        <Header.WrappedComponent
+          location={{ pathname: `/${casual.word}` }}
+          classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
+        />
+      </BrowserRouter>
+    )
     expect(wrapper).toExist()
   })
   test('title link does not replace', () => {
-    expect(wrapper.findWhere(node => node.prop('variant') === 'title').parent()).toHaveProp('replace', false)
+    wrapper = mount(
+      <BrowserRouter>
+        <Header.WrappedComponent
+          location={{ pathname: `/${casual.word}` }}
+          classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
+        />
+      </BrowserRouter>
+    )
+    expect(
+      wrapper
+        .findWhere(node => node.props().children === 'The Bid' && node.parent().type() === 'a')
+        .parents()
+        .at(1)
+    ).toHaveProp('replace', false)
   })
   test('title link replaces if pathname is /', () => {
-    wrapper.setProps({ location: { pathname: '/' } })
-    expect(wrapper.findWhere(node => node.prop('variant') === 'title').parent()).toHaveProp('replace', true)
+    wrapper = mount(
+      <BrowserRouter>
+        <Header.WrappedComponent
+          location={{ pathname: '/' }}
+          classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
+        />
+      </BrowserRouter>
+    )
+    expect(
+      wrapper
+        .findWhere(node => node.props().children === 'The Bid' && node.parent().type() === 'a')
+        .parents()
+        .at(1)
+    ).toHaveProp('replace', true)
   })
   test('account icon is displayed if logged in', () => {
-    wrapper.setProps({ isAuthenticated: jest.fn(() => true) })
+    mockAuth.isAuthenticated.mockReturnValue(true)
+    wrapper = mount(
+      <BrowserRouter>
+        <Header.WrappedComponent
+          location={{ pathname: `/${casual.word}` }}
+          classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
+        />
+      </BrowserRouter>
+    )
     expect(wrapper.find(AccountCircle)).toExist()
   })
-  test('click menu changes isMenuOpen state', () => {
+  test('click menu set NavMenu open prop', () => {
+    wrapper = mount(
+      <BrowserRouter>
+        <Header.WrappedComponent
+          location={{ pathname: `/${casual.word}` }}
+          classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
+        />
+      </BrowserRouter>
+    )
     const MenuIconNode = wrapper.find(MenuIcon)
     MenuIconNode.simulate('click')
-    expect(wrapper).toHaveState('isMenuOpen', true)
+    expect(wrapper.find('NavMenu')).toHaveProp('open', true)
   })
 })

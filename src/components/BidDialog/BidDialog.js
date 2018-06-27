@@ -35,20 +35,21 @@ const styles = theme => ({
     minWidth: 0
   }
 })
+function calcMinRaiseAmount(currentValue) {
+  return currentValue !== 0 ? roundToHundreths(currentValue * 0.1) : 0.1
+}
+
+function calcMinBidAmount(currentValue) {
+  return currentValue + calcMinRaiseAmount(currentValue)
+}
 
 class BidDialog extends Component {
-  calcMinRaiseAmount = currentValue => {
-    return roundToHundreths(currentValue * 0.1)
-  }
-  calcMinBidAmount = currentValue => {
-    return currentValue + this.calcMinRaiseAmount(currentValue)
-  }
   state = {
-    amount: this.calcMinBidAmount(this.props.currentValue),
+    amount: calcMinBidAmount(this.props.currentValue),
     errorMessage: ''
   }
   handleAmountChange = e => {
-    if (e.target.value >= this.calcMinBidAmount(this.props.currentValue)) {
+    if (e.target.value >= calcMinBidAmount(this.props.currentValue)) {
       this.setState({ amount: roundToHundreths(parseFloat(e.target.value)), errorMessage: '' })
     }
   }
@@ -56,7 +57,7 @@ class BidDialog extends Component {
     const steppedValue = roundToHundreths(this.state.amount + step)
     this.handleAmountChange({ target: { value: steppedValue } })
   }
-  handleClose = () => {
+  handleCancel = () => {
     this.props.onClose()
     this.setState({ errorMessage: '' })
   }
@@ -65,21 +66,24 @@ class BidDialog extends Component {
     const { auctionId, teamId } = this.props
     try {
       await this.props.onSubmit({ variables: { amount, auctionId, teamId } })
-      this.props.onClose()
+      await this.props.onClose(amount)
     } catch ({ message }) {
       this.setState({ errorMessage: message })
     }
   }
+  static getDerivedStateFromProps(nextProps, previousState) {
+    return nextProps.currentValue >= previousState.amount ? { amount: calcMinBidAmount(nextProps.currentValue) } : null
+  }
   render() {
     const { amount, errorMessage } = this.state
-    const { classes, teamName, isOpen, loading } = this.props
+    const { classes, school, isOpen, loading } = this.props
     return (
       <Dialog open={isOpen} onClose={this.handleClose} aria-labelledby="form-dialog-title">
         <DialogTitle id="form-dialog-title">Submit Bid</DialogTitle>
         <DialogContent className={classes.root}>
           <div className={classes.inputRow}>
             <Typography variant="headline" className={classes.inputLabel}>
-              {teamName}
+              {school}
             </Typography>
             <CurrencyInputField
               className={classes.currencyInput}
@@ -94,7 +98,7 @@ class BidDialog extends Component {
           <DialogContentText>{errorMessage}</DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={this.handleClose} disabled={loading}>
+          <Button onClick={this.handleCancel} disabled={loading}>
             Cancel
           </Button>
           <Button onClick={this.handleSubmit} color="primary" disabled={loading}>
@@ -116,7 +120,7 @@ BidDialog.propTypes = {
   onClose: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
   teamId: PropTypes.string.isRequired,
-  teamName: PropTypes.string.isRequired
+  school: PropTypes.string.isRequired
 }
 BidDialog.defaultProps = {
   isOpen: false,

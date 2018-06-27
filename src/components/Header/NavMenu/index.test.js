@@ -9,7 +9,7 @@ describe('NavMenu', () => {
   let shallow
   beforeEach(() => {
     shallow = createShallow()
-    wrapper = shallow(<NavMenu open={true} isLoggedIn={true} toggleMenu={jest.fn()} />)
+    wrapper = shallow(<NavMenu open={true} isLoggedIn={true} toggleMenu={jest.fn()} isAuthenticated={() => false} />)
   })
   afterEach(() => {
     wrapper.unmount()
