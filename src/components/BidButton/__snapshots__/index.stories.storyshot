@@ -3,10 +3,11 @@
 exports[`Storyshots BidButton default 1`] = `
 <div>
   <button
-    className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+    className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
     disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
+    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -32,10 +33,11 @@ exports[`Storyshots BidButton default 1`] = `
 exports[`Storyshots BidButton disabled 1`] = `
 <div>
   <button
-    className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+    className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
     disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
+    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}

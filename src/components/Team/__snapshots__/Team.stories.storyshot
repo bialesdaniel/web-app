@@ -26,10 +26,11 @@ exports[`Storyshots Team default 1`] = `
     >
       <div>
         <button
-          className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+          className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
           disabled={true}
           onBlur={[Function]}
           onClick={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -81,10 +82,11 @@ exports[`Storyshots Team gql 1`] = `
     >
       <div>
         <button
-          className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+          className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
           disabled={true}
           onBlur={[Function]}
           onClick={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -136,10 +138,11 @@ exports[`Storyshots Team with bid 1`] = `
     >
       <div>
         <button
-          className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-outlined MuiButton-disabled"
+          className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
           disabled={true}
           onBlur={[Function]}
           onClick={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}

@@ -5,7 +5,7 @@ exports[`Storyshots AuctionsList default 1`] = `
   className="MuiList-root MuiList-padding"
 >
   <li
-    className="MuiListSubheader-root MuiListSubheader-colorInherit MuiListSubheader-sticky AuctionsList-listHeader"
+    className="MuiListSubheader-root MuiListSubheader-colorInherit MuiListSubheader-sticky MuiListSubheader-gutters AuctionsList-listHeader"
   >
     <div
       className="MuiGrid-container MuiGrid-justify-xs-space-between"
@@ -26,6 +26,7 @@ exports[`Storyshots AuctionsList default 1`] = `
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
+              onContextMenu={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
               onKeyUp={[Function]}
@@ -45,13 +46,16 @@ exports[`Storyshots AuctionsList default 1`] = `
                   aria-hidden="true"
                   className="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
-                  <g>
-                    <path
-                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
-                    />
-                  </g>
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
                 </svg>
               </span>
               <span
@@ -70,6 +74,7 @@ exports[`Storyshots AuctionsList default 1`] = `
     className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-divider MuiListItem-button"
     onBlur={[Function]}
     onClick={[Function]}
+    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -104,6 +109,7 @@ exports[`Storyshots AuctionsList default 1`] = `
     className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-divider MuiListItem-button"
     onBlur={[Function]}
     onClick={[Function]}
+    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -138,6 +144,7 @@ exports[`Storyshots AuctionsList default 1`] = `
     className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-divider MuiListItem-button"
     onBlur={[Function]}
     onClick={[Function]}
+    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -172,6 +179,7 @@ exports[`Storyshots AuctionsList default 1`] = `
     className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-divider MuiListItem-button"
     onBlur={[Function]}
     onClick={[Function]}
+    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -210,7 +218,7 @@ exports[`Storyshots AuctionsList loading 1`] = `
   className="MuiList-root MuiList-padding"
 >
   <li
-    className="MuiListSubheader-root MuiListSubheader-colorInherit MuiListSubheader-sticky AuctionsList-listHeader"
+    className="MuiListSubheader-root MuiListSubheader-colorInherit MuiListSubheader-sticky MuiListSubheader-gutters AuctionsList-listHeader"
   >
     <div
       className="MuiGrid-container MuiGrid-justify-xs-space-between"
@@ -231,6 +239,7 @@ exports[`Storyshots AuctionsList loading 1`] = `
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
+              onContextMenu={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
               onKeyUp={[Function]}
@@ -250,13 +259,16 @@ exports[`Storyshots AuctionsList loading 1`] = `
                   aria-hidden="true"
                   className="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
-                  <g>
-                    <path
-                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
-                    />
-                  </g>
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
                 </svg>
               </span>
               <span
@@ -286,14 +298,14 @@ exports[`Storyshots AuctionsList loading 1`] = `
     >
       <svg
         className="MuiCircularProgress-svg"
-        viewBox="0 0 50 50"
+        viewBox="22 22 44 44"
       >
         <circle
           className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
-          cx={25}
-          cy={25}
+          cx={44}
+          cy={44}
           fill="none"
-          r={20}
+          r={20.2}
           strokeWidth={3.6}
           style={Object {}}
         />
@@ -308,7 +320,7 @@ exports[`Storyshots AuctionsList no auctions 1`] = `
   className="MuiList-root MuiList-padding"
 >
   <li
-    className="MuiListSubheader-root MuiListSubheader-colorInherit MuiListSubheader-sticky AuctionsList-listHeader"
+    className="MuiListSubheader-root MuiListSubheader-colorInherit MuiListSubheader-sticky MuiListSubheader-gutters AuctionsList-listHeader"
   >
     <div
       className="MuiGrid-container MuiGrid-justify-xs-space-between"
@@ -329,6 +341,7 @@ exports[`Storyshots AuctionsList no auctions 1`] = `
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
+              onContextMenu={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
               onKeyUp={[Function]}
@@ -348,13 +361,16 @@ exports[`Storyshots AuctionsList no auctions 1`] = `
                   aria-hidden="true"
                   className="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
-                  <g>
-                    <path
-                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
-                    />
-                  </g>
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
                 </svg>
               </span>
               <span

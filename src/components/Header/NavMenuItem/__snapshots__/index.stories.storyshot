@@ -2,14 +2,15 @@
 
 exports[`Storyshots NavMenuItem default 1`] = `
 <a
-  aria-current={false}
+  aria-current={null}
   className="withRouter(NavMenuItem)-nav"
   href="/autem"
   onClick={[Function]}
 >
   <li
-    className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
     onBlur={[Function]}
+    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -40,14 +41,15 @@ exports[`Storyshots NavMenuItem default 1`] = `
 
 exports[`Storyshots NavMenuItem disabled 1`] = `
 <a
-  aria-current={false}
+  aria-current={null}
   className="withRouter(NavMenuItem)-nav"
   href="/autem"
   onClick={[Function]}
 >
   <li
-    className="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-disabled MuiListItem-button MuiMenuItem-root"
+    className="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-disabled MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
     onBlur={[Function]}
+    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -75,14 +77,15 @@ exports[`Storyshots NavMenuItem disabled 1`] = `
 
 exports[`Storyshots NavMenuItem disabled with onDisabledClick function 1`] = `
 <a
-  aria-current={false}
+  aria-current={null}
   className="withRouter(NavMenuItem)-nav"
   href="/autem"
   onClick={[Function]}
 >
   <li
-    className="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-disabled MuiListItem-button MuiMenuItem-root"
+    className="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-disabled MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
     onBlur={[Function]}
+    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -110,14 +113,15 @@ exports[`Storyshots NavMenuItem disabled with onDisabledClick function 1`] = `
 
 exports[`Storyshots NavMenuItem with onClick function 1`] = `
 <a
-  aria-current={false}
+  aria-current={null}
   className="withRouter(NavMenuItem)-nav"
   href="/autem"
   onClick={[Function]}
 >
   <li
-    className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
     onBlur={[Function]}
+    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}

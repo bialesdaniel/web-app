@@ -13,9 +13,10 @@ exports[`Storyshots NavMenu closed 1`] = `
         className="MuiListItem-container"
       >
         <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiListItem-secondaryAction MuiMenuItem-root"
+          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiListItem-secondaryAction MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
           onClick={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -39,6 +40,7 @@ exports[`Storyshots NavMenu closed 1`] = `
             className="MuiButtonBase-root MuiIconButton-root"
             disabled={false}
             onBlur={[Function]}
+            onContextMenu={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -59,13 +61,16 @@ exports[`Storyshots NavMenu closed 1`] = `
                 className="MuiSvgIcon-root"
                 focusable="false"
                 onClick={[Function]}
+                role="presentation"
                 viewBox="0 0 24 24"
               >
-                <g>
-                  <path
-                    d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
-                  />
-                </g>
+                <path
+                  d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+                />
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
               </svg>
             </span>
             <span
@@ -80,15 +85,16 @@ exports[`Storyshots NavMenu closed 1`] = `
         tabIndex={-1}
       />
       <a
-        aria-current="true"
+        aria-current="page"
         className="withRouter(NavMenuItem)-nav withRouter(NavMenuItem)-activeNav"
         href="/"
         onClick={[Function]}
         style={Object {}}
       >
         <li
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -116,14 +122,15 @@ exports[`Storyshots NavMenu closed 1`] = `
         </li>
       </a>
       <a
-        aria-current={false}
+        aria-current={null}
         className="withRouter(NavMenuItem)-nav"
         href="/auctions/new"
         onClick={[Function]}
       >
         <li
-          className="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-disabled MuiListItem-button MuiMenuItem-root"
+          className="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-disabled MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -153,14 +160,15 @@ exports[`Storyshots NavMenu closed 1`] = `
         tabIndex={-1}
       />
       <a
-        aria-current={false}
+        aria-current={null}
         className="withRouter(NavMenuItem)-nav"
         href="/rules"
         onClick={[Function]}
       >
         <li
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -188,14 +196,15 @@ exports[`Storyshots NavMenu closed 1`] = `
         </li>
       </a>
       <a
-        aria-current={false}
+        aria-current={null}
         className="withRouter(NavMenuItem)-nav"
         href="/about"
         onClick={[Function]}
       >
         <li
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -240,9 +249,10 @@ exports[`Storyshots NavMenu logged in 1`] = `
         className="MuiListItem-container"
       >
         <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiListItem-secondaryAction MuiMenuItem-root"
+          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiListItem-secondaryAction MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
           onClick={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -266,6 +276,7 @@ exports[`Storyshots NavMenu logged in 1`] = `
             className="MuiButtonBase-root MuiIconButton-root"
             disabled={false}
             onBlur={[Function]}
+            onContextMenu={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -286,13 +297,16 @@ exports[`Storyshots NavMenu logged in 1`] = `
                 className="MuiSvgIcon-root"
                 focusable="false"
                 onClick={[Function]}
+                role="presentation"
                 viewBox="0 0 24 24"
               >
-                <g>
-                  <path
-                    d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
-                  />
-                </g>
+                <path
+                  d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+                />
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
               </svg>
             </span>
             <span
@@ -307,15 +321,16 @@ exports[`Storyshots NavMenu logged in 1`] = `
         tabIndex={-1}
       />
       <a
-        aria-current="true"
+        aria-current="page"
         className="withRouter(NavMenuItem)-nav withRouter(NavMenuItem)-activeNav"
         href="/"
         onClick={[Function]}
         style={Object {}}
       >
         <li
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -343,14 +358,15 @@ exports[`Storyshots NavMenu logged in 1`] = `
         </li>
       </a>
       <a
-        aria-current={false}
+        aria-current={null}
         className="withRouter(NavMenuItem)-nav"
         href="/auctions/new"
         onClick={[Function]}
       >
         <li
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -383,14 +399,15 @@ exports[`Storyshots NavMenu logged in 1`] = `
         tabIndex={-1}
       />
       <a
-        aria-current={false}
+        aria-current={null}
         className="withRouter(NavMenuItem)-nav"
         href="/rules"
         onClick={[Function]}
       >
         <li
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -418,14 +435,15 @@ exports[`Storyshots NavMenu logged in 1`] = `
         </li>
       </a>
       <a
-        aria-current={false}
+        aria-current={null}
         className="withRouter(NavMenuItem)-nav"
         href="/about"
         onClick={[Function]}
       >
         <li
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -470,9 +488,10 @@ exports[`Storyshots NavMenu not logged in 1`] = `
         className="MuiListItem-container"
       >
         <div
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiListItem-secondaryAction MuiMenuItem-root"
+          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiListItem-secondaryAction MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
           onClick={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -496,6 +515,7 @@ exports[`Storyshots NavMenu not logged in 1`] = `
             className="MuiButtonBase-root MuiIconButton-root"
             disabled={false}
             onBlur={[Function]}
+            onContextMenu={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
             onKeyUp={[Function]}
@@ -516,13 +536,16 @@ exports[`Storyshots NavMenu not logged in 1`] = `
                 className="MuiSvgIcon-root"
                 focusable="false"
                 onClick={[Function]}
+                role="presentation"
                 viewBox="0 0 24 24"
               >
-                <g>
-                  <path
-                    d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
-                  />
-                </g>
+                <path
+                  d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+                />
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
               </svg>
             </span>
             <span
@@ -537,15 +560,16 @@ exports[`Storyshots NavMenu not logged in 1`] = `
         tabIndex={-1}
       />
       <a
-        aria-current="true"
+        aria-current="page"
         className="withRouter(NavMenuItem)-nav withRouter(NavMenuItem)-activeNav"
         href="/"
         onClick={[Function]}
         style={Object {}}
       >
         <li
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -573,14 +597,15 @@ exports[`Storyshots NavMenu not logged in 1`] = `
         </li>
       </a>
       <a
-        aria-current={false}
+        aria-current={null}
         className="withRouter(NavMenuItem)-nav"
         href="/auctions/new"
         onClick={[Function]}
       >
         <li
-          className="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-disabled MuiListItem-button MuiMenuItem-root"
+          className="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-disabled MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -610,14 +635,15 @@ exports[`Storyshots NavMenu not logged in 1`] = `
         tabIndex={-1}
       />
       <a
-        aria-current={false}
+        aria-current={null}
         className="withRouter(NavMenuItem)-nav"
         href="/rules"
         onClick={[Function]}
       >
         <li
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
@@ -645,14 +671,15 @@ exports[`Storyshots NavMenu not logged in 1`] = `
         </li>
       </a>
       <a
-        aria-current={false}
+        aria-current={null}
         className="withRouter(NavMenuItem)-nav"
         href="/about"
         onClick={[Function]}
       >
         <li
-          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+          className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
           onBlur={[Function]}
+          onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}

@@ -32,10 +32,10 @@ class AuctionsList extends Component {
       auctions.length === 0 && !error
         ? 'No auctions available'
         : get(error, 'networkError')
-          ? `[NetworkError]: ${error.networkError}`
-          : error
-            ? JSON.stringify(error.graphQLErrors)
-            : '' //TODO: Find a better way to write this / handle error logic
+        ? `[NetworkError]: ${error.networkError}`
+        : error
+        ? JSON.stringify(error.graphQLErrors)
+        : '' //TODO: Find a better way to write this / handle error logic
 
     return (
       <List>

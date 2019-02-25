@@ -13,14 +13,14 @@ exports[`Storyshots Callback default 1`] = `
 >
   <svg
     className="MuiCircularProgress-svg"
-    viewBox="0 0 50 50"
+    viewBox="22 22 44 44"
   >
     <circle
       className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
-      cx={25}
-      cy={25}
+      cx={44}
+      cy={44}
       fill="none"
-      r={20}
+      r={20.2}
       strokeWidth={3.6}
       style={Object {}}
     />

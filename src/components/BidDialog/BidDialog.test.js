@@ -43,7 +43,7 @@ describe('BidDialog', () => {
   test('click second button calls onSubmit and onClose', async () => {
     const ButtonNodes = wrapper.find(Button)
     await ButtonNodes.at(1).simulate('click')
-    expect(wrapper.instance().props.onSubmit).toBeCalledWith(
+    expect(wrapper.instance().props.onSubmit).toHaveBeenCalledWith(
       expect.objectContaining({
         variables: { amount: expect.any(Number), auctionId: expect.any(String), teamId: expect.any(String) }
       })

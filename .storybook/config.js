@@ -7,6 +7,13 @@ import  { introspectSchema} from 'graphql-tools'
 import octokit from '@octokit/rest'
 import {MockTournament} from '../test/mock-data/get-tournament'
 import {AuthProvider} from '../src/context/AuthContext'
+//import requireContext from 'require-context.macro'
+
+global.window = global;
+window.addEventListener = () => {}
+window.requestAnimationFrame = () => {
+  throw new Error('requestAnimationFrame is not supported in Node')
+}
 
 const generateClassName = (rule, styleSheet) =>
   `${styleSheet.options.classNamePrefix}-${rule.key}`

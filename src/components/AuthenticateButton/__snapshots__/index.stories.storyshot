@@ -2,10 +2,11 @@
 
 exports[`Storyshots AuthenticateButton logged in 1`] = `
 <button
-  className="MuiButtonBase-root MuiButton-root MuiButton-colorInherit MuiButton-flat"
+  className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiButton-colorInherit"
   disabled={false}
   onBlur={[Function]}
   onClick={[Function]}
+  onContextMenu={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
   onKeyUp={[Function]}
@@ -31,10 +32,11 @@ exports[`Storyshots AuthenticateButton logged in 1`] = `
 
 exports[`Storyshots AuthenticateButton not logged in 1`] = `
 <button
-  className="MuiButtonBase-root MuiButton-root MuiButton-colorInherit MuiButton-flat"
+  className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiButton-colorInherit"
   disabled={false}
   onBlur={[Function]}
   onClick={[Function]}
+  onContextMenu={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
   onKeyUp={[Function]}

@@ -6,6 +6,7 @@ exports[`Storyshots BidDialog default 1`] = `
 <div
   aria-labelledby="form-dialog-title"
   className="MuiModal-root MuiDialog-root"
+  onKeyDown={[Function]}
   role="dialog"
 >
   <div
@@ -15,204 +16,217 @@ exports[`Storyshots BidDialog default 1`] = `
     style={
       Object {
         "opacity": 1,
-        "willChange": "opacity",
       }
     }
   />
   <div
-    className="MuiPaper-root MuiPaper-elevation24 MuiPaper-rounded MuiDialog-paper MuiDialog-paperWidthSm"
+    className="MuiDialog-container MuiDialog-scrollPaper"
+    onClick={[Function]}
+    onMouseDown={[Function]}
     role="document"
     style={
       Object {
         "opacity": 1,
-        "willChange": "opacity",
       }
     }
     tabIndex="-1"
   >
     <div
-      className="MuiDialogTitle-root"
-      id="form-dialog-title"
-    >
-      <h2
-        className="MuiTypography-root MuiTypography-title"
-      >
-        Submit Bid
-      </h2>
-    </div>
-    <div
-      className="MuiDialogContent-root BidDialog-root"
+      className="MuiPaper-root MuiPaper-elevation24 MuiPaper-rounded MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm"
     >
       <div
-        className="BidDialog-inputRow"
+        className="MuiDialogTitle-root"
+        id="form-dialog-title"
       >
-        <h1
-          className="MuiTypography-root MuiTypography-headline BidDialog-inputLabel"
+        <h2
+          className="MuiTypography-root MuiTypography-title"
         >
-          Lake Valentine sit
-        </h1>
+          Submit Bid
+        </h2>
+      </div>
+      <div
+        className="MuiDialogContent-root BidDialog-root"
+      >
         <div
-          className="MuiFormControl-root BidDialog-currencyInput"
-          onBlur={[Function]}
-          onFocus={[Function]}
+          className="BidDialog-inputRow"
         >
-          <div
-            className="MuiInput-root MuiInput-formControl MuiInput-underline"
+          <h1
+            className="MuiTypography-root MuiTypography-headline BidDialog-inputLabel"
           >
-            <input
-              aria-invalid={false}
-              aria-required={false}
-              className="MuiInput-input"
-              disabled={false}
-              id="bid-amount"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onMouseUp={[Function]}
-              type="text"
-              value="$120.78"
-            />
+            Lake Valentine sit
+          </h1>
+          <div
+            className="MuiFormControl-root BidDialog-currencyInput"
+          >
             <div
-              className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
+              className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
+              onClick={[Function]}
             >
-              <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-flat CurrencyInputField-stepButton"
+              <input
+                aria-invalid={false}
+                className="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
                 disabled={false}
+                id="bid-amount"
                 onBlur={[Function]}
-                onClick={[Function]}
+                onChange={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
                 onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex="0"
-                type="button"
+                required={false}
+                type="text"
+                value="$120.78"
+              />
+              <div
+                className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
               >
-                <span
-                  className="MuiButton-label"
+                <button
+                  className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat CurrencyInputField-stepButton"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex="0"
+                  type="button"
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="MuiSvgIcon-root"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  <span
+                    className="MuiButton-label"
                   >
-                    <g>
+                    <svg
+                      aria-hidden="true"
+                      className="MuiSvgIcon-root"
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
                       <path
                         d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
                       />
-                    </g>
-                  </svg>
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-              <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-flat CurrencyInputField-stepButton"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex="0"
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    className="MuiTouchRipple-root"
+                  />
+                </button>
+                <button
+                  className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat CurrencyInputField-stepButton"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex="0"
+                  type="button"
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="MuiSvgIcon-root"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  <span
+                    className="MuiButton-label"
                   >
-                    <g>
+                    <svg
+                      aria-hidden="true"
+                      className="MuiSvgIcon-root"
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
                       <path
                         d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                       />
-                    </g>
-                  </svg>
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    className="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
+        <p
+          className="MuiTypography-root MuiDialogContentText-root MuiTypography-subheading MuiTypography-colorTextSecondary"
+        />
       </div>
-      <p
-        className="MuiTypography-root MuiTypography-subheading MuiDialogContentText-root"
-      />
-    </div>
-    <div
-      className="MuiDialogActions-root"
-    >
-      <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-flat MuiDialogActions-action"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex="0"
-        type="button"
+      <div
+        className="MuiDialogActions-root"
       >
-        <span
-          className="MuiButton-label"
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiDialogActions-action"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
         >
-          Cancel
-        </span>
-        <span
-          className="MuiTouchRipple-root"
-        />
-      </button>
-      <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary MuiDialogActions-action"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex="0"
-        type="button"
-      >
-        <span
-          className="MuiButton-label"
+          <span
+            className="MuiButton-label"
+          >
+            Cancel
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary MuiDialogActions-action"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
         >
-          Submit
-        </span>
-        <span
-          className="MuiTouchRipple-root"
-        />
-      </button>
+          <span
+            className="MuiButton-label"
+          >
+            Submit
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -222,6 +236,7 @@ exports[`Storyshots BidDialog loading 1`] = `
 <div
   aria-labelledby="form-dialog-title"
   className="MuiModal-root MuiDialog-root"
+  onKeyDown={[Function]}
   role="dialog"
 >
   <div
@@ -231,222 +246,235 @@ exports[`Storyshots BidDialog loading 1`] = `
     style={
       Object {
         "opacity": 1,
-        "willChange": "opacity",
       }
     }
   />
   <div
-    className="MuiPaper-root MuiPaper-elevation24 MuiPaper-rounded MuiDialog-paper MuiDialog-paperWidthSm"
+    className="MuiDialog-container MuiDialog-scrollPaper"
+    onClick={[Function]}
+    onMouseDown={[Function]}
     role="document"
     style={
       Object {
         "opacity": 1,
-        "willChange": "opacity",
       }
     }
     tabIndex="-1"
   >
     <div
-      className="MuiDialogTitle-root"
-      id="form-dialog-title"
-    >
-      <h2
-        className="MuiTypography-root MuiTypography-title"
-      >
-        Submit Bid
-      </h2>
-    </div>
-    <div
-      className="MuiDialogContent-root BidDialog-root"
+      className="MuiPaper-root MuiPaper-elevation24 MuiPaper-rounded MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm"
     >
       <div
-        className="BidDialog-inputRow"
+        className="MuiDialogTitle-root"
+        id="form-dialog-title"
       >
-        <h1
-          className="MuiTypography-root MuiTypography-headline BidDialog-inputLabel"
+        <h2
+          className="MuiTypography-root MuiTypography-title"
         >
-          Lake Valentine sit
-        </h1>
+          Submit Bid
+        </h2>
+      </div>
+      <div
+        className="MuiDialogContent-root BidDialog-root"
+      >
         <div
-          className="MuiFormControl-root BidDialog-currencyInput"
-          onBlur={[Function]}
-          onFocus={[Function]}
+          className="BidDialog-inputRow"
         >
-          <div
-            className="MuiInput-root MuiInput-formControl MuiInput-underline"
+          <h1
+            className="MuiTypography-root MuiTypography-headline BidDialog-inputLabel"
           >
-            <input
-              aria-invalid={false}
-              aria-required={false}
-              className="MuiInput-input"
-              disabled={false}
-              id="bid-amount"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onMouseUp={[Function]}
-              type="text"
-              value="$120.78"
-            />
+            Lake Valentine sit
+          </h1>
+          <div
+            className="MuiFormControl-root BidDialog-currencyInput"
+          >
             <div
-              className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
+              className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
+              onClick={[Function]}
             >
-              <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-flat CurrencyInputField-stepButton"
+              <input
+                aria-invalid={false}
+                className="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
                 disabled={false}
+                id="bid-amount"
                 onBlur={[Function]}
-                onClick={[Function]}
+                onChange={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
                 onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex="0"
-                type="button"
+                required={false}
+                type="text"
+                value="$120.78"
+              />
+              <div
+                className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
               >
-                <span
-                  className="MuiButton-label"
+                <button
+                  className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat CurrencyInputField-stepButton"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex="0"
+                  type="button"
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="MuiSvgIcon-root"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  <span
+                    className="MuiButton-label"
                   >
-                    <g>
+                    <svg
+                      aria-hidden="true"
+                      className="MuiSvgIcon-root"
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
                       <path
                         d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
                       />
-                    </g>
-                  </svg>
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-              <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-flat CurrencyInputField-stepButton"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex="0"
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    className="MuiTouchRipple-root"
+                  />
+                </button>
+                <button
+                  className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat CurrencyInputField-stepButton"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onContextMenu={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex="0"
+                  type="button"
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="MuiSvgIcon-root"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  <span
+                    className="MuiButton-label"
                   >
-                    <g>
+                    <svg
+                      aria-hidden="true"
+                      className="MuiSvgIcon-root"
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
                       <path
                         d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                       />
-                    </g>
-                  </svg>
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    className="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
+        <p
+          className="MuiTypography-root MuiDialogContentText-root MuiTypography-subheading MuiTypography-colorTextSecondary"
+        />
       </div>
-      <p
-        className="MuiTypography-root MuiTypography-subheading MuiDialogContentText-root"
-      />
-    </div>
-    <div
-      className="MuiDialogActions-root"
-    >
-      <button
-        className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-flat MuiButton-disabled MuiDialogActions-action"
-        disabled={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex="-1"
-        type="button"
-      >
-        <span
-          className="MuiButton-label"
-        >
-          Cancel
-        </span>
-      </button>
-      <button
-        className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary MuiButton-disabled MuiDialogActions-action"
-        disabled={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex="-1"
-        type="button"
-      >
-        <span
-          className="MuiButton-label"
-        >
-          Submit
-        </span>
-      </button>
       <div
-        className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate BidDialog-buttonProgress MuiDialogActions-action"
-        role="progressbar"
-        style={
-          Object {
-            "height": 32,
-            "width": 32,
-          }
-        }
+        className="MuiDialogActions-root"
       >
-        <svg
-          className="MuiCircularProgress-svg"
-          viewBox="0 0 50 50"
+        <button
+          className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-text MuiButton-flat MuiButton-disabled MuiDialogActions-action"
+          disabled={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="-1"
+          type="button"
         >
-          <circle
-            className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
-            cx={25}
-            cy={25}
-            fill="none"
-            r={20}
-            strokeWidth={3.6}
-            style={Object {}}
-          />
-        </svg>
+          <span
+            className="MuiButton-label"
+          >
+            Cancel
+          </span>
+        </button>
+        <button
+          className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary MuiButton-disabled MuiDialogActions-action"
+          disabled={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="-1"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            Submit
+          </span>
+        </button>
+        <div
+          className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate BidDialog-buttonProgress MuiDialogActions-action"
+          role="progressbar"
+          style={
+            Object {
+              "height": 32,
+              "width": 32,
+            }
+          }
+        >
+          <svg
+            className="MuiCircularProgress-svg"
+            viewBox="22 22 44 44"
+          >
+            <circle
+              className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+              cx={44}
+              cy={44}
+              fill="none"
+              r={20.2}
+              strokeWidth={3.6}
+              style={Object {}}
+            />
+          </svg>
+        </div>
       </div>
     </div>
   </div>

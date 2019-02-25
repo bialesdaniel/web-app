@@ -8,7 +8,10 @@ import { createMocksForTournament } from '../../../test/mock-data/get-highest-bi
 storiesOf('Bracket', module).add('default', () => {
   const { name, teams } = new MockBracket()
   return (
-    <MockedProvider mocks={createMocksForTournament({ mockTournament: { tournament: { brackets: [{ teams }] } } })}>
+    <MockedProvider
+      addTypename={false}
+      mocks={createMocksForTournament({ mockTournament: { tournament: { brackets: [{ teams }] } } })}
+    >
       <Bracket name={name} teams={teams} />
     </MockedProvider>
   )

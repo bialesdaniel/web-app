@@ -14,11 +14,9 @@ exports[`Storyshots CreateAuction default 1`] = `
   >
     <div
       className="MuiFormControl-root MuiFormControl-fullWidth CreateAuction-formInput"
-      onBlur={[Function]}
-      onFocus={[Function]}
     >
       <label
-        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+        className="MuiFormLabel-root MuiFormLabel-required MuiInputLabel-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
         data-shrink={false}
         htmlFor="name"
       >
@@ -30,12 +28,12 @@ exports[`Storyshots CreateAuction default 1`] = `
         </span>
       </label>
       <div
-        className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+        className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+        onClick={[Function]}
       >
         <input
           aria-invalid={false}
-          aria-required={true}
-          className="MuiInput-input"
+          className="MuiInputBase-input MuiInput-input"
           disabled={false}
           id="name"
           onBlur={[Function]}
@@ -52,6 +50,7 @@ exports[`Storyshots CreateAuction default 1`] = `
     className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary"
     disabled={false}
     onBlur={[Function]}
+    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -89,30 +88,28 @@ exports[`Storyshots CreateAuction error 1`] = `
     className="CreateAuction-formRow"
   >
     <div
-      aria-describedby="name-helper-text"
       className="MuiFormControl-root MuiFormControl-fullWidth CreateAuction-formInput"
-      onBlur={[Function]}
-      onFocus={[Function]}
     >
       <label
-        className="MuiFormLabel-root MuiFormLabel-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+        className="MuiFormLabel-root MuiFormLabel-error MuiInputLabel-error MuiFormLabel-required MuiInputLabel-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
         data-shrink={false}
         htmlFor="name"
       >
         Name
         <span
-          className="MuiFormLabel-asterisk MuiFormLabel-error"
+          className="MuiFormLabel-asterisk MuiFormLabel-error MuiInputLabel-error"
         >
            *
         </span>
       </label>
       <div
-        className="MuiInput-root MuiInput-error MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+        className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-error MuiInput-error MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+        onClick={[Function]}
       >
         <input
+          aria-describedby="name-helper-text"
           aria-invalid={true}
-          aria-required={true}
-          className="MuiInput-input"
+          className="MuiInputBase-input MuiInput-input"
           disabled={false}
           id="name"
           onBlur={[Function]}
@@ -124,7 +121,7 @@ exports[`Storyshots CreateAuction error 1`] = `
         />
       </div>
       <p
-        className="MuiFormHelperText-root MuiFormHelperText-error"
+        className="MuiFormHelperText-root MuiFormHelperText-error MuiFormHelperText-required"
         id="name-helper-text"
       >
         there was an error
@@ -135,6 +132,7 @@ exports[`Storyshots CreateAuction error 1`] = `
     className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary"
     disabled={false}
     onBlur={[Function]}
+    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -173,11 +171,9 @@ exports[`Storyshots CreateAuction loading 1`] = `
   >
     <div
       className="MuiFormControl-root MuiFormControl-fullWidth CreateAuction-formInput"
-      onBlur={[Function]}
-      onFocus={[Function]}
     >
       <label
-        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+        className="MuiFormLabel-root MuiFormLabel-required MuiInputLabel-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
         data-shrink={false}
         htmlFor="name"
       >
@@ -189,12 +185,12 @@ exports[`Storyshots CreateAuction loading 1`] = `
         </span>
       </label>
       <div
-        className="MuiInput-root MuiInput-fullWidth MuiInput-formControl MuiInput-underline"
+        className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+        onClick={[Function]}
       >
         <input
           aria-invalid={false}
-          aria-required={true}
-          className="MuiInput-input"
+          className="MuiInputBase-input MuiInput-input"
           disabled={false}
           id="name"
           onBlur={[Function]}
@@ -211,6 +207,7 @@ exports[`Storyshots CreateAuction loading 1`] = `
     className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary MuiButton-disabled"
     disabled={true}
     onBlur={[Function]}
+    onContextMenu={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -241,14 +238,14 @@ exports[`Storyshots CreateAuction loading 1`] = `
   >
     <svg
       className="MuiCircularProgress-svg"
-      viewBox="0 0 50 50"
+      viewBox="22 22 44 44"
     >
       <circle
         className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
-        cx={25}
-        cy={25}
+        cx={44}
+        cy={44}
         fill="none"
-        r={20}
+        r={20.2}
         strokeWidth={3.6}
         style={Object {}}
       />

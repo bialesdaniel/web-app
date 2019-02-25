@@ -3,9 +3,7 @@ import gql from 'graphql-tag'
 casual.seed(42)
 export const MockBid = {
   highestBid: {
-    __typename: 'Bid',
     user: {
-      __typename: 'User',
       username: casual.username
     },
     amount: casual.double(0, 150)
@@ -28,7 +26,7 @@ export function createMocksForTournament({ mockTournament }) {
   return teams.map(team => ({
     request: {
       query: GET_HIGHEST_BID_QUERY,
-      variables: { teamId: team.id }
+      variables: { auctionId: undefined, teamId: team.id }
     },
     result: { data: MockBid }
   }))
