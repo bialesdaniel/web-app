@@ -47,8 +47,8 @@ class Header extends Component {
           <AuthConsumer>
             {({ auth }) => (
               <Toolbar>
-                <IconButton className={classes.menuButton} aria-label="Menu">
-                  <MenuIcon onClick={this.toggleMenu} />
+                <IconButton className={classes.menuButton} aria-label="Menu" onClick={this.toggleMenu}>
+                  <MenuIcon />
                 </IconButton>
                 <NavMenu open={isMenuOpen} toggleMenu={this.toggleMenu} isAuthenticated={auth.isAuthenticated} />
 

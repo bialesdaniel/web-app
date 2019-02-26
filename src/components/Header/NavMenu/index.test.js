@@ -1,6 +1,6 @@
 import React from 'react'
 import { createShallow } from '@material-ui/core/test-utils'
-import MenuItem from '@material-ui/core/MenuItem'
+import IconButton from '@material-ui/core/IconButton'
 import NavMenu from './index'
 import NavMenuItem from '../NavMenuItem'
 
@@ -8,7 +8,7 @@ describe('NavMenu', () => {
   let wrapper
   let shallow
   beforeEach(() => {
-    shallow = createShallow()
+    shallow = createShallow({ dive: true })
     wrapper = shallow(<NavMenu open={true} isLoggedIn={true} toggleMenu={jest.fn()} isAuthenticated={() => false} />)
   })
   afterEach(() => {
@@ -22,8 +22,8 @@ describe('NavMenu', () => {
     expect(wrapper.find(NavMenuItem)).toHaveLength(4)
   })
   test('Back button calls toggleMenu', () => {
-    const MenuItemNode = wrapper.find(MenuItem)
-    MenuItemNode.simulate('click')
+    const IconButtonNode = wrapper.find(IconButton)
+    IconButtonNode.childAt(0).simulate('click')
     expect(wrapper.instance().props.toggleMenu).toHaveBeenCalled()
   })
   test('Home NavMenuItem calls toggleMenu', () => {

@@ -15,6 +15,7 @@ exports[`Storyshots Header logged in 1`] = `
         className="MuiButtonBase-root MuiIconButton-root withRouter(Header)-menuButton"
         disabled={false}
         onBlur={[Function]}
+        onClick={[Function]}
         onContextMenu={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -35,7 +36,6 @@ exports[`Storyshots Header logged in 1`] = `
             aria-hidden="true"
             className="MuiSvgIcon-root"
             focusable="false"
-            onClick={[Function]}
             role="presentation"
             viewBox="0 0 24 24"
           >
@@ -60,13 +60,16 @@ exports[`Storyshots Header logged in 1`] = `
             onKeyDown={[Function]}
             role="menu"
           >
-            <li
-              className="MuiListItem-container"
+            <div
+              className="NavMenu-drawerHeader"
+              key=".0"
+              onFocus={[Function]}
+              tabIndex={0}
             >
-              <div
-                className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiListItem-secondaryAction MuiMenuItem-root MuiMenuItem-gutters"
+              <button
+                className="MuiButtonBase-root MuiIconButton-root"
+                disabled={false}
                 onBlur={[Function]}
-                onClick={[Function]}
                 onContextMenu={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
@@ -77,59 +80,34 @@ exports[`Storyshots Header logged in 1`] = `
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
-                role="menuitem"
-                tabIndex={0}
+                tabIndex="0"
+                type="button"
               >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root"
+                    focusable="false"
+                    onClick={[Function]}
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+                    />
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
                 <span
                   className="MuiTouchRipple-root"
                 />
-              </div>
-              <div
-                className="MuiListItemSecondaryAction-root"
-              >
-                <button
-                  className="MuiButtonBase-root MuiIconButton-root"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onContextMenu={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex="0"
-                  type="button"
-                >
-                  <span
-                    className="MuiIconButton-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="MuiSvgIcon-root"
-                      focusable="false"
-                      onClick={[Function]}
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
-                      />
-                      <path
-                        d="M0 0h24v24H0V0z"
-                        fill="none"
-                      />
-                    </svg>
-                  </span>
-                  <span
-                    className="MuiTouchRipple-root"
-                  />
-                </button>
-              </div>
-            </li>
+              </button>
+            </div>
             <hr
               className="MuiDivider-root"
               onFocus={[Function]}
@@ -343,6 +321,7 @@ exports[`Storyshots Header not logged in 1`] = `
         className="MuiButtonBase-root MuiIconButton-root withRouter(Header)-menuButton"
         disabled={false}
         onBlur={[Function]}
+        onClick={[Function]}
         onContextMenu={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -363,7 +342,6 @@ exports[`Storyshots Header not logged in 1`] = `
             aria-hidden="true"
             className="MuiSvgIcon-root"
             focusable="false"
-            onClick={[Function]}
             role="presentation"
             viewBox="0 0 24 24"
           >
@@ -388,13 +366,16 @@ exports[`Storyshots Header not logged in 1`] = `
             onKeyDown={[Function]}
             role="menu"
           >
-            <li
-              className="MuiListItem-container"
+            <div
+              className="NavMenu-drawerHeader"
+              key=".0"
+              onFocus={[Function]}
+              tabIndex={0}
             >
-              <div
-                className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiListItem-secondaryAction MuiMenuItem-root MuiMenuItem-gutters"
+              <button
+                className="MuiButtonBase-root MuiIconButton-root"
+                disabled={false}
                 onBlur={[Function]}
-                onClick={[Function]}
                 onContextMenu={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
@@ -405,59 +386,34 @@ exports[`Storyshots Header not logged in 1`] = `
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
-                role="menuitem"
-                tabIndex={0}
+                tabIndex="0"
+                type="button"
               >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root"
+                    focusable="false"
+                    onClick={[Function]}
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+                    />
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
                 <span
                   className="MuiTouchRipple-root"
                 />
-              </div>
-              <div
-                className="MuiListItemSecondaryAction-root"
-              >
-                <button
-                  className="MuiButtonBase-root MuiIconButton-root"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onContextMenu={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex="0"
-                  type="button"
-                >
-                  <span
-                    className="MuiIconButton-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="MuiSvgIcon-root"
-                      focusable="false"
-                      onClick={[Function]}
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
-                      />
-                      <path
-                        d="M0 0h24v24H0V0z"
-                        fill="none"
-                      />
-                    </svg>
-                  </span>
-                  <span
-                    className="MuiTouchRipple-root"
-                  />
-                </button>
-              </div>
-            </li>
+              </button>
+            </div>
             <hr
               className="MuiDivider-root"
               onFocus={[Function]}

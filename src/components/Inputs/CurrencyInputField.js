@@ -14,7 +14,6 @@ class CurrencyNumberFormat extends Component {
     return (
       <NumberFormat
         {...other}
-        ref={inputRef}
         onValueChange={values => {
           onChange({ target: { value: values.value } })
         }}

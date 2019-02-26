@@ -59,7 +59,7 @@ class CreateAuction extends Component {
             onChange={this.handleFieldChange('name')}
           />
         </div>
-        <Button variant="raised" color="primary" type="submit" disabled={loading}>
+        <Button variant="contained" color="primary" type="submit" disabled={loading}>
           Create
         </Button>
         {loading && <CircularProgress size={32} className={classes.buttonProgress} />}

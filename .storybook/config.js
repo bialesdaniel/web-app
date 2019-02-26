@@ -9,7 +9,10 @@ import {MockTournament} from '../test/mock-data/get-tournament'
 import {AuthProvider} from '../src/context/AuthContext'
 //import requireContext from 'require-context.macro'
 
-global.window = global;
+if (typeof window !== 'object') {
+  global.window = global;
+  global.window.navigator = {};
+}
 window.addEventListener = () => {}
 window.requestAnimationFrame = () => {
   throw new Error('requestAnimationFrame is not supported in Node')

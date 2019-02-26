@@ -11,6 +11,7 @@ storiesOf('Team', module).add('gql', () => {
   const auctionId = casual.uuid
   return (
     <MockedProvider
+      addTypename={false}
       mocks={[
         {
           request: { query: GET_HIGHEST_BID_QUERY, variables: { auctionId, teamId } },

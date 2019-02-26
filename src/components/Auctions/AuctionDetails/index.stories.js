@@ -13,6 +13,7 @@ storiesOf('AuctionDetails', module).add('gql', () => {
   const year = date.getMonth() <= 3 ? date.getYear() - 1 : date.getYear()
   return (
     <MockedProvider
+      addTypename={false}
       mocks={[
         {
           request: { query: GET_TOURNAMENT_QUERY, variables: { year } },

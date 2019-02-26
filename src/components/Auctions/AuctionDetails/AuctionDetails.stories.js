@@ -10,6 +10,7 @@ storiesOf('AuctionDetails', module).add('default', () => {
   const date = casual.moment.toISOString()
   return (
     <MockedProvider
+      addTypename={false}
       mocks={[
         {
           request: { query: GET_TOURNAMENT_QUERY, variables: { year: new Date(date).getYear() } },
