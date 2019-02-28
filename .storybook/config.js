@@ -7,7 +7,7 @@ import  { introspectSchema} from 'graphql-tools'
 import octokit from '@octokit/rest'
 import {MockTournament} from '../test/mock-data/get-tournament'
 import {AuthProvider} from '../src/context/AuthContext'
-//import requireContext from 'require-context.macro'
+import requireContext from 'require-context.macro'
 
 if (typeof window !== 'object') {
   global.window = global
@@ -30,7 +30,7 @@ addDecorator(story => <BrowserRouter>{story()}</BrowserRouter>)
 addDecorator(story=><AuthProvider authMethods={{isAuthenticated:()=>false}}>{story()}</AuthProvider>)
 
 function loadStories() {
-  const req = require.context('../src/',true,/\.stories\.js$/)
+  const req = requireContext('../src/',true,/\.stories\.js$/)
   req.keys().forEach(filename => req(filename))
 }
 
