@@ -10,7 +10,7 @@ import {AuthProvider} from '../src/context/AuthContext'
 //import requireContext from 'require-context.macro'
 
 if (typeof window !== 'object') {
-  global.window = global;
+  global.window = global
   global.window.navigator = {};
 }
 window.addEventListener = () => {}
