@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots NavMenuItem default 1`] = `
+exports[`Storyshots Navigation|NavMenuItem default 1`] = `
 <a
   aria-current={null}
   className="withRouter(NavMenuItem)-nav"
@@ -39,7 +39,7 @@ exports[`Storyshots NavMenuItem default 1`] = `
 </a>
 `;
 
-exports[`Storyshots NavMenuItem disabled 1`] = `
+exports[`Storyshots Navigation|NavMenuItem disabled 1`] = `
 <a
   aria-current={null}
   className="withRouter(NavMenuItem)-nav"
@@ -75,7 +75,7 @@ exports[`Storyshots NavMenuItem disabled 1`] = `
 </a>
 `;
 
-exports[`Storyshots NavMenuItem disabled with onDisabledClick function 1`] = `
+exports[`Storyshots Navigation|NavMenuItem disabled with onDisabledClick function 1`] = `
 <a
   aria-current={null}
   className="withRouter(NavMenuItem)-nav"
@@ -111,7 +111,7 @@ exports[`Storyshots NavMenuItem disabled with onDisabledClick function 1`] = `
 </a>
 `;
 
-exports[`Storyshots NavMenuItem with onClick function 1`] = `
+exports[`Storyshots Navigation|NavMenuItem with onClick function 1`] = `
 <a
   aria-current={null}
   className="withRouter(NavMenuItem)-nav"

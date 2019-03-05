@@ -6,7 +6,7 @@ import { GET_TOURNAMENT_QUERY, MockTournament } from '../../../../test/mock-data
 import { createMocksForTournament } from '../../../../test/mock-data/get-highest-bid'
 import AuctionDetails from './AuctionDetails'
 
-storiesOf('AuctionDetails', module).add('default', () => {
+storiesOf('Auctions|AuctionDetails', module).add('default', () => {
   const date = casual.moment.toISOString()
   return (
     <MockedProvider

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Team default 1`] = `
+exports[`Storyshots Tournaments|Team default 1`] = `
 <ul
   className="MuiList-root MuiList-padding"
 >
@@ -56,63 +56,7 @@ exports[`Storyshots Team default 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Team gql 1`] = `
-<ul
-  className="MuiList-root MuiList-padding"
->
-  <li
-    className="MuiListItem-container"
-  >
-    <div
-      className="MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-secondaryAction"
-      disabled={false}
-    >
-      <div
-        className="MuiListItemText-root Team-text"
-      >
-        <span
-          className="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
-        >
-          15. South Aniyah perferendis
-        </span>
-      </div>
-    </div>
-    <div
-      className="MuiListItemSecondaryAction-root"
-    >
-      <div>
-        <button
-          className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
-          disabled={true}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onContextMenu={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex="-1"
-          type="button"
-        >
-          <span
-            className="MuiButton-label"
-          >
-            $
-            0
-          </span>
-        </button>
-      </div>
-    </div>
-  </li>
-</ul>
-`;
-
-exports[`Storyshots Team with bid 1`] = `
+exports[`Storyshots Tournaments|Team with bid 1`] = `
 <ul
   className="MuiList-root MuiList-padding"
 >

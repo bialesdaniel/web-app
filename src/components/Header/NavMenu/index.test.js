@@ -23,7 +23,7 @@ describe('NavMenu', () => {
   })
   test('Back button calls toggleMenu', () => {
     const IconButtonNode = wrapper.find(IconButton)
-    IconButtonNode.childAt(0).simulate('click')
+    IconButtonNode.simulate('click')
     expect(wrapper.instance().props.toggleMenu).toHaveBeenCalled()
   })
   test('Home NavMenuItem calls toggleMenu', () => {

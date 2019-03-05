@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots BidButton default 1`] = `
+exports[`Storyshots Bids|BidButton default 1`] = `
 <div>
   <button
     className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
@@ -30,7 +30,7 @@ exports[`Storyshots BidButton default 1`] = `
 </div>
 `;
 
-exports[`Storyshots BidButton disabled 1`] = `
+exports[`Storyshots Bids|BidButton disabled 1`] = `
 <div>
   <button
     className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"

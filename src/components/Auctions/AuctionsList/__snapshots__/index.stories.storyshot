@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots AuctionsList default 1`] = `
+exports[`Storyshots Auctions|AuctionsList default 1`] = `
 <ul
   className="MuiList-root MuiList-padding"
 >
@@ -213,7 +213,7 @@ exports[`Storyshots AuctionsList default 1`] = `
 </ul>
 `;
 
-exports[`Storyshots AuctionsList loading 1`] = `
+exports[`Storyshots Auctions|AuctionsList loading 1`] = `
 <ul
   className="MuiList-root MuiList-padding"
 >
@@ -315,7 +315,7 @@ exports[`Storyshots AuctionsList loading 1`] = `
 </ul>
 `;
 
-exports[`Storyshots AuctionsList no auctions 1`] = `
+exports[`Storyshots Auctions|AuctionsList no auctions 1`] = `
 <ul
   className="MuiList-root MuiList-padding"
 >

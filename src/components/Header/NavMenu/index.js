@@ -32,8 +32,8 @@ class NavMenu extends Component {
         <SwipeableDrawer open={open} onOpen={toggleMenu} onClose={toggleMenu}>
           <MenuList>
             <div className={classes.drawerHeader}>
-              <IconButton>
-                <KeyboardArrowLeftIcon onClick={toggleMenu} />
+              <IconButton onClick={toggleMenu}>
+                <KeyboardArrowLeftIcon />
               </IconButton>
             </div>
             <Divider />

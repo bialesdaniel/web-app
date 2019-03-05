@@ -5,7 +5,7 @@ import Tournament from './Tournament'
 import MockTournament from '../../../test/mock-data/Tournament'
 import { createMocksForTournament } from '../../../test/mock-data/get-highest-bid'
 
-storiesOf('Tournament', module).add('default', () => {
+storiesOf('Tournaments|Tournament', module).add('default', () => {
   const { brackets } = new MockTournament()
   return (
     <MockedProvider

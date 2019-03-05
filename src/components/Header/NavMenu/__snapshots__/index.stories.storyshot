@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots NavMenu closed 1`] = `
+exports[`Storyshots Navigation|NavMenu closed 1`] = `
 <div>
   <div>
     <ul
@@ -19,6 +19,7 @@ exports[`Storyshots NavMenu closed 1`] = `
           className="MuiButtonBase-root MuiIconButton-root"
           disabled={false}
           onBlur={[Function]}
+          onClick={[Function]}
           onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -39,7 +40,6 @@ exports[`Storyshots NavMenu closed 1`] = `
               aria-hidden="true"
               className="MuiSvgIcon-root"
               focusable="false"
-              onClick={[Function]}
               role="presentation"
               viewBox="0 0 24 24"
             >
@@ -214,7 +214,7 @@ exports[`Storyshots NavMenu closed 1`] = `
 </div>
 `;
 
-exports[`Storyshots NavMenu logged in 1`] = `
+exports[`Storyshots Navigation|NavMenu logged in 1`] = `
 <div>
   <div>
     <ul
@@ -233,6 +233,7 @@ exports[`Storyshots NavMenu logged in 1`] = `
           className="MuiButtonBase-root MuiIconButton-root"
           disabled={false}
           onBlur={[Function]}
+          onClick={[Function]}
           onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -253,7 +254,6 @@ exports[`Storyshots NavMenu logged in 1`] = `
               aria-hidden="true"
               className="MuiSvgIcon-root"
               focusable="false"
-              onClick={[Function]}
               role="presentation"
               viewBox="0 0 24 24"
             >
@@ -431,7 +431,7 @@ exports[`Storyshots NavMenu logged in 1`] = `
 </div>
 `;
 
-exports[`Storyshots NavMenu not logged in 1`] = `
+exports[`Storyshots Navigation|NavMenu not logged in 1`] = `
 <div>
   <div>
     <ul
@@ -450,6 +450,7 @@ exports[`Storyshots NavMenu not logged in 1`] = `
           className="MuiButtonBase-root MuiIconButton-root"
           disabled={false}
           onBlur={[Function]}
+          onClick={[Function]}
           onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -470,7 +471,6 @@ exports[`Storyshots NavMenu not logged in 1`] = `
               aria-hidden="true"
               className="MuiSvgIcon-root"
               focusable="false"
-              onClick={[Function]}
               role="presentation"
               viewBox="0 0 24 24"
             >

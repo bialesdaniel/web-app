@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Bracket default 1`] = `
+exports[`Storyshots Tournaments|Bracket default 1`] = `
 <div
   className="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded Bracket-root"
 >

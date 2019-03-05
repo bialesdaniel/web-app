@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots AuthenticateButton logged in 1`] = `
+exports[`Storyshots Authentication|AuthenticateButton logged in 1`] = `
 <button
   className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiButton-colorInherit"
   disabled={false}
   onBlur={[Function]}
-  onClick={[Function]}
+  onClick={[MockFunction]}
   onContextMenu={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
@@ -30,12 +30,12 @@ exports[`Storyshots AuthenticateButton logged in 1`] = `
 </button>
 `;
 
-exports[`Storyshots AuthenticateButton not logged in 1`] = `
+exports[`Storyshots Authentication|AuthenticateButton not logged in 1`] = `
 <button
   className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiButton-colorInherit"
   disabled={false}
   onBlur={[Function]}
-  onClick={[Function]}
+  onClick={[MockFunction]}
   onContextMenu={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}

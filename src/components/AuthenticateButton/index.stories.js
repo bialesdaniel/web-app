@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { AuthProvider } from '../../context/AuthContext'
 import AuthenticateButton from './index'
 
-storiesOf('AuthenticateButton', module)
+storiesOf('Authentication|AuthenticateButton', module)
   .add('not logged in', () => (
     <AuthProvider authMethods={{ isAuthenticated: () => false }}>
       <AuthenticateButton />

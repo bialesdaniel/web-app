@@ -5,7 +5,7 @@ import { AuthProvider } from '../../context/AuthContext'
 import casual from 'casual-browserify'
 import BidButton from './index'
 
-storiesOf('BidButton', module)
+storiesOf('Bids|BidButton', module)
   .add('default', () => (
     <MockedProvider>
       <AuthProvider authMethods={{ isAuthenticated: () => true }}>

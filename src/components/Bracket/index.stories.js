@@ -5,7 +5,7 @@ import Bracket from './index'
 import MockBracket from '../../../test/mock-data/Bracket'
 import { createMocksForTournament } from '../../../test/mock-data/get-highest-bid'
 
-storiesOf('Bracket', module).add('default', () => {
+storiesOf('Tournaments|Bracket', module).add('default', () => {
   const { name, teams } = new MockBracket()
   return (
     <MockedProvider

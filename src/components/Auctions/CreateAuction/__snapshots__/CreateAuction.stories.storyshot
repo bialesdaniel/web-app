@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots CreateAuction default 1`] = `
+exports[`Storyshots Auctions|CreateAuction default 1`] = `
 <form
   onSubmit={[Function]}
 >
@@ -75,7 +75,7 @@ exports[`Storyshots CreateAuction default 1`] = `
 </form>
 `;
 
-exports[`Storyshots CreateAuction error 1`] = `
+exports[`Storyshots Auctions|CreateAuction error 1`] = `
 <form
   onSubmit={[Function]}
 >
@@ -157,7 +157,7 @@ exports[`Storyshots CreateAuction error 1`] = `
 </form>
 `;
 
-exports[`Storyshots CreateAuction loading 1`] = `
+exports[`Storyshots Auctions|CreateAuction loading 1`] = `
 <form
   onSubmit={[Function]}
 >

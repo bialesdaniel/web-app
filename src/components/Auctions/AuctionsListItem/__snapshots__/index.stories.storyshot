@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots AuctionsListItem default 1`] = `
+exports[`Storyshots Auctions|AuctionsListItem default 1`] = `
 <div
   className="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-divider MuiListItem-button"
   onBlur={[Function]}

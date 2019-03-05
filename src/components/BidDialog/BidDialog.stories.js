@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions'
 import casual from 'casual-browserify'
 import BidDialog from './BidDialog'
 
-storiesOf('BidDialog', module)
+storiesOf('Bids|BidDialog', module)
   .add('default', () => (
     <BidDialog
       isOpen={true}

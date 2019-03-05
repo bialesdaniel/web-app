@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { AuthProvider } from '../../context/AuthContext'
 import Header from './index'
 
-storiesOf('Header', module)
+storiesOf('Navigation|Header', module)
   .add('logged in', () => (
     <AuthProvider authMethods={{ isAuthenticated: () => true }}>
       <Header location={{ pathname: '/' }} />

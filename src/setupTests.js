@@ -1,6 +1,5 @@
 import { configure } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-//import Adapter from 'enzyme-react-adapter-future'
 import 'jest-enzyme'
 import casual from 'casual-browserify'
 import initStoryshots, { multiSnapshotWithOptions } from '@storybook/addon-storyshots'

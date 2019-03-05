@@ -7,7 +7,7 @@ import { GET_TOURNAMENT_QUERY, MockTournament } from '../../../../test/mock-data
 import { createMocksForTournament } from '../../../../test/mock-data/get-highest-bid'
 import AuctionDetails from './index'
 
-storiesOf('AuctionDetails', module).add('gql', () => {
+storiesOf('Auctions|AuctionDetails', module).add('gql', () => {
   const auctionId = casual.uuid
   const date = new Date(MockAuction.auction.createdAt)
   const year = date.getMonth() <= 3 ? date.getYear() - 1 : date.getYear()

@@ -8,7 +8,7 @@ import Tournament from './index'
 
 const date = new Date(casual.moment.toISOString())
 const year = date.getMonth() <= 3 ? date.getYear() - 1 : date.getYear()
-storiesOf('Tournament', module).add('gql', () => (
+storiesOf('Tournaments|Tournament', module).add('gql', () => (
   <MockedProvider
     addTypename={false}
     mocks={[

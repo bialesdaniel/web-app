@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Callback default 1`] = `
+exports[`Storyshots Authentication|Callback default 1`] = `
 <div
   className="MuiCircularProgress-root MuiCircularProgress-colorSecondary MuiCircularProgress-indeterminate"
   role="progressbar"

@@ -6,7 +6,7 @@ import List from '@material-ui/core/List'
 import { GET_HIGHEST_BID_QUERY, MockBid } from '../../../test/mock-data/get-highest-bid'
 import Team from './index'
 
-storiesOf('Team', module).add('gql', () => {
+storiesOf('Tournaments|Team', module).add('gql', () => {
   const teamId = casual.uuid
   const auctionId = casual.uuid
   return (

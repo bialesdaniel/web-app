@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Header logged in 1`] = `
+exports[`Storyshots Navigation|Header logged in 1`] = `
 <div
   className="withRouter(Header)-root"
 >
@@ -70,6 +70,7 @@ exports[`Storyshots Header logged in 1`] = `
                 className="MuiButtonBase-root MuiIconButton-root"
                 disabled={false}
                 onBlur={[Function]}
+                onClick={[Function]}
                 onContextMenu={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
@@ -90,7 +91,6 @@ exports[`Storyshots Header logged in 1`] = `
                     aria-hidden="true"
                     className="MuiSvgIcon-root"
                     focusable="false"
-                    onClick={[Function]}
                     role="presentation"
                     viewBox="0 0 24 24"
                   >
@@ -278,7 +278,7 @@ exports[`Storyshots Header logged in 1`] = `
         className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiButton-colorInherit"
         disabled={false}
         onBlur={[Function]}
-        onClick={[Function]}
+        onClick={[MockFunction]}
         onContextMenu={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -306,7 +306,7 @@ exports[`Storyshots Header logged in 1`] = `
 </div>
 `;
 
-exports[`Storyshots Header not logged in 1`] = `
+exports[`Storyshots Navigation|Header not logged in 1`] = `
 <div
   className="withRouter(Header)-root"
 >
@@ -376,6 +376,7 @@ exports[`Storyshots Header not logged in 1`] = `
                 className="MuiButtonBase-root MuiIconButton-root"
                 disabled={false}
                 onBlur={[Function]}
+                onClick={[Function]}
                 onContextMenu={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
@@ -396,7 +397,6 @@ exports[`Storyshots Header not logged in 1`] = `
                     aria-hidden="true"
                     className="MuiSvgIcon-root"
                     focusable="false"
-                    onClick={[Function]}
                     role="presentation"
                     viewBox="0 0 24 24"
                   >
@@ -584,7 +584,7 @@ exports[`Storyshots Header not logged in 1`] = `
         className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiButton-colorInherit"
         disabled={false}
         onBlur={[Function]}
-        onClick={[Function]}
+        onClick={[MockFunction]}
         onContextMenu={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}

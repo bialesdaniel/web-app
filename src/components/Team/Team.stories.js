@@ -5,7 +5,7 @@ import { MockedProvider } from 'react-apollo/test-utils'
 import casual from 'casual-browserify'
 import Team from './Team'
 
-storiesOf('Team', module)
+storiesOf('Tournaments|Team', module)
   .add('default', () => (
     <MockedProvider>
       <List>
