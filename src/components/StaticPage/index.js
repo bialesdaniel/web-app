@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import ReactMarkdown from 'react-markdown'
 import axios from 'axios'
 import { withStyles } from '@material-ui/core/styles'
-const CancelToken = axios.CancelToken //Only needed because storyshots unmount before componentDidMount called
-const { token, cancel } = CancelToken.source()
+const { CancelToken } = axios //Only needed because storyshots unmount before componentDidMount called
 
 const styles = {
   root: {
@@ -14,43 +13,27 @@ const styles = {
   }
 }
 
-class StaticPage extends Component {
-  state = {
-    markdownContent: ''
-  }
+const StaticPage = ({ markdownSource, classes }) => {
+  const [markdownContent, setMarkdownContent] = useState('')
 
-  async setMarkdownContent() {
-    const { markdownSource } = this.props
-    try {
-      const { data: markdownContent } = await axios.get(markdownSource, { cancelToken: token })
-      this.setState({ markdownContent })
-    } catch (e) {
-      if (!axios.isCancel(e)) {
-        this.setState({ markdownContent: e.message })
+  useEffect(() => {
+    const { token, cancel } = CancelToken.source()
+    const getMarkdownContent = async () => {
+      try {
+        const { data } = await axios.get(markdownSource, { cancelToken: token })
+        setMarkdownContent(data)
+      } catch (e) {
+        if (!axios.isCancel(e)) {
+          setMarkdownContent(e.message)
+        }
       }
     }
-  }
+    getMarkdownContent()
+    return cancel
+  }, [markdownSource])
 
-  async componentDidMount() {
-    await this.setMarkdownContent()
-  }
-
-  async componentDidUpdate(prevProps) {
-    const { markdownSource } = this.props
-    if (prevProps.markdownSource !== markdownSource) {
-      await this.setMarkdownContent()
-    }
-  }
-
-  componentWillUnmount() {
-    cancel()
-  }
-
-  render() {
-    const { markdownContent } = this.state
-    const { classes } = this.props
-    return <ReactMarkdown className={classes.root} source={markdownContent} escapeHtml={false} />
-  }
+  const { root } = classes
+  return <ReactMarkdown className={root} source={markdownContent} escapeHtml={false} />
 }
 
 StaticPage.propTypes = {
