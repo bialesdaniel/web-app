@@ -1,24 +1,33 @@
 import React from 'react'
-import { createShallow } from '@material-ui/core/test-utils'
+import { createMount } from '@material-ui/core/test-utils'
 import IconButton from '@material-ui/core/IconButton'
+import { BrowserRouter } from 'react-router-dom'
 import NavMenu from './index'
 import NavMenuItem from '../NavMenuItem'
+import { AuthProvider } from '../../../context/AuthContext'
 
 describe('NavMenu', () => {
   let wrapper
-  let shallow
+  let mount
   let toggleMenuMock
+  let isAuthenticated
   beforeEach(() => {
     toggleMenuMock = jest.fn()
-    shallow = createShallow({ dive: true })
-    wrapper = shallow(
-      <NavMenu open={true} isLoggedIn={true} toggleMenu={toggleMenuMock} isAuthenticated={() => false} />
+    isAuthenticated = jest.fn(false)
+    mount = createMount()
+    wrapper = mount(
+      <BrowserRouter>
+        <AuthProvider authMethods={{ isAuthenticated }}>
+          <NavMenu open={true} toggleMenu={toggleMenuMock} />
+        </AuthProvider>
+      </BrowserRouter>
     )
   })
   afterEach(() => {
     wrapper.unmount()
-    shallow = null
+    mount = null
     toggleMenuMock = null
+    isAuthenticated = null
   })
   test('renders', () => {
     expect(wrapper).toExist()
@@ -37,6 +46,15 @@ describe('NavMenu', () => {
     expect(toggleMenuMock).toHaveBeenCalled()
   })
   test('Create Auction NavMenuItem calls toggleMenu', () => {
+    wrapper.unmount()
+    isAuthenticated.mockReturnValue(true)
+    wrapper = mount(
+      <BrowserRouter>
+        <AuthProvider authMethods={{ isAuthenticated }}>
+          <NavMenu open={true} toggleMenu={toggleMenuMock} />
+        </AuthProvider>
+      </BrowserRouter>
+    )
     const CreateAuctionMenuItemNode = wrapper.findWhere(
       node => node.type() === NavMenuItem && node.prop('label') === 'Create Auction'
     )

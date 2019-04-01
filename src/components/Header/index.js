@@ -44,7 +44,7 @@ const Header = ({ classes, location }) => {
           <IconButton className={menuButton} aria-label="Menu" onClick={toggleMenu}>
             <MenuIcon />
           </IconButton>
-          <NavMenu open={isMenuOpen} toggleMenu={toggleMenu} isAuthenticated={auth.isAuthenticated} />
+          <NavMenu open={isMenuOpen} toggleMenu={toggleMenu} />
 
           <Link to="/" replace={pathname === '/'} className={headerLink}>
             <Typography variant="title" color="inherit">
@@ -58,7 +58,7 @@ const Header = ({ classes, location }) => {
             </IconButton>
           )}
 
-          <AuthenticateButton login={auth.login} logout={auth.logout} />
+          <AuthenticateButton />
         </Toolbar>
       </AppBar>
     </div>

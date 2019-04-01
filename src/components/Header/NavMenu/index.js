@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import PropTypes from 'prop-types'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
 import MenuList from '@material-ui/core/MenuList'
@@ -6,6 +6,7 @@ import IconButton from '@material-ui/core/IconButton'
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft'
 import Divider from '@material-ui/core/Divider'
 import { withStyles } from '@material-ui/core/styles'
+import AuthContext from '../../../context/AuthContext'
 import NavMenuItem from '../NavMenuItem'
 import InfoSnackBar, { LOGIN_REQUIRED_MESSAGE } from '../../Messaging/SnackBars/Info'
 
@@ -18,8 +19,9 @@ const styles = () => ({
   }
 })
 
-const NavMenu = ({ classes, isAuthenticated, open, toggleMenu }) => {
+const NavMenu = ({ classes, open, toggleMenu }) => {
   const [isMessageOpen, setIsMessageOpen] = useState(false)
+  const { auth } = useContext(AuthContext)
   const toggleLoginMessage = () => setIsMessageOpen(!isMessageOpen)
   return (
     <div>
@@ -36,7 +38,7 @@ const NavMenu = ({ classes, isAuthenticated, open, toggleMenu }) => {
             to="/auctions/new"
             onClick={toggleMenu}
             label="Create Auction"
-            disabled={!isAuthenticated()}
+            disabled={!auth.isAuthenticated()}
             onDisabledClick={toggleLoginMessage}
           />
           <Divider />
@@ -51,7 +53,6 @@ const NavMenu = ({ classes, isAuthenticated, open, toggleMenu }) => {
 
 NavMenu.propTypes = {
   classes: PropTypes.object.isRequired,
-  isAuthenticated: PropTypes.func.isRequired,
   open: PropTypes.bool.isRequired,
   toggleMenu: PropTypes.func.isRequired
 }

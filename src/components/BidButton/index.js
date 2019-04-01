@@ -12,7 +12,6 @@ const BidButton = ({ currentValue, teamId, school, auctionId }) => {
 
   const handleDialogOpen = () => {
     setIsDialogOpen(true)
-    console.log('clicked')
   }
   const handleDialogClose = newAmount => {
     if (newAmount > amount) {
