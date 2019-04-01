@@ -1,23 +1,23 @@
-import React, { Component, createContext } from 'react'
+import React, { createContext } from 'react'
 import PropTypes from 'prop-types'
 
-const { Provider, Consumer } = createContext()
-export { Consumer as AuthConsumer }
-class AuthProvider extends Component {
-  state = {
-    auth: this.props.authMethods,
-    handleAuthentication: nextState => {
-      if (/access_token|id_token|error/.test(nextState.location.hash)) {
-        this.state.auth.handleAuthentication()
-      }
+const AuthContext = createContext()
+const { Provider, Consumer } = AuthContext
+
+const AuthProvider = ({ authMethods, children }) => {
+  const handleAuthentication = nextState => {
+    if (/access_token|id_token|error/.test(nextState.location.hash)) {
+      authMethods.handleAuthentication()
     }
   }
-  render() {
-    return <Provider value={this.state}>{this.props.children}</Provider>
-  }
+  return <Provider value={{ auth: authMethods, handleAuthentication }}>{children}</Provider>
 }
+
 AuthProvider.propTypes = {
   children: PropTypes.element.isRequired,
   authMethods: PropTypes.object.isRequired
 }
+
+export default AuthContext
+export { Consumer as AuthConsumer }
 export { AuthProvider }

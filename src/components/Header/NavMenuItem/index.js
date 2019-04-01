@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router'
 import { NavLink } from 'react-router-dom'
@@ -18,28 +18,26 @@ const styles = theme => ({
   }
 })
 
-class NavMenuItem extends Component {
-  handleDisabledClick = e => {
+const NavMenuItem = ({ classes, location, onClick, onDisabledClick, to, label, disabled }) => {
+  const handleDisabledClick = e => {
     e.preventDefault()
-    this.props.onDisabledClick()
+    onDisabledClick()
   }
-  render() {
-    const { classes, location, onClick, to, label, disabled } = this.props
-    return (
-      <NavLink
-        exact
-        to={to}
-        onClick={!disabled ? onClick : this.handleDisabledClick}
-        className={classes.nav}
-        activeClassName={classes.activeNav}
-        replace={location.pathname === to}
-      >
-        <MenuItem disabled={disabled}>
-          <ListItemText primary={label} />
-        </MenuItem>
-      </NavLink>
-    )
-  }
+
+  return (
+    <NavLink
+      exact
+      to={to}
+      onClick={!disabled ? onClick : handleDisabledClick}
+      className={classes.nav}
+      activeClassName={classes.activeNav}
+      replace={location.pathname === to}
+    >
+      <MenuItem disabled={disabled}>
+        <ListItemText primary={label} />
+      </MenuItem>
+    </NavLink>
+  )
 }
 
 NavMenuItem.propTypes = {

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState, useContext } from 'react'
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router'
 import { Link } from 'react-router-dom'
@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import AccountCircle from '@material-ui/icons/AccountCircle'
-import { AuthConsumer } from '../../context/AuthContext'
+import AuthContext from '../../context/AuthContext'
 import AuthenticateButton from '../AuthenticateButton'
 import NavMenu from './NavMenu'
 
@@ -31,47 +31,38 @@ const styles = {
   }
 }
 
-class Header extends Component {
-  state = {
-    isMenuOpen: false
-  }
-  toggleMenu = () => {
-    this.setState({ isMenuOpen: !this.state.isMenuOpen })
-  }
-  render() {
-    const { classes, location } = this.props
-    const { isMenuOpen } = this.state
-    return (
-      <div className={classes.root}>
-        <AppBar position="static">
-          <AuthConsumer>
-            {({ auth }) => (
-              <Toolbar>
-                <IconButton className={classes.menuButton} aria-label="Menu" onClick={this.toggleMenu}>
-                  <MenuIcon />
-                </IconButton>
-                <NavMenu open={isMenuOpen} toggleMenu={this.toggleMenu} isAuthenticated={auth.isAuthenticated} />
+const Header = ({ classes, location }) => {
+  const { root, menuButton, headerLink } = classes
+  const { pathname } = location
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+  const { auth } = useContext(AuthContext)
+  return (
+    <div className={root}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton className={menuButton} aria-label="Menu" onClick={toggleMenu}>
+            <MenuIcon />
+          </IconButton>
+          <NavMenu open={isMenuOpen} toggleMenu={toggleMenu} isAuthenticated={auth.isAuthenticated} />
 
-                <Link to="/" replace={location.pathname === '/'} className={classes.headerLink}>
-                  <Typography variant="title" color="inherit">
-                    The Bid
-                  </Typography>
-                </Link>
+          <Link to="/" replace={pathname === '/'} className={headerLink}>
+            <Typography variant="title" color="inherit">
+              The Bid
+            </Typography>
+          </Link>
 
-                {auth.isAuthenticated() && (
-                  <IconButton>
-                    <AccountCircle color="inherit" />
-                  </IconButton>
-                )}
+          {auth.isAuthenticated() && (
+            <IconButton>
+              <AccountCircle color="inherit" />
+            </IconButton>
+          )}
 
-                <AuthenticateButton login={auth.login} logout={auth.logout} />
-              </Toolbar>
-            )}
-          </AuthConsumer>
-        </AppBar>
-      </div>
-    )
-  }
+          <AuthenticateButton login={auth.login} logout={auth.logout} />
+        </Toolbar>
+      </AppBar>
+    </div>
+  )
 }
 
 Header.propTypes = {

@@ -1,47 +1,44 @@
-import React, { Component } from 'react'
+import React, { useContext, useState } from 'react'
 import PropTypes from 'prop-types'
 import Button from '@material-ui/core/Button'
-import { AuthConsumer } from '../../context/AuthContext'
+import AuthContext from '../../context/AuthContext'
 import BidDialog from '../BidDialog'
 import { roundToHundreths } from '../../utils'
 
-class BidButton extends Component {
-  state = {
-    isDialogOpen: false,
-    amount: 0
+const BidButton = ({ currentValue, teamId, school, auctionId }) => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false)
+  const [amount, setAmount] = useState(currentValue)
+  const { auth } = useContext(AuthContext)
+
+  const handleDialogOpen = () => {
+    setIsDialogOpen(true)
+    console.log('clicked')
   }
-  handleClick = () => {
-    this.setState({ isDialogOpen: true })
+  const handleDialogClose = newAmount => {
+    if (newAmount > amount) {
+      setAmount(newAmount)
+    }
+    setIsDialogOpen(false)
   }
-  static getDerivedStateFromProps(nextProps, previousState) {
-    const amount = nextProps.currentValue >= previousState.amount ? nextProps.currentValue : previousState.amount
-    return { amount }
+  if (currentValue > amount) {
+    setAmount(currentValue)
   }
-  render() {
-    const { school, teamId, auctionId } = this.props
-    const { isDialogOpen, amount } = this.state
-    return (
-      <AuthConsumer>
-        {({ auth }) => (
-          <div>
-            <Button variant="outlined" onClick={this.handleClick} disabled={!auth.isAuthenticated()}>
-              ${roundToHundreths(amount)}
-            </Button>
-            <BidDialog
-              auctionId={auctionId}
-              currentValue={amount}
-              isOpen={isDialogOpen}
-              onClose={newAmount =>
-                this.setState({ isDialogOpen: false, amount: newAmount > amount ? newAmount : amount })
-              }
-              teamId={teamId}
-              school={school}
-            />
-          </div>
-        )}
-      </AuthConsumer>
-    )
-  }
+
+  return (
+    <div>
+      <Button variant="outlined" onClick={handleDialogOpen} disabled={!auth.isAuthenticated()}>
+        ${roundToHundreths(amount)}
+      </Button>
+      <BidDialog
+        auctionId={auctionId}
+        currentValue={amount}
+        isOpen={isDialogOpen}
+        onClose={handleDialogClose}
+        teamId={teamId}
+        school={school}
+      />
+    </div>
+  )
 }
 
 BidButton.propTypes = {

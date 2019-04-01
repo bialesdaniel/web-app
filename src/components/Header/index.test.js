@@ -4,24 +4,16 @@ import casual from 'casual-browserify'
 import { BrowserRouter } from 'react-router-dom'
 import MenuIcon from '@material-ui/icons/Menu'
 import AccountCircle from '@material-ui/icons/AccountCircle'
+import { AuthProvider } from '../../context/AuthContext'
 import { mockAuth } from '../../../test/mock-context/AuthConsumer'
 import Header from './index'
+//jest.unmock('../../context/AuthContext')
 
 describe('Header', () => {
   let wrapper
   let mount
   beforeEach(() => {
     mount = createMount()
-    /* TODO: waiting to be able to mock context provider or consumer
-    wrapper = mount(<AuthProvider authMethods={auth}>
-      <BrowserRouter>
-      <Header.WrappedComponent
-        location={{ pathname: `/${casual.word}` }}
-        classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
-      />
-    </BrowserRouter>
-    </AuthProvider>
-    )*/
   })
   afterEach(() => {
     wrapper.unmount()
@@ -31,10 +23,12 @@ describe('Header', () => {
   test('renders', () => {
     wrapper = mount(
       <BrowserRouter>
-        <Header.WrappedComponent
-          location={{ pathname: `/${casual.word}` }}
-          classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
-        />
+        <AuthProvider authMethods={mockAuth}>
+          <Header.WrappedComponent
+            location={{ pathname: `/${casual.word}` }}
+            classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
+          />
+        </AuthProvider>
       </BrowserRouter>
     )
     expect(wrapper).toExist()
@@ -42,10 +36,12 @@ describe('Header', () => {
   test('title link does not replace', () => {
     wrapper = mount(
       <BrowserRouter>
-        <Header.WrappedComponent
-          location={{ pathname: `/${casual.word}` }}
-          classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
-        />
+        <AuthProvider authMethods={mockAuth}>
+          <Header.WrappedComponent
+            location={{ pathname: `/${casual.word}` }}
+            classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
+          />
+        </AuthProvider>
       </BrowserRouter>
     )
     expect(
@@ -58,10 +54,12 @@ describe('Header', () => {
   test('title link replaces if pathname is /', () => {
     wrapper = mount(
       <BrowserRouter>
-        <Header.WrappedComponent
-          location={{ pathname: '/' }}
-          classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
-        />
+        <AuthProvider authMethods={mockAuth}>
+          <Header.WrappedComponent
+            location={{ pathname: '/' }}
+            classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
+          />
+        </AuthProvider>
       </BrowserRouter>
     )
     expect(
@@ -75,10 +73,12 @@ describe('Header', () => {
     mockAuth.isAuthenticated.mockReturnValue(true)
     wrapper = mount(
       <BrowserRouter>
-        <Header.WrappedComponent
-          location={{ pathname: `/${casual.word}` }}
-          classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
-        />
+        <AuthProvider authMethods={mockAuth}>
+          <Header.WrappedComponent
+            location={{ pathname: `/${casual.word}` }}
+            classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
+          />
+        </AuthProvider>
       </BrowserRouter>
     )
     expect(wrapper.find(AccountCircle)).toExist()
@@ -86,10 +86,12 @@ describe('Header', () => {
   test('click menu set NavMenu open prop', () => {
     wrapper = mount(
       <BrowserRouter>
-        <Header.WrappedComponent
-          location={{ pathname: `/${casual.word}` }}
-          classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
-        />
+        <AuthProvider authMethods={mockAuth}>
+          <Header.WrappedComponent
+            location={{ pathname: `/${casual.word}` }}
+            classes={{ root: casual.uuid, menuButton: casual.uuid, headerLink: casual.uuid }}
+          />
+        </AuthProvider>
       </BrowserRouter>
     )
     const MenuIconNode = wrapper.find(MenuIcon)

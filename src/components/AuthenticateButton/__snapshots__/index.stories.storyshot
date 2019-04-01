@@ -5,7 +5,6 @@ exports[`Storyshots Authentication|AuthenticateButton logged in 1`] = `
   className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiButton-colorInherit"
   disabled={false}
   onBlur={[Function]}
-  onClick={[MockFunction]}
   onContextMenu={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
@@ -22,7 +21,7 @@ exports[`Storyshots Authentication|AuthenticateButton logged in 1`] = `
   <span
     className="MuiButton-label"
   >
-    Login
+    Logout
   </span>
   <span
     className="MuiTouchRipple-root"
@@ -35,7 +34,6 @@ exports[`Storyshots Authentication|AuthenticateButton not logged in 1`] = `
   className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiButton-colorInherit"
   disabled={false}
   onBlur={[Function]}
-  onClick={[MockFunction]}
   onContextMenu={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}

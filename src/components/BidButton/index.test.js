@@ -1,37 +1,60 @@
 import React from 'react'
-import { createShallow } from '@material-ui/core/test-utils'
+import { createMount } from '@material-ui/core/test-utils'
+import { MockedProvider } from 'react-apollo/test-utils'
 import casual from 'casual-browserify'
-//import Button from '@material-ui/core/Button'
-import { mockAuthConsumer } from '../../../test/mock-context/AuthConsumer'
+import Button from '@material-ui/core/Button'
+import { mockAuth } from '../../../test/mock-context/AuthConsumer'
+import { AuthProvider } from '../../context/AuthContext'
 import BidButton from './index'
 
-jest.mock('../../context/AuthContext', () => mockAuthConsumer())
 describe('BidButton', () => {
   let wrapper
-  let shallow
+  let mount
   beforeEach(() => {
-    shallow = createShallow({ dive: true })
-    wrapper = shallow(
-      <BidButton
-        currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
-        teamId={casual.uuid}
-        school={casual.title}
-        auctionId={casual.uuid}
-      />
+    mockAuth.isAuthenticated.mockReturnValue(true)
+    mount = createMount()
+    wrapper = mount(
+      <MockedProvider>
+        <AuthProvider authMethods={mockAuth}>
+          <BidButton
+            currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
+            teamId={casual.uuid}
+            school={casual.title}
+            auctionId={casual.uuid}
+          />
+        </AuthProvider>
+      </MockedProvider>
     )
   })
   afterEach(() => {
+    mockAuth.isAuthenticated.mockReturnValue(false)
     wrapper.unmount()
-    shallow = null
+    mount = null
   })
   test('renders', () => {
     expect(wrapper).toExist()
   })
-  /*FIXME: this test isn't working because to shallow render requires diving into component
+  test('button is disabled when not logged in', () => {
+    mockAuth.isAuthenticated.mockReturnValue(false)
+    wrapper.unmount()
+    wrapper = mount(
+      <MockedProvider>
+        <AuthProvider authMethods={mockAuth}>
+          <BidButton
+            currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
+            teamId={casual.uuid}
+            school={casual.title}
+            auctionId={casual.uuid}
+          />
+        </AuthProvider>
+      </MockedProvider>
+    )
+    const ButtonNode = wrapper.find(Button)
+    expect(ButtonNode).toHaveProp('disabled', true)
+  })
   test('onClick sets isDialogOpen to true', () => {
     const ButtonNode = wrapper.find(Button)
     ButtonNode.simulate('click')
-    wrapper = wrapper.update()
     expect(wrapper.find('BidDialogGQL')).toHaveProp('isOpen', true)
-  })*/
+  })
 })

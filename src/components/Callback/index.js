@@ -1,12 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import CircularProgress from '@material-ui/core/CircularProgress'
 
-class Callback extends Component {
-  render() {
-    return <CircularProgress size="50%" color="secondary" />
-  }
-}
+const Callback = () => <CircularProgress size="50%" color="secondary" />
 
 Callback.propTypes = {
   classes: PropTypes.object

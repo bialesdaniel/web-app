@@ -26,6 +26,6 @@ describe('SnackBars - Info', () => {
   test('click IconButton calls onClose', () => {
     const IconButtonNode = wrapper.find('IconButton')
     IconButtonNode.simulate('click')
-    expect(wrapper.instance().props.onClose).toHaveBeenCalled()
+    expect(wrapper.props().onClose).toHaveBeenCalled()
   })
 })

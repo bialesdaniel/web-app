@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import NumberFormat from 'react-number-format'
 import { withStyles } from '@material-ui/core/styles'
@@ -8,22 +8,18 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import InputAdornment from '@material-ui/core/InputAdornment'
 
-class CurrencyNumberFormat extends Component {
-  render() {
-    const { inputRef, onChange, ...other } = this.props
-    return (
-      <NumberFormat
-        {...other}
-        onValueChange={values => {
-          onChange({ target: { value: values.value } })
-        }}
-        prefix="$"
-        decimalScale={2}
-        fixedDecimalScale={true}
-      />
-    )
-  }
-}
+const CurrencyNumberFormat = ({ inputRef, onChange, ...other }) => (
+  <NumberFormat
+    {...other}
+    onValueChange={values => {
+      onChange({ target: { value: values.value } })
+    }}
+    prefix="$"
+    decimalScale={2}
+    fixedDecimalScale={true}
+  />
+)
+
 CurrencyNumberFormat.propTypes = {
   inputRef: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired
@@ -36,29 +32,24 @@ const styles = {
   }
 }
 
-class CurrencyInputField extends Component {
-  render() {
-    const { classes, onDecrease, onIncrease, ...props } = this.props
-    return (
-      <TextField
-        {...props}
-        InputProps={{
-          inputComponent: CurrencyNumberFormat,
-          endAdornment: (
-            <InputAdornment position="end">
-              <Button className={classes.stepButton} onClick={onDecrease}>
-                <ExpandMoreIcon />
-              </Button>
-              <Button className={classes.stepButton} onClick={onIncrease}>
-                <ExpandLessIcon />
-              </Button>
-            </InputAdornment>
-          )
-        }}
-      />
-    )
-  }
-}
+const CurrencyInputField = ({ classes, onDecrease, onIncrease, ...props }) => (
+  <TextField
+    {...props}
+    InputProps={{
+      inputComponent: CurrencyNumberFormat,
+      endAdornment: (
+        <InputAdornment position="end">
+          <Button className={classes.stepButton} onClick={onDecrease}>
+            <ExpandMoreIcon />
+          </Button>
+          <Button className={classes.stepButton} onClick={onIncrease}>
+            <ExpandLessIcon />
+          </Button>
+        </InputAdornment>
+      )
+    }}
+  />
+)
 
 CurrencyInputField.propTypes = {
   classes: PropTypes.object.isRequired,

@@ -1,32 +1,41 @@
 import React from 'react'
-import { createShallow } from '@material-ui/core/test-utils'
-import { mockAuth, mockAuthConsumer } from '../../../test/mock-context/AuthConsumer'
+import { createMount } from '@material-ui/core/test-utils'
+import { mockAuth } from '../../../test/mock-context/AuthConsumer'
+import { AuthProvider } from '../../context/AuthContext'
 import AuthenticateButton from './index'
 
-jest.mock('../../context/AuthContext', () => mockAuthConsumer())
 describe('AuthenticateButton', () => {
   let wrapper
-  let shallow
+  let mount
   beforeEach(() => {
-    shallow = createShallow({ dive: true })
-    wrapper = shallow(<AuthenticateButton />)
+    mount = createMount()
+    wrapper = mount(
+      <AuthProvider authMethods={mockAuth}>
+        <AuthenticateButton />
+      </AuthProvider>
+    )
   })
   afterEach(() => {
     wrapper.unmount()
-    shallow = null
+    mount = null
     mockAuth.isAuthenticated.mockReturnValue(false)
   })
   test('renders', () => {
     expect(wrapper).toExist()
   })
   test('click button when not authenticated calls login', () => {
-    wrapper.simulate('click')
+    wrapper.find('LoginSignupButton').simulate('click')
     expect(mockAuth.login).toHaveBeenCalled()
   })
   test('click button when authenticated calls logout', () => {
     mockAuth.isAuthenticated.mockReturnValue(true)
-    wrapper = shallow(<AuthenticateButton />)
-    wrapper.simulate('click')
+    wrapper.unmount()
+    wrapper = mount(
+      <AuthProvider authMethods={mockAuth}>
+        <AuthenticateButton />
+      </AuthProvider>
+    )
+    wrapper.find('LoginSignupButton').simulate('click')
     expect(mockAuth.logout).toHaveBeenCalled()
   })
 })

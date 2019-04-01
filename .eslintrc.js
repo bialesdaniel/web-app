@@ -25,5 +25,10 @@ module.exports = {
     'no-empty': ['warn', { allowEmptyCatch: true }],
     'no-unused-vars': ['error', { ignoreRestSiblings: true }],
     'no-console': 'warn'
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
   }
 }
