@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 import Dialog from '@material-ui/core/Dialog'
@@ -43,72 +43,66 @@ function calcMinBidAmount(currentValue) {
   return currentValue + calcMinRaiseAmount(currentValue)
 }
 
-class BidDialog extends Component {
-  state = {
-    amount: calcMinBidAmount(this.props.currentValue),
-    errorMessage: ''
+const BidDialog = ({ auctionId, teamId, currentValue, onClose, onSubmit, school, classes, isOpen, loading }) => {
+  const [amount, setAmount] = useState(calcMinBidAmount(currentValue))
+  const [errorMessage, setErrorMessage] = useState('')
+  if (currentValue >= amount) {
+    setAmount(calcMinBidAmount(currentValue))
   }
-  handleAmountChange = e => {
-    if (e.target.value >= calcMinBidAmount(this.props.currentValue)) {
-      this.setState({ amount: roundToHundreths(parseFloat(e.target.value)), errorMessage: '' })
+
+  const handleAmountChange = event => {
+    if (event.target.value >= calcMinBidAmount(currentValue)) {
+      setAmount(roundToHundreths(parseFloat(event.target.value)))
     }
   }
-  handleAmountStep = step => {
-    const steppedValue = roundToHundreths(this.state.amount + step)
-    this.handleAmountChange({ target: { value: steppedValue } })
+  const handleAmountStep = step => {
+    const steppedValue = roundToHundreths(amount + step)
+    handleAmountChange({ target: { value: steppedValue } })
   }
-  handleCancel = () => {
-    this.props.onClose()
-    this.setState({ errorMessage: '' })
+  const handleCancel = () => {
+    onClose()
+    setErrorMessage('')
   }
-  handleSubmit = async () => {
-    const { amount } = this.state
-    const { auctionId, teamId } = this.props
+  const handleSubmit = async () => {
     try {
-      await this.props.onSubmit({ variables: { amount, auctionId, teamId } })
-      await this.props.onClose(amount)
+      await onSubmit({ variables: { amount, auctionId, teamId } })
+      await onClose(amount)
     } catch ({ message }) {
-      this.setState({ errorMessage: message })
+      setErrorMessage(message)
     }
   }
-  static getDerivedStateFromProps(nextProps, previousState) {
-    return nextProps.currentValue >= previousState.amount ? { amount: calcMinBidAmount(nextProps.currentValue) } : null
-  }
-  render() {
-    const { amount, errorMessage } = this.state
-    const { classes, school, isOpen, loading } = this.props
-    return (
-      <Dialog open={isOpen} onClose={this.handleClose} aria-labelledby="form-dialog-title">
-        <DialogTitle id="form-dialog-title">Submit Bid</DialogTitle>
-        <DialogContent className={classes.root}>
-          <div className={classes.inputRow}>
-            <Typography variant="headline" className={classes.inputLabel}>
-              {school}
-            </Typography>
-            <CurrencyInputField
-              className={classes.currencyInput}
-              id="bid-amount"
-              error={Boolean(errorMessage)}
-              value={amount}
-              onChange={this.handleAmountChange}
-              onIncrease={() => this.handleAmountStep(0.1)}
-              onDecrease={() => this.handleAmountStep(-0.1)}
-            />
-          </div>
-          <DialogContentText>{errorMessage}</DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={this.handleCancel} disabled={loading}>
-            Cancel
-          </Button>
-          <Button onClick={this.handleSubmit} color="primary" disabled={loading}>
-            Submit
-          </Button>
-          {loading && <CircularProgress size={32} className={classes.buttonProgress} />}
-        </DialogActions>
-      </Dialog>
-    )
-  }
+  const { root, inputRow, inputLabel, currencyInput, buttonProgress } = classes
+  return (
+    <Dialog open={isOpen} onClose={handleCancel} aria-labelledby="form-dialog-title">
+      <DialogTitle id="form-dialog-title">Submit Bid</DialogTitle>
+      <DialogContent className={root}>
+        <div className={inputRow}>
+          <Typography variant="headline" className={inputLabel}>
+            {school}
+          </Typography>
+          <CurrencyInputField
+            className={currencyInput}
+            id="bid-amount"
+            error={Boolean(errorMessage)}
+            value={amount}
+            onChange={handleAmountChange}
+            onIncrease={() => handleAmountStep(0.1)}
+            onDecrease={() => handleAmountStep(-0.1)}
+          />
+        </div>
+        <DialogContentText>{errorMessage}</DialogContentText>
+      </DialogContent>
+      <DialogActions>
+        <Button onClick={handleCancel} disabled={loading}>
+          Cancel
+        </Button>
+        <Button onClick={handleSubmit} color="primary" disabled={loading}>
+          Submit
+        </Button>
+        {loading && <CircularProgress size={32} className={buttonProgress} />}
+      </DialogActions>
+    </Dialog>
+  )
 }
 
 BidDialog.propTypes = {
