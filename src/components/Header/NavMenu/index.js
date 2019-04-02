@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { Fragment, useState, useContext } from 'react'
 import PropTypes from 'prop-types'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
 import MenuList from '@material-ui/core/MenuList'
@@ -24,7 +24,7 @@ const NavMenu = ({ classes, open, toggleMenu }) => {
   const { auth } = useContext(AuthContext)
   const toggleLoginMessage = () => setIsMessageOpen(!isMessageOpen)
   return (
-    <div>
+    <Fragment>
       <SwipeableDrawer open={open} onOpen={toggleMenu} onClose={toggleMenu}>
         <MenuList>
           <div className={classes.drawerHeader}>
@@ -47,7 +47,7 @@ const NavMenu = ({ classes, open, toggleMenu }) => {
         </MenuList>
       </SwipeableDrawer>
       <InfoSnackBar isOpen={isMessageOpen} onClose={toggleLoginMessage} message={LOGIN_REQUIRED_MESSAGE} />
-    </div>
+    </Fragment>
   )
 }
 

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Bids|BidButton default 1`] = `
-<div>
+Array [
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
     disabled={false}
@@ -29,12 +29,13 @@ exports[`Storyshots Bids|BidButton default 1`] = `
     <span
       className="MuiTouchRipple-root"
     />
-  </button>
-</div>
+  </button>,
+  "",
+]
 `;
 
 exports[`Storyshots Bids|BidButton disabled 1`] = `
-<div>
+Array [
   <button
     className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
     disabled={true}
@@ -59,6 +60,7 @@ exports[`Storyshots Bids|BidButton disabled 1`] = `
       $
       56.18
     </span>
-  </button>
-</div>
+  </button>,
+  "",
+]
 `;

@@ -24,7 +24,7 @@ exports[`Storyshots Tournaments|Team gql 1`] = `
     <div
       className="MuiListItemSecondaryAction-root"
     >
-      <div>
+      Array [
         <button
           className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
           disabled={true}
@@ -49,8 +49,9 @@ exports[`Storyshots Tournaments|Team gql 1`] = `
             $
             0
           </span>
-        </button>
-      </div>
+        </button>,
+        "",
+      ]
     </div>
   </li>
 </ul>

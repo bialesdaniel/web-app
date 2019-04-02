@@ -38,7 +38,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -63,8 +63,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -87,7 +88,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -112,8 +113,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -136,7 +138,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -161,8 +163,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -185,7 +188,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -210,8 +213,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -234,7 +238,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -259,8 +263,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -283,7 +288,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -308,8 +313,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -332,7 +338,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -357,8 +363,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -381,7 +388,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -406,8 +413,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -430,7 +438,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -455,8 +463,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -479,7 +488,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -504,8 +513,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -528,7 +538,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -553,8 +563,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -577,7 +588,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -602,8 +613,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -626,7 +638,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -651,8 +663,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -675,7 +688,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -700,8 +713,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -724,7 +738,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -749,8 +763,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -773,7 +788,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -798,8 +813,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
       </ul>
@@ -839,7 +855,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -864,8 +880,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -888,7 +905,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -913,8 +930,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -937,7 +955,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -962,8 +980,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -986,7 +1005,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1011,8 +1030,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1035,7 +1055,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1060,8 +1080,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1084,7 +1105,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1109,8 +1130,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1133,7 +1155,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1158,8 +1180,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1182,7 +1205,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1207,8 +1230,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1231,7 +1255,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1256,8 +1280,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1280,7 +1305,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1305,8 +1330,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1329,7 +1355,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1354,8 +1380,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1378,7 +1405,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1403,8 +1430,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1427,7 +1455,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1452,8 +1480,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1476,7 +1505,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1501,8 +1530,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1525,7 +1555,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1550,8 +1580,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1574,7 +1605,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1599,8 +1630,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
       </ul>
@@ -1640,7 +1672,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1665,8 +1697,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1689,7 +1722,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1714,8 +1747,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1738,7 +1772,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1763,8 +1797,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1787,7 +1822,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1812,8 +1847,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1836,7 +1872,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1861,8 +1897,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1885,7 +1922,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1910,8 +1947,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1934,7 +1972,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -1959,8 +1997,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -1983,7 +2022,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2008,8 +2047,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2032,7 +2072,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2057,8 +2097,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2081,7 +2122,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2106,8 +2147,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2130,7 +2172,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2155,8 +2197,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2179,7 +2222,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2204,8 +2247,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2228,7 +2272,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2253,8 +2297,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2277,7 +2322,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2302,8 +2347,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2326,7 +2372,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2351,8 +2397,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2375,7 +2422,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2400,8 +2447,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
       </ul>
@@ -2441,7 +2489,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2466,8 +2514,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2490,7 +2539,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2515,8 +2564,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2539,7 +2589,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2564,8 +2614,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2588,7 +2639,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2613,8 +2664,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2637,7 +2689,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2662,8 +2714,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2686,7 +2739,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2711,8 +2764,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2735,7 +2789,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2760,8 +2814,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2784,7 +2839,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2809,8 +2864,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2833,7 +2889,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2858,8 +2914,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2882,7 +2939,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2907,8 +2964,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2931,7 +2989,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -2956,8 +3014,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -2980,7 +3039,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -3005,8 +3064,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -3029,7 +3089,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -3054,8 +3114,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -3078,7 +3139,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -3103,8 +3164,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -3127,7 +3189,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -3152,8 +3214,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
         <li
@@ -3176,7 +3239,7 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
           <div
             className="MuiListItemSecondaryAction-root"
           >
-            <div>
+            Array [
               <button
                 className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
                 disabled={true}
@@ -3201,8 +3264,9 @@ exports[`Storyshots Tournaments|Tournament default 1`] = `
                   $
                   0
                 </span>
-              </button>
-            </div>
+              </button>,
+              "",
+            ]
           </div>
         </li>
       </ul>

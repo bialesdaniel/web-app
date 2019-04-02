@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { Fragment, useContext, useState } from 'react'
 import PropTypes from 'prop-types'
 import Button from '@material-ui/core/Button'
 import AuthContext from '../../context/AuthContext'
@@ -24,7 +24,7 @@ const BidButton = ({ currentValue, teamId, school, auctionId }) => {
   }
 
   return (
-    <div>
+    <Fragment>
       <Button variant="outlined" onClick={handleDialogOpen} disabled={!auth.isAuthenticated()}>
         ${roundToHundreths(amount)}
       </Button>
@@ -36,7 +36,7 @@ const BidButton = ({ currentValue, teamId, school, auctionId }) => {
         teamId={teamId}
         school={school}
       />
-    </div>
+    </Fragment>
   )
 }
 

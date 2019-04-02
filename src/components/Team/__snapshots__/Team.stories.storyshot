@@ -24,7 +24,7 @@ exports[`Storyshots Tournaments|Team default 1`] = `
     <div
       className="MuiListItemSecondaryAction-root"
     >
-      <div>
+      Array [
         <button
           className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
           disabled={true}
@@ -49,8 +49,9 @@ exports[`Storyshots Tournaments|Team default 1`] = `
             $
             0
           </span>
-        </button>
-      </div>
+        </button>,
+        "",
+      ]
     </div>
   </li>
 </ul>
@@ -80,7 +81,7 @@ exports[`Storyshots Tournaments|Team with bid 1`] = `
     <div
       className="MuiListItemSecondaryAction-root"
     >
-      <div>
+      Array [
         <button
           className="MuiButtonBase-root MuiButtonBase-disabled MuiButton-root MuiButton-outlined MuiButton-disabled"
           disabled={true}
@@ -105,8 +106,9 @@ exports[`Storyshots Tournaments|Team with bid 1`] = `
             $
             64.85
           </span>
-        </button>
-      </div>
+        </button>,
+        "",
+      ]
     </div>
   </li>
 </ul>
