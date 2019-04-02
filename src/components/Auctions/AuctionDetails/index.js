@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
@@ -19,25 +19,22 @@ const GET_AUCTION = gql`
   }
 `
 
-class AuctionDetailsGQL extends Component {
-  render() {
-    const { auctionId } = this.props.match.params
-    return (
-      <Query query={GET_AUCTION} variables={{ auctionId }}>
-        {({ loading, error, data }) => {
-          if (loading) return <CircularProgress size="40%" />
-          if (error) return <Typography variant="subheading">{error}</Typography>
-          const { auction } = data
-          return <AuctionDetails name={auction.name} createdAt={auction.createdAt} owner={auction.owner.username} />
-        }}
-      </Query>
-    )
-  }
+const AuctionDetailsGQL = ({ match }) => {
+  const { auctionId } = match.params
+  return (
+    <Query query={GET_AUCTION} variables={{ auctionId }}>
+      {({ loading, error, data }) => {
+        if (loading) return <CircularProgress size="40%" />
+        if (error) return <Typography variant="subheading">{error}</Typography>
+        const { auction } = data
+        return <AuctionDetails name={auction.name} createdAt={auction.createdAt} owner={auction.owner.username} />
+      }}
+    </Query>
+  )
 }
 
 AuctionDetailsGQL.propTypes = {
-  match: PropTypes.object.isRequired,
-  classes: PropTypes.object
+  match: PropTypes.object.isRequired
 }
 
 export default AuctionDetailsGQL
