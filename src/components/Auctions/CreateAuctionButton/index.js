@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { Fragment, useContext, useState } from 'react'
 import PropTypes from 'prop-types'
 import Tooltip from '@material-ui/core/Tooltip'
 import IconButton from '@material-ui/core/IconButton'
@@ -18,14 +18,14 @@ const CreateAuctionButton = ({ history }) => {
     }
   }
   return (
-    <div>
+    <Fragment>
       <Tooltip id="tooltip-create-auction" title="Create Auction" placement="left" enterDelay={400}>
         <IconButton aria-label="Create Auction" color="inherit" onClick={handleClick}>
           <AddBoxIcon />
         </IconButton>
       </Tooltip>
       <InfoSnackBar isOpen={isMessageOpen} onClose={() => setIsMessageOpen(false)} message={LOGIN_REQUIRED_MESSAGE} />
-    </div>
+    </Fragment>
   )
 }
 

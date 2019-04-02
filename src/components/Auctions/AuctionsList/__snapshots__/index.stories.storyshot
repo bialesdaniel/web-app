@@ -18,7 +18,7 @@ exports[`Storyshots Auctions|AuctionsList default 1`] = `
       <div
         className="MuiGrid-item"
       >
-        <div>
+        Array [
           <div>
             <button
               aria-label="Create Auction"
@@ -62,8 +62,9 @@ exports[`Storyshots Auctions|AuctionsList default 1`] = `
                 className="MuiTouchRipple-root"
               />
             </button>
-          </div>
-        </div>
+          </div>,
+          "",
+        ]
       </div>
     </div>
   </li>
@@ -231,7 +232,7 @@ exports[`Storyshots Auctions|AuctionsList loading 1`] = `
       <div
         className="MuiGrid-item"
       >
-        <div>
+        Array [
           <div>
             <button
               aria-label="Create Auction"
@@ -275,8 +276,9 @@ exports[`Storyshots Auctions|AuctionsList loading 1`] = `
                 className="MuiTouchRipple-root"
               />
             </button>
-          </div>
-        </div>
+          </div>,
+          "",
+        ]
       </div>
     </div>
   </li>
@@ -333,7 +335,7 @@ exports[`Storyshots Auctions|AuctionsList no auctions 1`] = `
       <div
         className="MuiGrid-item"
       >
-        <div>
+        Array [
           <div>
             <button
               aria-label="Create Auction"
@@ -377,8 +379,9 @@ exports[`Storyshots Auctions|AuctionsList no auctions 1`] = `
                 className="MuiTouchRipple-root"
               />
             </button>
-          </div>
-        </div>
+          </div>,
+          "",
+        ]
       </div>
     </div>
   </li>
