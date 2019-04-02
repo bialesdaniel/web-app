@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { get } from 'lodash'
 import { withStyles } from '@material-ui/core/styles'
@@ -25,45 +25,42 @@ const styles = theme => ({
   }
 })
 
-class AuctionsList extends Component {
-  render() {
-    const { classes, loading, error, auctions } = this.props
-    const errorMessage =
-      auctions.length === 0 && !error
-        ? 'No auctions available'
-        : get(error, 'networkError')
-        ? `[NetworkError]: ${error.networkError}`
-        : error
-        ? JSON.stringify(error.graphQLErrors)
-        : '' //TODO: Find a better way to write this / handle error logic
-
-    return (
-      <List>
-        <ListSubheader color="inherit" className={classes.listHeader}>
-          <Grid container direction="row" justify="space-between">
-            <Grid item>Auctions</Grid>
-            <Grid item>
-              <CreateAuctionButton />
-            </Grid>
+const AuctionsList = ({ auctions, classes, error, loading }) => {
+  const errorMessage =
+    auctions.length === 0 && !error
+      ? 'No auctions available'
+      : get(error, 'networkError')
+      ? `[NetworkError]: ${error.networkError}`
+      : error
+      ? JSON.stringify(error.graphQLErrors)
+      : '' //TODO: Find a better way to write this / handle error logic
+  const { listHeader, emptyListItemText } = classes
+  return (
+    <List>
+      <ListSubheader color="inherit" className={listHeader}>
+        <Grid container direction="row" justify="space-between">
+          <Grid item>Auctions</Grid>
+          <Grid item>
+            <CreateAuctionButton />
           </Grid>
-        </ListSubheader>
-        <Divider />
-        {loading ? (
-          <Grid container direction="row" justify="center">
-            <CircularProgress />
-          </Grid>
-        ) : auctions.length > 0 && !error ? (
-          auctions.map(auction => (
-            <AuctionsListItem key={auction.id} id={auction.id} name={auction.name} owner={auction.owner.username} />
-          ))
-        ) : (
-          <ListItem>
-            <ListItemText className={classes.emptyListItemText} primary={errorMessage} />
-          </ListItem>
-        )}
-      </List>
-    )
-  }
+        </Grid>
+      </ListSubheader>
+      <Divider />
+      {loading ? (
+        <Grid container direction="row" justify="center">
+          <CircularProgress />
+        </Grid>
+      ) : auctions.length > 0 && !error ? (
+        auctions.map(auction => (
+          <AuctionsListItem key={auction.id} id={auction.id} name={auction.name} owner={auction.owner.username} />
+        ))
+      ) : (
+        <ListItem>
+          <ListItemText className={emptyListItemText} primary={errorMessage} />
+        </ListItem>
+      )}
+    </List>
+  )
 }
 
 AuctionsList.propTypes = {

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { Mutation } from 'react-apollo'
 import gql from 'graphql-tag'
@@ -12,17 +12,13 @@ const CREATE_BID = gql`
   }
 `
 
-class BidDialogGQL extends Component {
-  render() {
-    return (
-      <Mutation mutation={CREATE_BID}>
-        {(createBid, { loading }) => {
-          return <BidDialog {...this.props} onSubmit={createBid} loading={loading} />
-        }}
-      </Mutation>
-    )
-  }
-}
+const BidDialogGQL = props => (
+  <Mutation mutation={CREATE_BID}>
+    {(createBid, { loading }) => {
+      return <BidDialog {...props} onSubmit={createBid} loading={loading} />
+    }}
+  </Mutation>
+)
 
 BidDialogGQL.propTypes = {
   auctionId: PropTypes.string.isRequired,

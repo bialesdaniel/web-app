@@ -1,39 +1,32 @@
-import React, { Component } from 'react'
+import React, { useContext, useState } from 'react'
 import PropTypes from 'prop-types'
 import Tooltip from '@material-ui/core/Tooltip'
 import IconButton from '@material-ui/core/IconButton'
 import AddBoxIcon from '@material-ui/icons/AddBox'
+import AuthContext from '../../../context/AuthContext'
 import InfoSnackBar, { LOGIN_REQUIRED_MESSAGE } from '../../Messaging/SnackBars/Info'
 import { withRouter } from 'react-router'
 
-class CreateAuctionButton extends Component {
-  state = {
-    isOpen: false
-  }
-
-  handleClick = () => {
-    if (localStorage.getItem('access_token')) {
-      this.props.history.push('/auctions/new')
+const CreateAuctionButton = ({ history }) => {
+  const [isMessageOpen, setIsMessageOpen] = useState(false)
+  const { auth } = useContext(AuthContext)
+  const handleClick = () => {
+    if (auth.isAuthenticated()) {
+      history.push('/auctions/new')
     } else {
-      this.setState({ isOpen: true })
+      setIsMessageOpen(true)
     }
   }
-  render() {
-    return (
-      <div>
-        <Tooltip id="tooltip-create-auction" title="Create Auction" placement="left" enterDelay={400}>
-          <IconButton aria-label="Create Auction" color="inherit" onClick={this.handleClick}>
-            <AddBoxIcon />
-          </IconButton>
-        </Tooltip>
-        <InfoSnackBar
-          isOpen={this.state.isOpen}
-          onClose={() => this.setState({ isOpen: false })}
-          message={LOGIN_REQUIRED_MESSAGE}
-        />
-      </div>
-    )
-  }
+  return (
+    <div>
+      <Tooltip id="tooltip-create-auction" title="Create Auction" placement="left" enterDelay={400}>
+        <IconButton aria-label="Create Auction" color="inherit" onClick={handleClick}>
+          <AddBoxIcon />
+        </IconButton>
+      </Tooltip>
+      <InfoSnackBar isOpen={isMessageOpen} onClose={() => setIsMessageOpen(false)} message={LOGIN_REQUIRED_MESSAGE} />
+    </div>
+  )
 }
 
 CreateAuctionButton.propTypes = {

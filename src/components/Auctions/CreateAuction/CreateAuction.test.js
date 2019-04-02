@@ -1,22 +1,22 @@
 import React from 'react'
-import { createShallow } from '@material-ui/core/test-utils'
+import { createMount } from '@material-ui/core/test-utils'
 import casual from 'casual-browserify'
 import CircularProgress from '@material-ui/core/CircularProgress'
 import CreateAuction from './CreateAuction'
 
 describe('CreateAuction', () => {
   let wrapper
-  let shallow
+  let mount
   let event
   const handleSubmit = jest.fn()
   beforeEach(() => {
     event = { preventDefault: jest.fn() }
-    shallow = createShallow({ dive: true })
-    wrapper = shallow(<CreateAuction onSubmit={handleSubmit} />)
+    mount = createMount()
+    wrapper = mount(<CreateAuction onSubmit={handleSubmit} />)
   })
   afterEach(() => {
     wrapper.unmount()
-    shallow = null
+    mount = null
     event = null
   })
   test('renders', () => {
@@ -24,9 +24,9 @@ describe('CreateAuction', () => {
   })
   test('changing the name input changes the state', () => {
     const event = { target: { value: casual.word } }
-    const textFieldNode = wrapper.find('TextField')
+    const textFieldNode = wrapper.find('input')
     textFieldNode.simulate('change', event)
-    expect(wrapper).toHaveState('name', event.target.value)
+    expect(wrapper.find('input')).toHaveValue(event.target.value)
   })
   test('form submit prevents defaults', () => {
     const formNode = wrapper.find('form')
@@ -39,7 +39,9 @@ describe('CreateAuction', () => {
     expect(handleSubmit).not.toHaveBeenCalled()
   })
   test('form submit calls onSubmit if name is provided', () => {
-    wrapper.setState({ name: casual.title })
+    const event = { target: { value: casual.word } }
+    const textFieldNode = wrapper.find('input')
+    textFieldNode.simulate('change', event)
     const formNode = wrapper.find('form')
     formNode.simulate('submit', event)
     expect(handleSubmit).toHaveBeenCalled()

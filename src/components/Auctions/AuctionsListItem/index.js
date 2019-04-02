@@ -1,20 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 
-class AuctionListItem extends Component {
-  handleClick = () => {
-    this.props.history.push(`/auctions/${this.props.id}`)
+const AuctionListItem = ({ history, id, name, owner }) => {
+  const handleClick = () => {
+    history.push(`/auctions/${id}`)
   }
-  render() {
-    return (
-      <ListItem onClick={this.handleClick} button divider>
-        <ListItemText primary={this.props.name} secondary={`by ${this.props.owner}`} />
-      </ListItem>
-    )
-  }
+  return (
+    <ListItem onClick={handleClick} button divider>
+      <ListItemText primary={name} secondary={`by ${owner}`} />
+    </ListItem>
+  )
 }
 
 AuctionListItem.propTypes = {
