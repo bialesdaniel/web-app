@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
+import TeamContext from '../../context/TeamContext'
 import BidButton from '../BidButton'
 
 const styles = {
@@ -14,13 +15,14 @@ const styles = {
   }
 }
 
-const Team = ({ classes, currentValue, id, owner, seed, school }) => {
+const Team = ({ classes, currentValue, owner }) => {
+  const { school, seed } = useContext(TeamContext)
   const { text } = classes
   return (
     <ListItem>
       <ListItemText className={text} primary={`${seed}. ${school}`} secondary={owner} />
       <ListItemSecondaryAction>
-        <BidButton teamId={id} school={school} currentValue={currentValue} />
+        <BidButton school={school} currentValue={currentValue} />
       </ListItemSecondaryAction>
     </ListItem>
   )
@@ -29,10 +31,7 @@ const Team = ({ classes, currentValue, id, owner, seed, school }) => {
 Team.propTypes = {
   classes: PropTypes.object,
   currentValue: PropTypes.number,
-  id: PropTypes.string.isRequired,
-  owner: PropTypes.string,
-  school: PropTypes.string.isRequired,
-  seed: PropTypes.number.isRequired
+  owner: PropTypes.string
 }
 
 export default withStyles(styles)(Team)

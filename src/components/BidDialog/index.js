@@ -12,10 +12,18 @@ const CREATE_BID = gql`
   }
 `
 
-const BidDialogGQL = props => (
+const BidDialogGQL = ({ currentValue, isOpen, onClose }) => (
   <Mutation mutation={CREATE_BID}>
     {(createBid, { loading }) => {
-      return <BidDialog {...props} onSubmit={createBid} loading={loading} />
+      return (
+        <BidDialog
+          onClose={onClose}
+          isOpen={isOpen}
+          currentValue={currentValue}
+          onSubmit={createBid}
+          loading={loading}
+        />
+      )
     }}
   </Mutation>
 )
@@ -23,9 +31,7 @@ const BidDialogGQL = props => (
 BidDialogGQL.propTypes = {
   currentValue: PropTypes.number.isRequired,
   isOpen: PropTypes.bool.isRequired,
-  onClose: PropTypes.func.isRequired,
-  teamId: PropTypes.string.isRequired,
-  school: PropTypes.string.isRequired
+  onClose: PropTypes.func.isRequired
 }
 BidDialogGQL.defaultProps = {
   isOpen: false

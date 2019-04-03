@@ -32,6 +32,7 @@ addDecorator(story => <BrowserRouter>{story()}</BrowserRouter>)
 addDecorator(story=><AuthProvider authMethods={{isAuthenticated:()=>false}}>{story()}</AuthProvider>)
 addDecorator(story=><AuctionProvider auctionId={'123'}>{story()}</AuctionProvider>)
 
+
 function loadStories() {
   const req = requireContext('../src/',true,/\.stories\.js$/)
   req.keys().forEach(filename => req(filename))

@@ -2,37 +2,42 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import casual from 'casual-browserify'
+import { TeamProvider } from '../../context/TeamContext'
 import BidDialog from './BidDialog'
 
 storiesOf('Bids|BidDialog', module)
   .add('default', () => (
-    <BidDialog
-      isOpen={true}
-      onClose={action('close')}
-      onSubmit={action('submit')}
-      school={`${casual.city} ${casual.word}`}
-      currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
-      teamId={casual.uuid}
-    />
+    <TeamProvider school={`${casual.city} ${casual.word}`} seed={casual.integer(1, 16)} teamId={casual.uuid}>
+      <BidDialog
+        isOpen={true}
+        onClose={action('close')}
+        onSubmit={action('submit')}
+        currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
+      />
+    </TeamProvider>
   ))
   .add('loading', () => (
-    <BidDialog
-      isOpen={true}
-      onClose={action('close')}
-      onSubmit={action('submit')}
-      school={`${casual.city} ${casual.word}`}
-      currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
-      teamId={casual.uuid}
-      loading={true}
-    />
+    <TeamProvider school={`${casual.city} ${casual.word}`} seed={casual.integer(1, 16)} teamId={casual.uuid}>
+      <BidDialog
+        isOpen={true}
+        onClose={action('close')}
+        onSubmit={action('submit')}
+        school={`${casual.city} ${casual.word}`}
+        currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
+        teamId={casual.uuid}
+        loading={true}
+      />
+    </TeamProvider>
   ))
   .add('closed', () => (
-    <BidDialog
-      isOpen={false}
-      onClose={action('close')}
-      onSubmit={action('submit')}
-      school={`${casual.city} ${casual.word}`}
-      currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
-      teamId={casual.uuid}
-    />
+    <TeamProvider school={`${casual.city} ${casual.word}`} seed={casual.integer(1, 16)} teamId={casual.uuid}>
+      <BidDialog
+        isOpen={false}
+        onClose={action('close')}
+        onSubmit={action('submit')}
+        school={`${casual.city} ${casual.word}`}
+        currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
+        teamId={casual.uuid}
+      />
+    </TeamProvider>
   ))

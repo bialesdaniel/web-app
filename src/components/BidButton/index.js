@@ -5,7 +5,7 @@ import AuthContext from '../../context/AuthContext'
 import BidDialog from '../BidDialog'
 import { roundToHundreths } from '../../utils'
 
-const BidButton = ({ currentValue, teamId, school }) => {
+const BidButton = ({ currentValue }) => {
   const [isDialogOpen, setIsDialogOpen] = useState(false)
   const [amount, setAmount] = useState(currentValue)
   const { auth } = useContext(AuthContext)
@@ -28,21 +28,13 @@ const BidButton = ({ currentValue, teamId, school }) => {
       <Button variant="outlined" onClick={handleDialogOpen} disabled={!auth.isAuthenticated()}>
         ${roundToHundreths(amount)}
       </Button>
-      <BidDialog
-        currentValue={amount}
-        isOpen={isDialogOpen}
-        onClose={handleDialogClose}
-        teamId={teamId}
-        school={school}
-      />
+      <BidDialog currentValue={amount} isOpen={isDialogOpen} onClose={handleDialogClose} />
     </Fragment>
   )
 }
 
 BidButton.propTypes = {
-  currentValue: PropTypes.number,
-  teamId: PropTypes.string.isRequired,
-  school: PropTypes.string.isRequired
+  currentValue: PropTypes.number
 }
 BidButton.defaultProps = {
   currentValue: 0

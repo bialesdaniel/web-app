@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button'
 import { mockAuth } from '../../../test/mock-context/AuthConsumer'
 import { AuthProvider } from '../../context/AuthContext'
 import { AuctionProvider } from '../../context/AuctionContext'
+import { TeamProvider } from '../../context/TeamContext'
 import BidButton from './index'
 
 describe('BidButton', () => {
@@ -18,11 +19,9 @@ describe('BidButton', () => {
       <MockedProvider>
         <AuthProvider authMethods={mockAuth}>
           <AuctionProvider auctionId={casual.uuid}>
-            <BidButton
-              currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
-              teamId={casual.uuid}
-              school={casual.title}
-            />
+            <TeamProvider school={`${casual.city} ${casual.word}`} seed={casual.integer(1, 16)} teamId={casual.uuid}>
+              <BidButton currentValue={parseFloat(casual.double(0, 150).toFixed(2))} />
+            </TeamProvider>
           </AuctionProvider>
         </AuthProvider>
       </MockedProvider>
@@ -43,11 +42,13 @@ describe('BidButton', () => {
       <MockedProvider>
         <AuthProvider authMethods={mockAuth}>
           <AuctionProvider auctionId={casual.uuid}>
-            <BidButton
-              currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
-              teamId={casual.uuid}
-              school={casual.title}
-            />
+            <TeamProvider school={`${casual.city} ${casual.word}`} seed={casual.integer(1, 16)} teamId={casual.uuid}>
+              <BidButton
+                currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
+                teamId={casual.uuid}
+                school={casual.title}
+              />
+            </TeamProvider>
           </AuctionProvider>
         </AuthProvider>
       </MockedProvider>

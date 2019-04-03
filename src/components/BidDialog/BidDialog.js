@@ -11,6 +11,7 @@ import Button from '@material-ui/core/Button'
 import CircularProgress from '@material-ui/core/CircularProgress'
 import CurrencyInputField from '../Inputs/CurrencyInputField'
 import AuctionContext from '../../context/AuctionContext'
+import TeamContext from '../../context/TeamContext'
 import { roundToHundreths } from '../../utils'
 
 const styles = theme => ({
@@ -44,10 +45,11 @@ function calcMinBidAmount(currentValue) {
   return currentValue + calcMinRaiseAmount(currentValue)
 }
 
-const BidDialog = ({ teamId, currentValue, onClose, onSubmit, school, classes, isOpen, loading }) => {
+const BidDialog = ({ currentValue, onClose, onSubmit, classes, isOpen, loading }) => {
   const [amount, setAmount] = useState(calcMinBidAmount(currentValue))
   const [errorMessage, setErrorMessage] = useState('')
   const { auctionId } = useContext(AuctionContext)
+  const { school, teamId } = useContext(TeamContext)
 
   if (currentValue >= amount) {
     setAmount(calcMinBidAmount(currentValue))
@@ -114,9 +116,7 @@ BidDialog.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   loading: PropTypes.bool,
   onClose: PropTypes.func.isRequired,
-  onSubmit: PropTypes.func.isRequired,
-  teamId: PropTypes.string.isRequired,
-  school: PropTypes.string.isRequired
+  onSubmit: PropTypes.func.isRequired
 }
 BidDialog.defaultProps = {
   isOpen: false,

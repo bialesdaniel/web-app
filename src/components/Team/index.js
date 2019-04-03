@@ -5,6 +5,7 @@ import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
 import Team from './Team'
 import AuctionContext from '../../context/AuctionContext'
+import { TeamProvider } from '../../context/TeamContext'
 
 const GET_HIGHEST_BID = gql`
   query highestBid($auctionId: ID!, $teamId: ID!) {
@@ -23,15 +24,15 @@ const TeamGQL = ({ id, school, seed }) => {
     <Query query={GET_HIGHEST_BID} variables={{ auctionId, teamId: id }}>
       {({ error, data }) => {
         if (error && error.message !== 'GraphQL error: No bids')
-          return <Team school={error.message} seed={seed} id={id} auctionId={auctionId} />
+          return (
+            <TeamProvider school={school} seed={seed} teamId={id}>
+              <Team school={error.message} />
+            </TeamProvider>
+          )
         return (
-          <Team
-            id={id}
-            school={school}
-            seed={seed}
-            owner={get(data, 'highestBid.user.username')}
-            currentValue={get(data, 'highestBid.amount', 0)}
-          />
+          <TeamProvider school={school} seed={seed} teamId={id}>
+            <Team owner={get(data, 'highestBid.user.username')} currentValue={get(data, 'highestBid.amount', 0)} />
+          </TeamProvider>
         )
       }}
     </Query>

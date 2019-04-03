@@ -2,6 +2,7 @@ import React from 'react'
 import { createMount } from '@material-ui/core/test-utils'
 import casual from 'casual-browserify'
 import { AuctionProvider } from '../../context/AuctionContext'
+import { TeamProvider } from '../../context/TeamContext'
 import BidDialog from './BidDialog'
 
 describe('BidDialog', () => {
@@ -17,14 +18,14 @@ describe('BidDialog', () => {
     mount = createMount()
     wrapper = mount(
       <AuctionProvider auctionId={auctionId}>
-        <BidDialog
-          isOpen={true}
-          onClose={onClose}
-          onSubmit={onSubmit}
-          school={casual.title}
-          currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
-          teamId={casual.uuid}
-        />
+        <TeamProvider school={`${casual.city} ${casual.word}`} seed={casual.integer(1, 16)} teamId={casual.uuid}>
+          <BidDialog
+            isOpen={true}
+            onClose={onClose}
+            onSubmit={onSubmit}
+            currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
+          />
+        </TeamProvider>
       </AuctionProvider>
     )
   })
@@ -42,15 +43,17 @@ describe('BidDialog', () => {
     wrapper.unmount()
     wrapper = mount(
       <AuctionProvider auctionId={auctionId}>
-        <BidDialog
-          isOpen={true}
-          onClose={onClose}
-          onSubmit={onSubmit}
-          school={casual.title}
-          currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
-          teamId={casual.uuid}
-          loading={true}
-        />
+        <TeamProvider school={`${casual.city} ${casual.word}`} seed={casual.integer(1, 16)} teamId={casual.uuid}>
+          <BidDialog
+            isOpen={true}
+            onClose={onClose}
+            onSubmit={onSubmit}
+            school={casual.title}
+            currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
+            teamId={casual.uuid}
+            loading={true}
+          />
+        </TeamProvider>
       </AuctionProvider>
     )
     const CancelButtonNode = wrapper.findWhere(node => node.type() === 'button' && node.text() === 'Cancel')
