@@ -5,6 +5,7 @@ import { Query } from 'react-apollo'
 import Typography from '@material-ui/core/Typography'
 import CircularProgress from '@material-ui/core/CircularProgress'
 import AuctionDetails from './AuctionDetails'
+import { AuctionProvider } from '../../../context/AuctionContext'
 
 const GET_AUCTION = gql`
   query auction($auctionId: ID!) {
@@ -27,7 +28,11 @@ const AuctionDetailsGQL = ({ match }) => {
         if (loading) return <CircularProgress size="40%" />
         if (error) return <Typography variant="subheading">{error}</Typography>
         const { auction } = data
-        return <AuctionDetails name={auction.name} createdAt={auction.createdAt} owner={auction.owner.username} />
+        return (
+          <AuctionProvider auctionId={auctionId}>
+            <AuctionDetails name={auction.name} createdAt={auction.createdAt} owner={auction.owner.username} />
+          </AuctionProvider>
+        )
       }}
     </Query>
   )

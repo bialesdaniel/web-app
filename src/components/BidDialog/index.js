@@ -21,7 +21,6 @@ const BidDialogGQL = props => (
 )
 
 BidDialogGQL.propTypes = {
-  auctionId: PropTypes.string.isRequired,
   currentValue: PropTypes.number.isRequired,
   isOpen: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,

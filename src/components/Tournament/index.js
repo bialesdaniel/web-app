@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
@@ -27,21 +27,18 @@ const GET_TOURNAMENT = gql`
   }
 `
 
-class TournamentGQL extends Component {
-  render() {
-    const { date } = this.props
-    const seasonYear = date.getMonth() <= 3 ? date.getYear() - 1 : date.getYear()
-    return (
-      <Query query={GET_TOURNAMENT} variables={{ year: seasonYear }}>
-        {({ loading, error, data }) => {
-          if (loading) return <CircularProgress />
-          if (error) return <Typography variant="subheading">{error}</Typography>
-          const { tournament } = data
-          return <Tournament brackets={tournament.brackets} />
-        }}
-      </Query>
-    )
-  }
+const TournamentGQL = ({ date }) => {
+  const seasonYear = date.getMonth() <= 3 ? date.getYear() - 1 : date.getYear()
+  return (
+    <Query query={GET_TOURNAMENT} variables={{ year: seasonYear }}>
+      {({ loading, error, data }) => {
+        if (loading) return <CircularProgress />
+        if (error) return <Typography variant="subheading">{error}</Typography>
+        const { tournament } = data
+        return <Tournament brackets={tournament.brackets} />
+      }}
+    </Query>
+  )
 }
 
 TournamentGQL.propTypes = {

@@ -5,6 +5,7 @@ import casual from 'casual-browserify'
 import Button from '@material-ui/core/Button'
 import { mockAuth } from '../../../test/mock-context/AuthConsumer'
 import { AuthProvider } from '../../context/AuthContext'
+import { AuctionProvider } from '../../context/AuctionContext'
 import BidButton from './index'
 
 describe('BidButton', () => {
@@ -16,12 +17,13 @@ describe('BidButton', () => {
     wrapper = mount(
       <MockedProvider>
         <AuthProvider authMethods={mockAuth}>
-          <BidButton
-            currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
-            teamId={casual.uuid}
-            school={casual.title}
-            auctionId={casual.uuid}
-          />
+          <AuctionProvider auctionId={casual.uuid}>
+            <BidButton
+              currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
+              teamId={casual.uuid}
+              school={casual.title}
+            />
+          </AuctionProvider>
         </AuthProvider>
       </MockedProvider>
     )
@@ -40,12 +42,13 @@ describe('BidButton', () => {
     wrapper = mount(
       <MockedProvider>
         <AuthProvider authMethods={mockAuth}>
-          <BidButton
-            currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
-            teamId={casual.uuid}
-            school={casual.title}
-            auctionId={casual.uuid}
-          />
+          <AuctionProvider auctionId={casual.uuid}>
+            <BidButton
+              currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
+              teamId={casual.uuid}
+              school={casual.title}
+            />
+          </AuctionProvider>
         </AuthProvider>
       </MockedProvider>
     )

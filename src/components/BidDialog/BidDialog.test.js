@@ -1,57 +1,74 @@
 import React from 'react'
-import { createShallow } from '@material-ui/core/test-utils'
+import { createMount } from '@material-ui/core/test-utils'
 import casual from 'casual-browserify'
-import Button from '@material-ui/core/Button'
+import { AuctionProvider } from '../../context/AuctionContext'
 import BidDialog from './BidDialog'
 
 describe('BidDialog', () => {
   let wrapper
-  let shallow
+  let mount
   let onClose
   let onSubmit
+  let auctionId
   beforeEach(() => {
     onClose = jest.fn()
     onSubmit = jest.fn()
-    shallow = createShallow({ dive: true })
-    wrapper = shallow(
-      <BidDialog
-        isOpen={true}
-        onClose={onClose}
-        onSubmit={onSubmit}
-        school={casual.title}
-        currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
-        auctionId={casual.uuid}
-        teamId={casual.uuid}
-      />
+    auctionId = casual.uuid
+    mount = createMount()
+    wrapper = mount(
+      <AuctionProvider auctionId={auctionId}>
+        <BidDialog
+          isOpen={true}
+          onClose={onClose}
+          onSubmit={onSubmit}
+          school={casual.title}
+          currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
+          teamId={casual.uuid}
+        />
+      </AuctionProvider>
     )
   })
   afterEach(() => {
     wrapper.unmount()
-    shallow = null
+    mount = null
     onClose = null
     onSubmit = null
+    auctionId = null
   })
   test('renders', () => {
     expect(wrapper).toExist()
   })
   test('if loading buttons are disabled', () => {
-    wrapper.setProps({ loading: true })
-    const ButtonNodes = wrapper.find(Button)
-    ButtonNodes.forEach(node => {
-      expect(node).toHaveProp('disabled', true)
-    })
+    wrapper.unmount()
+    wrapper = mount(
+      <AuctionProvider auctionId={auctionId}>
+        <BidDialog
+          isOpen={true}
+          onClose={onClose}
+          onSubmit={onSubmit}
+          school={casual.title}
+          currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
+          teamId={casual.uuid}
+          loading={true}
+        />
+      </AuctionProvider>
+    )
+    const CancelButtonNode = wrapper.findWhere(node => node.type() === 'button' && node.text() === 'Cancel')
+    const SubmitButtonNode = wrapper.findWhere(node => node.type() === 'button' && node.text() === 'Submit')
+    expect(CancelButtonNode).toHaveProp('disabled', true)
+    expect(SubmitButtonNode).toHaveProp('disabled', true)
   })
-  test('click first button calls onClose', () => {
-    const ButtonNodes = wrapper.find(Button)
-    ButtonNodes.at(0).simulate('click')
+  test('click cancel button calls onClose', () => {
+    const CancelButtonNode = wrapper.findWhere(node => node.type() === 'button' && node.text() === 'Cancel')
+    CancelButtonNode.simulate('click')
     expect(onClose).toHaveBeenCalled()
   })
   test('click second button calls onSubmit and onClose', async () => {
-    const ButtonNodes = wrapper.find(Button)
-    await ButtonNodes.at(1).simulate('click')
+    const SubmitButtonNode = wrapper.findWhere(node => node.type() === 'button' && node.text() === 'Submit')
+    await SubmitButtonNode.simulate('click')
     expect(onSubmit).toHaveBeenCalledWith(
       expect.objectContaining({
-        variables: { amount: expect.any(Number), auctionId: expect.any(String), teamId: expect.any(String) }
+        variables: { amount: expect.any(Number), auctionId: auctionId, teamId: expect.any(String) }
       })
     )
     expect(onClose).toHaveBeenCalled()

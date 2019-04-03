@@ -1,7 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import { get } from 'lodash'
-import { withRouter } from 'react-router'
 import { withStyles } from '@material-ui/core/styles'
 import Paper from '@material-ui/core/Paper'
 import List from '@material-ui/core/List'
@@ -17,32 +15,23 @@ const styles = theme => ({
   }
 })
 
-class Bracket extends Component {
-  render() {
-    const { classes, teams, name, match } = this.props
-    return (
-      <Paper elevation={2} className={classes.root}>
-        <List subheader={<ListSubheader className={classes.header}>{name}</ListSubheader>}>
-          {teams.map(team => (
-            <Team
-              key={team.id}
-              id={team.id}
-              auctionId={get(match, 'params.auctionId')}
-              school={team.school}
-              seed={team.seed}
-            />
-          ))}
-        </List>
-      </Paper>
-    )
-  }
+const Bracket = ({ classes, name, teams }) => {
+  const { root, header } = classes
+  return (
+    <Paper elevation={2} className={root}>
+      <List subheader={<ListSubheader className={header}>{name}</ListSubheader>}>
+        {teams.map(team => (
+          <Team key={team.id} id={team.id} school={team.school} seed={team.seed} />
+        ))}
+      </List>
+    </Paper>
+  )
 }
 
 Bracket.propTypes = {
-  classes: PropTypes.object,
+  classes: PropTypes.object.isRequired,
   teams: PropTypes.array.isRequired,
-  name: PropTypes.string.isRequired,
-  match: PropTypes.object.isRequired
+  name: PropTypes.string.isRequired
 }
 
-export default withRouter(withStyles(styles)(Bracket))
+export default withStyles(styles)(Bracket)

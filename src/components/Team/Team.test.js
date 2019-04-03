@@ -8,14 +8,7 @@ describe('Team', () => {
   let shallow
   beforeEach(() => {
     shallow = createShallow({ dive: true })
-    wrapper = shallow(
-      <Team
-        school={`${casual.city} ${casual.word}`}
-        seed={casual.integer(1, 16)}
-        id={casual.uuid}
-        auctionId={casual.uuid}
-      />
-    )
+    wrapper = shallow(<Team school={`${casual.city} ${casual.word}`} seed={casual.integer(1, 16)} id={casual.uuid} />)
   })
   afterEach(() => {
     wrapper.unmount()

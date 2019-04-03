@@ -12,7 +12,6 @@ storiesOf('Bids|BidDialog', module)
       onSubmit={action('submit')}
       school={`${casual.city} ${casual.word}`}
       currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
-      auctionId={casual.uuid}
       teamId={casual.uuid}
     />
   ))
@@ -23,7 +22,6 @@ storiesOf('Bids|BidDialog', module)
       onSubmit={action('submit')}
       school={`${casual.city} ${casual.word}`}
       currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
-      auctionId={casual.uuid}
       teamId={casual.uuid}
       loading={true}
     />
@@ -35,7 +33,6 @@ storiesOf('Bids|BidDialog', module)
       onSubmit={action('submit')}
       school={`${casual.city} ${casual.word}`}
       currentValue={parseFloat(casual.double(0, 150).toFixed(2))}
-      auctionId={casual.uuid}
       teamId={casual.uuid}
     />
   ))

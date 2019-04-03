@@ -5,8 +5,10 @@ import { BrowserRouter } from 'react-router-dom'
 import apolloStorybookDecorator from 'apollo-storybook-react'
 import  { introspectSchema} from 'graphql-tools'
 import octokit from '@octokit/rest'
+import casual from 'casual-browserify'
 import {MockTournament} from '../test/mock-data/get-tournament'
 import {AuthProvider} from '../src/context/AuthContext'
+import {AuctionProvider} from '../src/context/AuctionContext'
 import requireContext from 'require-context.macro'
 
 if (typeof window !== 'object') {
@@ -28,6 +30,7 @@ addDecorator(story => (
 ))
 addDecorator(story => <BrowserRouter>{story()}</BrowserRouter>)
 addDecorator(story=><AuthProvider authMethods={{isAuthenticated:()=>false}}>{story()}</AuthProvider>)
+addDecorator(story=><AuctionProvider auctionId={'123'}>{story()}</AuctionProvider>)
 
 function loadStories() {
   const req = requireContext('../src/',true,/\.stories\.js$/)

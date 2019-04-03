@@ -21,12 +21,12 @@ export const GET_HIGHEST_BID_QUERY = gql`
   }
 `
 
-export function createMocksForTournament({ mockTournament }) {
+export function createMocksForTournament({ mockTournament, auctionId = '123' }) {
   const teams = mockTournament.tournament.brackets.reduce((teams, bracket) => teams.concat(bracket.teams), [])
   return teams.map(team => ({
     request: {
       query: GET_HIGHEST_BID_QUERY,
-      variables: { auctionId: undefined, teamId: team.id }
+      variables: { auctionId, teamId: team.id }
     },
     result: { data: MockBid }
   }))

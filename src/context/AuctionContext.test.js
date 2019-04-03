@@ -29,6 +29,6 @@ describe('AuctionContext', () => {
     expect(wrapper).toExist()
   })
   test('consuming component has auctionId', () => {
-    expect(wrapper.find(MockComponent).text()).toEqual(auctionId)
+    expect(wrapper.find(MockComponent)).toHaveText(auctionId)
   })
 })

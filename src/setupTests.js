@@ -9,7 +9,6 @@ import PropTypes from 'prop-types'
 import { createMount } from '@material-ui/core/test-utils'
 import { createSerializer } from 'enzyme-to-json'
 import { addSerializer } from 'jest-specific-snapshot'
-//import { mockAuthConsumer } from '../test/mock-context/AuthConsumer'
 
 const mockWrapperComponent = props => <div>{props.children}</div>
 mockWrapperComponent.propTypes = {
@@ -19,7 +18,6 @@ mockWrapperComponent.propTypes = {
 jest.mock('@material-ui/core/Tooltip', () => mockWrapperComponent)
 jest.mock('@material-ui/core/SwipeableDrawer', () => mockWrapperComponent)
 jest.mock('@material-ui/core/Slide', () => mockWrapperComponent)
-//jest.mock('./context/AuthContext', () => mockAuthConsumer())
 
 configure({ adapter: new Adapter() })
 addSerializer(createSerializer({ mode: 'deep' }))

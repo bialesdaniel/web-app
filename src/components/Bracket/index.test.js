@@ -1,6 +1,5 @@
 import React from 'react'
 import { createShallow } from '@material-ui/core/test-utils'
-import casual from 'casual-browserify'
 import Bracket from './index'
 import MockBracket from '../../../test/mock-data/Bracket'
 
@@ -10,9 +9,7 @@ describe('Bracket', () => {
   beforeEach(() => {
     const { name, teams } = new MockBracket()
     shallow = createShallow({ dive: true })
-    wrapper = shallow(
-      <Bracket.WrappedComponent name={name} teams={teams} match={{ params: { auctionId: casual.uuid } }} />
-    )
+    wrapper = shallow(<Bracket name={name} teams={teams} />)
   })
   afterEach(() => {
     wrapper.unmount()
