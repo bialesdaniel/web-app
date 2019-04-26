@@ -1,7 +1,6 @@
 import React from 'react'
 import { createShallow } from '@material-ui/core/test-utils'
 import casual from 'casual-browserify'
-import Typography from '@material-ui/core/Typography'
 import AuctionDetails from './AuctionDetails'
 
 describe('AuctionDetails', () => {
@@ -24,10 +23,6 @@ describe('AuctionDetails', () => {
   })
   test('renders', () => {
     expect(wrapper).toExist()
-  })
-  test('contains title', () => {
-    const titleNode = wrapper.findWhere(node => node.type() === Typography && node.prop('variant') === 'headline')
-    expect(titleNode.children()).toHaveText(props.title)
   })
   test('contains a Tournament', () => {
     expect(wrapper.find('TournamentGQL')).toExist()

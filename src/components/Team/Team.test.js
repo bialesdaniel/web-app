@@ -11,7 +11,7 @@ describe('Team', () => {
     shallow = createShallow()
     wrapper = shallow(
       <TeamProvider school={`${casual.city} ${casual.word}`} seed={casual.integer(1, 16)} teamId={casual.uuid}>
-        <Team school={`${casual.city} ${casual.word}`} seed={casual.integer(1, 16)} id={casual.uuid} />
+        <Team />
       </TeamProvider>
     )
   })

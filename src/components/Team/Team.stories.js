@@ -20,7 +20,7 @@ storiesOf('Tournaments|Team', module)
     <MockedProvider>
       <TeamProvider school={`${casual.city} ${casual.word}`} seed={casual.integer(1, 16)} teamId={casual.uuid}>
         <List>
-          <Team currentValue={parseFloat(casual.double(0.1, 150).toFixed(2))} />
+          <Team currentValue={parseFloat(casual.double(0.1, 150).toFixed(2))} owner={casual.username} />
         </List>
       </TeamProvider>
     </MockedProvider>

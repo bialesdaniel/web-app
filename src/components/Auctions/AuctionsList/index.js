@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { get } from 'lodash'
 import { withStyles } from '@material-ui/core/styles'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
@@ -11,6 +10,7 @@ import Divider from '@material-ui/core/Divider'
 import CircularProgress from '@material-ui/core/CircularProgress'
 import AuctionsListItem from '../AuctionsListItem'
 import CreateAuctionButton from '../CreateAuctionButton'
+import { getUserErrorMessage } from '../../../utils'
 
 const styles = theme => ({
   listHeader: {
@@ -26,14 +26,13 @@ const styles = theme => ({
 })
 
 const AuctionsList = ({ auctions, classes, error, loading }) => {
-  const errorMessage =
-    auctions.length === 0 && !error
-      ? 'No auctions available'
-      : get(error, 'networkError')
-      ? `[NetworkError]: ${error.networkError}`
-      : error
-      ? JSON.stringify(error.graphQLErrors)
-      : '' //TODO: Find a better way to write this / handle error logic
+  let errorMessage
+  if (!loading && auctions.length === 0) {
+    errorMessage = 'No auctions available'
+  }
+  if (!loading && error) {
+    errorMessage = getUserErrorMessage(error.message)
+  }
   const { listHeader, emptyListItemText } = classes
   return (
     <List>
@@ -50,7 +49,7 @@ const AuctionsList = ({ auctions, classes, error, loading }) => {
         <Grid container direction="row" justify="center">
           <CircularProgress />
         </Grid>
-      ) : auctions.length > 0 && !error ? (
+      ) : !errorMessage ? (
         auctions.map(auction => (
           <AuctionsListItem key={auction.id} id={auction.id} name={auction.name} owner={auction.owner.username} />
         ))

@@ -31,8 +31,8 @@ const styles = theme => ({
   buttonProgress: {
     marginTop: -12,
     marginLeft: -24,
-    top: 5,
-    right: 34,
+    top: 7,
+    right: 28,
     position: 'relative',
     minWidth: 0
   }

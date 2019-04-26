@@ -7,17 +7,19 @@ exports[`Storyshots Auctions|AuctionDetails default 1`] = `
   <div
     className="MuiGrid-item"
   >
-    <h1
-      className="MuiTypography-root MuiTypography-headline MuiTypography-alignCenter"
-    >
-      Hic sit minus
-    </h1>
-    <h3
-      className="MuiTypography-root MuiTypography-subheading MuiTypography-alignCenter"
-    >
-      by 
-      Lavinia_McKenzie
-    </h3>
+    Array [
+      <h1
+        className="MuiTypography-root MuiTypography-headline MuiTypography-alignCenter"
+      >
+        Hic sit minus
+      </h1>,
+      <h3
+        className="MuiTypography-root MuiTypography-subheading MuiTypography-alignCenter"
+      >
+        by 
+        Lavinia_McKenzie
+      </h3>,
+    ]
   </div>
   <div
     className="MuiGrid-item"

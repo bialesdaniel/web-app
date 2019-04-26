@@ -76,6 +76,11 @@ exports[`Storyshots Tournaments|Team with bid 1`] = `
         >
           12. Lake Valentine sit
         </span>
+        <p
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiListItemText-secondary"
+        >
+          Green.Judson
+        </p>
       </div>
     </div>
     <div
