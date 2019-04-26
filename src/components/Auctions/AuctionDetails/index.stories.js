@@ -17,8 +17,8 @@ storiesOf('Auctions|AuctionDetails', module).add('gql', () => {
       addTypename={false}
       mocks={[
         {
-          request:{query:IS_MEMBER_QUERY,variables:{auctionId:'123'}},
-          result:{data:MockIsMember}
+          request: { query: IS_MEMBER_QUERY, variables: { auctionId: '123' } },
+          result: { data: MockIsMember }
         },
         {
           request: { query: GET_TOURNAMENT_QUERY, variables: { year } },
