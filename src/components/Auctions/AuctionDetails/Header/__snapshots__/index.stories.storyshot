@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Auctions|AuctionDetailsHeader default 1`] = `
+exports[`Storyshots Auction|Header default 1`] = `
 Array [
   <h1
     className="MuiTypography-root MuiTypography-headline MuiTypography-alignCenter"

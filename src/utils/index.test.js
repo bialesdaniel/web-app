@@ -1,4 +1,5 @@
-import { roundToHundreths } from './index'
+import casual from 'casual-browserify'
+import { roundToHundreths, getUserErrorMessage } from './index'
 
 describe('utils', () => {
   describe('roundToHundreths', () => {
@@ -13,6 +14,21 @@ describe('utils', () => {
     test('dont round numbers that have less than two decimals', () => {
       const result = roundToHundreths(1)
       expect(result).toEqual(1)
+    })
+  })
+  describe('getUserErrorMessage', () => {
+    test('Failed to fetch', () => {
+      const result = getUserErrorMessage('Failed to fetch')
+      expect(result).toEqual("I can't connect to the data. Please check your connection.")
+    })
+    test('Authroziation header Bearer token required', () => {
+      const result = getUserErrorMessage('Authorization header Bearer token required')
+      expect(result).toEqual("You shouldn't be here. \nPlease login.")
+    })
+    test('Undocumented error', () => {
+      const gqlErrorMessage = casual.sentence
+      const result = getUserErrorMessage(gqlErrorMessage)
+      expect(result).toEqual(gqlErrorMessage)
     })
   })
 })

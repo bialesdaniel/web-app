@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography'
 import CircularProgress from '@material-ui/core/CircularProgress'
 import AuctionDetails from './AuctionDetails'
 import { AuctionProvider } from '../../../context/AuctionContext'
+import { getUserErrorMessage } from '../../../utils'
 
 const GET_AUCTION = gql`
   query auction($auctionId: ID!) {
@@ -26,7 +27,7 @@ const AuctionDetailsGQL = ({ match }) => {
     <Query query={GET_AUCTION} variables={{ auctionId }}>
       {({ loading, error, data }) => {
         if (loading) return <CircularProgress size="40%" />
-        if (error) return <Typography variant="subheading">{error}</Typography>
+        if (error) return <Typography variant="subtitle1">{getUserErrorMessage(error.message)}</Typography>
         const { auction } = data
         return (
           <AuctionProvider auctionId={auctionId}>

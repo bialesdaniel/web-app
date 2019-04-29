@@ -33,16 +33,15 @@ describe('AuctionsList', () => {
     wrapper.setProps({ auctions })
     expect(wrapper.find(AuctionListItem)).toHaveLength(auctions.length)
   })
-  //FIXME: When I create a error compoenent this won't be needed
   test('network error', () => {
-    const error = { networkError: 'error', graphQLErrors: [] }
+    const error = { networkError: 'error', graphQLErrors: [], message: 'error' }
     wrapper.setProps({ error })
-    expect(wrapper.find(ListItemText)).toHaveProp('primary', '[NetworkError]: error')
+    expect(wrapper.find(ListItemText)).toHaveProp('primary', 'error')
   })
   test('graphQLErrors', () => {
     expect.assertions(1)
-    const error = { graphQLErrors: [{ message: 'error' }, { message: 'error' }] }
+    const error = { graphQLErrors: [{ message: 'error' }, { message: 'error' }], message: 'error' }
     wrapper.setProps({ error })
-    expect(wrapper.find(ListItemText)).toHaveProp('primary', '[{"message":"error"},{"message":"error"}]')
+    expect(wrapper.find(ListItemText)).toHaveProp('primary', 'error')
   })
 })

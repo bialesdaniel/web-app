@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Auctions|AuctionDetails default 1`] = `
+exports[`Storyshots Auction|AuctionDetails default 1`] = `
 <div
-  className="MuiGrid-container MuiGrid-direction-xs-column"
+  className="MuiGrid-container MuiGrid-direction-xs-column MuiGrid-wrap-xs-nowrap"
 >
   <div
     className="MuiGrid-item"
@@ -22,15 +22,15 @@ exports[`Storyshots Auctions|AuctionDetails default 1`] = `
     ]
   </div>
   <div
-    className="MuiGrid-item"
+    className="MuiGrid-item AuctionDetails-content"
   >
     <div
       className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
       role="progressbar"
       style={
         Object {
-          "height": 40,
-          "width": 40,
+          "height": "40%",
+          "width": "40%",
         }
       }
     >

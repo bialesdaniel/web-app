@@ -12,9 +12,9 @@ const AuctionDetailsContent = ({ isMember, updateIsMember, createdAt }) => {
 }
 
 AuctionDetailsContent.propTypes = {
+  createdAt: PropTypes.string.isRequired,
   isMember: PropTypes.bool.isRequired,
-  updateIsMember: PropTypes.func.isRequired,
-  createdAt: PropTypes.string.isRequired
+  updateIsMember: PropTypes.func.isRequired
 }
 
 export default AuctionDetailsContent

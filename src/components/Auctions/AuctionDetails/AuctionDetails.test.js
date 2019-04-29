@@ -2,6 +2,7 @@ import React from 'react'
 import { createShallow } from '@material-ui/core/test-utils'
 import casual from 'casual-browserify'
 import AuctionDetails from './AuctionDetails'
+import ContentGQL from './Content'
 
 describe('AuctionDetails', () => {
   let wrapper
@@ -13,7 +14,7 @@ describe('AuctionDetails', () => {
       owner: casual.username,
       createdAt: casual.moment.toISOString()
     }
-    shallow = createShallow()
+    shallow = createShallow({ dive: true })
     wrapper = shallow(<AuctionDetails {...props} />)
   })
   afterEach(() => {
@@ -24,11 +25,22 @@ describe('AuctionDetails', () => {
   test('renders', () => {
     expect(wrapper).toExist()
   })
-  test('contains a Tournament', () => {
-    expect(wrapper.find('TournamentGQL')).toExist()
+  test('contains AuctionDetailsHeader', () => {
+    expect(wrapper.find('AuctionDetailsHeader')).toExist()
   })
-  test('Tournament receives createdAt as a prop', () => {
-    const tournamentNode = wrapper.find('TournamentGQL')
-    expect(tournamentNode).toHaveProp('date', new Date(props.createdAt))
+  test('AuctionDetailsHeader has name prop', () => {
+    const auctionDetailsHeaderNode = wrapper.find('AuctionDetailsHeader')
+    expect(auctionDetailsHeaderNode).toHaveProp('name', props.name)
+  })
+  test('AuctionDetailsHeader has owner prop', () => {
+    const auctionDetailsHeaderNode = wrapper.find('AuctionDetailsHeader')
+    expect(auctionDetailsHeaderNode).toHaveProp('owner', props.owner)
+  })
+  test('contains a ContentGQL', () => {
+    expect(wrapper.find(ContentGQL)).toExist()
+  })
+  test('Content receives createdAt as a prop', () => {
+    const contentNode = wrapper.find(ContentGQL)
+    expect(contentNode).toHaveProp('createdAt', props.createdAt)
   })
 })

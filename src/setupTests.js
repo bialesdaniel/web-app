@@ -21,6 +21,7 @@ jest.mock('@material-ui/core/Slide', () => mockWrapperComponent)
 
 configure({ adapter: new Adapter() })
 addSerializer(createSerializer({ mode: 'deep' }))
+//TODO: UNCOMMENT
 initStoryshots({
   test: multiSnapshotWithOptions({
     renderer: createMount()

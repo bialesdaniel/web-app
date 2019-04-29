@@ -3,11 +3,11 @@ import { storiesOf } from '@storybook/react'
 import { MockedProvider } from 'react-apollo/test-utils'
 import casual from 'casual-browserify'
 import { GET_TOURNAMENT_QUERY, MockTournament } from '../../../../test/mock-data/get-tournament'
-import { IS_MEMBER_QUERY, MockIsMember } from '../../../../test/mock-data/isMember'
+import { IS_MEMBER_QUERY, MockIsMember } from '../../../../test/mock-data/is-member'
 import { createMocksForTournament } from '../../../../test/mock-data/get-highest-bid'
 import AuctionDetails from './AuctionDetails'
 
-storiesOf('Auctions|AuctionDetails', module).add('default', () => {
+storiesOf('Auction|AuctionDetails', module).add('default', () => {
   const date = casual.moment.toISOString()
   return (
     <MockedProvider
